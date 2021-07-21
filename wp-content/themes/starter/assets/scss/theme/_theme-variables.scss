@@ -1,9 +1,9 @@
 // Colors
 
-$gm_base-color:                                  #555555;
+$gm_base-color:                                  #4d4e52;
 $gm_muted-color:                                 #9b9b9b;
 
-$gm_light-color:                                 #f9f9f9;
+$gm_light-color:                                 #f7f8fa;
 $gm_light-muted-color:                           darken($gm_light-color, 10%);
 $gm_light-lighten-color:                         darken($gm_light-color, 5%);
 
@@ -11,15 +11,15 @@ $gm_contrast-light-color:                        rgba(255, 255, 255, 0.2);
 $gm_contrast-light-muted-color:                  rgba(255, 255, 255, 0.1);
 $gm_contrast-light-lighten-color:                rgba(255, 255, 255, 0.15);
 
-$gm_primary-color:                               #6194e5;
+$gm_primary-color:                               #fe9603;
 $gm_primary-muted-color:                         desaturate(darken($gm_primary-color, 10%), 10%);
 $gm_primary-light-color:                         lighten($gm_primary-color, 10%);
 
-$gm_secondary-color:                             #3e579b;
+$gm_secondary-color:                             #6c7481;
 $gm_secondary-muted-color:                       lighten($gm_secondary-color, 10%);
 $gm_secondary-light-color:                       lighten($gm_secondary-color, 20%);
 
-$gm_dark-color:                                  #333333;
+$gm_dark-color:                                  #191919;
 $gm_dark-muted-color:                            lighten($gm_dark-color, 10%);
 $gm_dark-light-color:                            lighten($gm_dark-color, 20%);
 
@@ -29,19 +29,20 @@ $gm_overlay-secondary-color:                     rgba($gm_secondary-color, 0.6);
 $gm_overlay-dark-color:                          rgba($gm_dark-color, 0.6);
 $gm_overlay-loading:                             rgba(255, 255, 255, 0.5);
 
+$gm_lighten-color:                               rgba(255, 255, 155, 0.1);
 $gm_darken-color:                                rgba(0, 0, 0, 0.1);
 
 $gm_contrast-color:                              rgba(255, 255, 255, 0.9);
 $gm_contrast-muted-color:                        #ffffff;
 
-$gm_success-color:                               #a5e437;
+$gm_success-color:                               #48c092;
 $gm_warning-color:                               #ffc238;
 $gm_danger-color:                                #ff454e;
 
-$gm_border-color:                                #e6e6e6;
+$gm_border-color:                                #e6e7eb;
 $gm_border-contrast-color:                       rgba(255, 255, 255, 0.25);
 
-$gm_body-background:                             #ffffff;
+$gm_body-background:                             $gm_light-color;
 
 // END Colors
 
