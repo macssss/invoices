@@ -249,10 +249,10 @@ $button-icon-mini-font-size:                     $button-icon-font-size - 8 * $p
 $button-icon-small-font-size:                    $button-icon-font-size - 4 * $px;
 $button-icon-large-font-size:                    $button-icon-font-size + 4 * $px;
 
-$button-padding-horizontal:                      $gm_offset-default;
+$button-padding-horizontal:                      $gm_offset-medium;
 $button-mini-padding-horizontal:                 $gm_offset-small;
-$button-small-padding-horizontal:                $gm_offset-medium;
-$button-large-padding-horizontal:                $gm_offset-large;
+$button-small-padding-horizontal:                $gm_offset-small;
+$button-large-padding-horizontal:                $gm_offset-default;
 
 $button-radius:                                  $gm_button-radius;
 $button-mini-radius:                             $gm_button-mini-radius;

@@ -15863,7 +15863,7 @@ select.uk-form-width-mini {
   /* 7 */
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 32px;
+  padding: 0 24px;
   background: #f7f8fa;
   vertical-align: middle;
   /* 8 */
@@ -16098,7 +16098,7 @@ select.uk-form-width-mini {
 /* line 321, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_button.scss */
 .uk-button-small, .uk-button-icon-small {
   min-height: 40px;
-  padding: 0 24px;
+  padding: 0 16px;
   line-height: 38px;
   font-size: 0.875rem;
 }
@@ -16106,7 +16106,7 @@ select.uk-form-width-mini {
 /* line 328, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_button.scss */
 .uk-button-large, .uk-button-icon-large {
   min-height: 60px;
-  padding: 0 48px;
+  padding: 0 32px;
   line-height: 58px;
   font-size: 1.125rem;
 }
@@ -28725,7 +28725,7 @@ body.login .indicator-hint {
   background: #f7f8fa;
   vertical-align: middle;
   min-height: 40px;
-  padding: 0 24px;
+  padding: 0 16px;
   line-height: 38px;
   font-size: 0.875rem;
   text-decoration: none;
@@ -28775,7 +28775,7 @@ body.login .indicator-hint {
 /* line 306, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
 .wp-core-ui .button.button-large {
   min-height: 40px;
-  padding: 0 24px;
+  padding: 0 16px;
   line-height: 38px;
   font-size: 0.875rem;
 }
@@ -29318,7 +29318,7 @@ body.admin-bar .uk-offcanvas-bar {
   background: #fe9603;
   vertical-align: middle;
   min-height: 40px;
-  padding: 0 24px;
+  padding: 0 16px;
   line-height: 38px;
   font-size: 0.875rem;
   text-decoration: none;
@@ -36499,7 +36499,7 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
   background: #fe9603;
   vertical-align: middle;
   min-height: 40px;
-  padding: 0 24px;
+  padding: 0 16px;
   line-height: 38px;
   font-size: 0.875rem;
   text-decoration: none;
