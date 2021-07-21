@@ -28363,8 +28363,8 @@ body.login #login {
 
 /* line 33, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
 body.login #login > h1 a {
-  background: url(/wp-content/uploads/images/logo.svg) no-repeat center center/75% auto;
-  height: 120px;
+  background: url(/wp-content/uploads/images/logo.svg) no-repeat center center/auto 90%;
+  height: 150px;
   width: 100%;
   background-position: center center;
   margin: 0;
