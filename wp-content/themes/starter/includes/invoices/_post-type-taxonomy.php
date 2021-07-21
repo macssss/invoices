@@ -54,7 +54,7 @@
 			'public'              => true,
 			'menu_position'       => 5,
 			'menu_icon'           => 'dashicons-calculator',
-			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
+			'supports'            => array( 'title', 'editor', 'revisions', 'custom-fields', ),
 			'taxonomies'          => array( 'restaurant' ),
 			'has_archive'         => true,
 		);
