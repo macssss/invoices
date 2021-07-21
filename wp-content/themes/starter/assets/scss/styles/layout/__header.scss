@@ -91,8 +91,11 @@
 
 
 	&.gm_navbar-default {
-
-		.gm_navbar-inner { justify-content: space-between; }
+		
+		.gm_navbar-center { margin-left: $gm_offset-default; }
+		
+		.gm_navbar-right { margin-left: auto; }
+		
 		.gm_navbar-right > div + div { margin-left: $gm_offset-small; }
 		
 		@media ( max-width: 400px ) {

@@ -1,7 +1,7 @@
 
 .uk-navbar { 
 	
-	.gm_search, .gm_more, .gm_navbar-toggle{
+	.gm_search, .gm_navbar-toggle{
 	
 		@if ( $gm_navbar-contrast == false ){
 			
@@ -27,6 +27,12 @@
 		}
 		
 	}
+	
+	@if ( $gm_navbar-contrast == true ){
+		
+		color: $navbar-contrast-color;
+		background: $navbar-contrast-background;
+	}
 }
 
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar {
@@ -34,7 +40,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar {
 	color: $navbar-contrast-color;
 	background: none;
 	
-	.gm_search, .gm_more, .gm_navbar-toggle {
+	.gm_search, .gm_navbar-toggle {
 		
 		a:not(.uk-button) {
 			color: $navbar-contrast-link-color;
@@ -50,8 +56,11 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar {
 	
 	> li { 
 		
+		& + li { margin-left: $gm_offset-mini; }
+		
 		> a {
 			text-transform: $navbar-nav-text-transform;
+			border-radius: $gm_base-radius;
 		}
 		
 		
@@ -92,8 +101,8 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar {
 			
 			
 			&.uk-active > a {
-				background-color: $navbar-contrast-nav-hover-background;
-				color: $navbar-contrast-nav-hover-color;
+				background-color: $navbar-contrast-nav-active-background;
+				color: $navbar-contrast-nav-active-color;
 			}
 		}
 		

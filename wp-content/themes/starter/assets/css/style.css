@@ -14016,12 +14016,12 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   box-sizing: border-box;
   text-decoration: none;
   /* 1 */
-  height: 100px;
-  padding: 0 24px;
-  line-height: 100px;
+  height: 40px;
+  padding: 0 16px;
+  line-height: 40px;
   /* 2 */
   color: #191919;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -14087,8 +14087,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-toggle {
   box-sizing: border-box;
   display: block;
-  height: 100px;
-  padding: 0 24px;
+  height: 40px;
+  padding: 0 16px;
   float: left;
 }
 
@@ -18081,6 +18081,7 @@ a.uk-thumbnail:focus {
   margin-left: 8px;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* line 247, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_dropdown.scss */
@@ -23136,17 +23137,17 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 /* line 30, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-button-secondary:hover, .uk-button-secondary:focus {
-  background-color: #868e9a;
+  background-color: #555b65;
   color: #ffffff;
-  border-color: #868e9a;
+  border-color: #555b65;
   box-shadow: none;
 }
 
 /* line 38, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-button-secondary:active, .uk-button-secondary.uk-active {
-  background-color: #a2a8b1;
+  background-color: #868e9a;
   color: #ffffff;
-  border-color: #a2a8b1;
+  border-color: #868e9a;
   box-shadow: none;
 }
 
@@ -23168,9 +23169,9 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 /* line 67, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-button-secondary-invert:active, .uk-button-secondary-invert.uk-active {
-  background-color: #a2a8b1;
+  background-color: #868e9a;
   color: #ffffff;
-  border-color: #a2a8b1;
+  border-color: #868e9a;
   box-shadow: none;
 }
 
@@ -23464,17 +23465,17 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 /* line 433, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-contrast-reset .uk-button-secondary:hover, .uk-contrast-reset .uk-button-secondary:focus {
-  background-color: #868e9a;
+  background-color: #555b65;
   color: #ffffff;
-  border-color: #868e9a;
+  border-color: #555b65;
   box-shadow: none;
 }
 
 /* line 441, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-contrast-reset .uk-button-secondary:active, .uk-contrast-reset .uk-button-secondary.uk-active {
-  background-color: #a2a8b1;
+  background-color: #868e9a;
   color: #ffffff;
-  border-color: #a2a8b1;
+  border-color: #868e9a;
   box-shadow: none;
 }
 
@@ -23496,9 +23497,9 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 /* line 470, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_button.scss */
 .uk-contrast-reset .uk-button-secondary-invert:active, .uk-contrast-reset .uk-button-secondary-invert.uk-active {
-  background-color: #a2a8b1;
+  background-color: #868e9a;
   color: #ffffff;
-  border-color: #a2a8b1;
+  border-color: #868e9a;
   box-shadow: none;
 }
 
@@ -24423,15 +24424,15 @@ input:not([type]).uk-form-large {
 
 /* line 69, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_icon.scss */
 .uk-icon-button-secondary:hover, .uk-icon-button-secondary:focus {
-  background: #868e9a;
-  border-color: #868e9a;
+  background: #555b65;
+  border-color: #555b65;
   color: #ffffff;
 }
 
 /* line 75, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_icon.scss */
 .uk-icon-button-secondary:active {
-  background: #a2a8b1;
-  border: #a2a8b1;
+  background: #868e9a;
+  border: #868e9a;
   color: #ffffff;
 }
 
@@ -24992,7 +24993,7 @@ input:not([type]).uk-form-large {
 
 /* line 278, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_nav.scss */
 .uk-nav-offcanvas > li > a {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-transform: none;
@@ -25055,38 +25056,57 @@ input:not([type]).uk-form-large {
   color: #fe9603;
 }
 
-/* line 8, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-.uk-navbar .gm_search a:not(.uk-button), .uk-navbar .gm_more a:not(.uk-button), .uk-navbar .gm_navbar-toggle a:not(.uk-button) {
+/* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar {
+  color: #ffffff;
+  background: #191919;
+}
+
+/* line 4, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar .gm_search, .uk-navbar .gm_navbar-toggle {
+  color: #ffffff;
+  background: #191919;
+  box-shadow: none !important;
+}
+
+/* line 22, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar .gm_search a:not(.uk-button), .uk-navbar .gm_navbar-toggle a:not(.uk-button) {
   color: inherit;
 }
 
-/* line 11, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-.uk-navbar .gm_search a:not(.uk-button):hover, .uk-navbar .gm_search a:not(.uk-button):focus, .uk-navbar .gm_more a:not(.uk-button):hover, .uk-navbar .gm_more a:not(.uk-button):focus, .uk-navbar .gm_navbar-toggle a:not(.uk-button):hover, .uk-navbar .gm_navbar-toggle a:not(.uk-button):focus {
+/* line 25, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar .gm_search a:not(.uk-button):hover, .uk-navbar .gm_search a:not(.uk-button):focus, .uk-navbar .gm_navbar-toggle a:not(.uk-button):hover, .uk-navbar .gm_navbar-toggle a:not(.uk-button):focus {
   color: #fe9603;
 }
 
-/* line 32, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 38, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar {
   color: #ffffff;
   background: none;
 }
 
-/* line 39, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button), body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_more a:not(.uk-button), body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button) {
+/* line 45, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button), body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button) {
   color: inherit;
 }
 
-/* line 42, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button):hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button):focus, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_more a:not(.uk-button):hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_more a:not(.uk-button):focus, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button):hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button):focus {
+/* line 48, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button):hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_search a:not(.uk-button):focus, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button):hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_navbar-toggle a:not(.uk-button):focus {
   color: #fe9603;
 }
 
-/* line 53, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-.uk-navbar-nav > li > a {
-  text-transform: none;
+/* line 59, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar-nav > li + li {
+  margin-left: 8px;
 }
 
-/* line 69, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 61, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar-nav > li > a {
+  text-transform: none;
+  border-radius: 5px;
+}
+
+/* line 78, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav > li.uk-parent > a span:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -25096,17 +25116,34 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_sea
   margin-left: 4px;
 }
 
-/* line 79, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 88, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav > li i {
   line-height: 1;
 }
 
-/* line 106, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 92, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar-nav > li > a {
+  color: #ffffff;
+}
+
+/* line 97, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar-nav > li:hover > a, .uk-navbar-nav > li > a:focus, .uk-navbar-nav > li.uk-open > a {
+  background-color: rgba(108, 116, 129, 0.3);
+  color: #ffffff;
+}
+
+/* line 103, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+.uk-navbar-nav > li.uk-active > a {
+  background-color: rgba(108, 116, 129, 0.3);
+  color: #ffffff;
+}
+
+/* line 115, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar li {
   position: relative;
 }
 
-/* line 110, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 119, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar li.uk-parent > a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -25116,12 +25153,12 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_sea
   float: right;
 }
 
-/* line 120, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 129, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar li.uk-parent > a > span {
   margin-right: 16px;
 }
 
-/* line 124, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 133, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub {
   display: none;
   position: absolute;
@@ -25132,54 +25169,55 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar .gm_sea
   color: white;
   border-radius: 5px;
   padding: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* line 143, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 152, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub > li > a {
   padding: 8px 16px;
 }
 
-/* line 146, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 155, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub > li > a:hover, .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub > li > a:focus {
   background: #fe9603;
   color: #ffffff;
 }
 
-/* line 153, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 162, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub > li.uk-active > a {
   background: #fe9603;
   color: #ffffff;
 }
 
-/* line 159, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 168, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub ul {
   padding-left: 32px;
   font-size: 0.875rem;
 }
 
-/* line 163, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 172, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-nav .uk-nav-navbar ul.uk-nav-sub ul li.uk-active > a {
   color: #fe9603;
 }
 
-/* line 175, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 184, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li > a {
   color: #ffffff;
 }
 
-/* line 178, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+/* line 187, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li:hover, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li > a:focus, body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li.uk-open > a {
-  background-color: transparent;
-  color: #fe9603;
-}
-
-/* line 185, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
-body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li.uk-active > a {
-  background-color: transparent;
-  color: #fe9603;
+  background-color: rgba(108, 116, 129, 0.3);
+  color: #ffffff;
 }
 
 /* line 194, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
+body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > li.uk-active > a {
+  background-color: rgba(108, 116, 129, 0.3);
+  color: #ffffff;
+}
+
+/* line 203, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_navbar.scss */
 .uk-navbar-toggle:after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -25726,11 +25764,11 @@ body.admin-bar .uk-height-full {
 @media (min-width: 960px) {
   /* line 48, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_utility.scss */
   body.gm_with-sticky-menu .uk-height-full:not(.gm_clear-header-section) {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 60px);
   }
   /* line 49, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_utility.scss */
   body.admin-bar.gm_with-sticky-menu .uk-height-full:not(.gm_clear-header-section) {
-    min-height: calc(100vh - 80px - 32px);
+    min-height: calc(100vh - 60px - 32px);
   }
 }
 
@@ -32307,13 +32345,13 @@ div.wpcf7 .ajax-loader.is-active {
 .gm_block-header {
   position: relative;
   z-index: 980;
-  min-height: 100px;
+  min-height: 60px;
 }
 
 @media (max-width: 959px) {
   /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
   .gm_block-header {
-    min-height: 80px;
+    min-height: 60px;
   }
 }
 
@@ -32348,7 +32386,7 @@ div.wpcf7 .ajax-loader.is-active {
 
 /* line 36, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper .uk-navbar-content, .gm_navbar-wrapper .uk-navbar-brand, .gm_navbar-wrapper .uk-navbar-toggle {
-  height: 100px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -32382,23 +32420,28 @@ div.wpcf7 .ajax-loader.is-active {
 
 /* line 55, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.uk-active .uk-navbar-brand {
-  height: 80px;
+  height: 60px;
 }
 
 /* line 57, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.uk-active .uk-navbar-content, .gm_navbar-wrapper.uk-active .uk-navbar-toggle {
-  height: 80px;
+  height: 40px;
 }
 
 /* line 59, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.uk-active .uk-navbar-nav > li > a {
-  height: 80px;
-  line-height: 80px;
+  height: 40px;
+  line-height: 40px;
 }
 
-/* line 63, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
-.gm_navbar-wrapper.uk-active .uk-navbar {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+/* line 70, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+.gm_navbar-wrapper .logo-default {
+  display: none !important;
+}
+
+/* line 71, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+.gm_navbar-wrapper .logo-contrast {
+  display: block !important;
 }
 
 @media (min-width: 960px) {
@@ -32419,48 +32462,53 @@ div.wpcf7 .ajax-loader.is-active {
   }
   /* line 87, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
   .gm_navbar-wrapper .uk-navbar-brand, .gm_navbar-wrapper .uk-navbar-content, .gm_navbar-wrapper .uk-navbar-toggle {
-    height: 80px;
+    height: 60px;
   }
   /* line 89, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
   .gm_navbar-wrapper .uk-navbar-nav > li > a {
-    height: 80px;
-    line-height: 80px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
 /* line 95, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
-.gm_navbar-wrapper.gm_navbar-default .gm_navbar-inner {
-  justify-content: space-between;
+.gm_navbar-wrapper.gm_navbar-default .gm_navbar-center {
+  margin-left: 32px;
 }
 
-/* line 96, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+/* line 97, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+.gm_navbar-wrapper.gm_navbar-default .gm_navbar-right {
+  margin-left: auto;
+}
+
+/* line 99, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.gm_navbar-default .gm_navbar-right > div + div {
   margin-left: 16px;
 }
 
 @media (max-width: 400px) {
-  /* line 100, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+  /* line 103, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
   .gm_navbar-wrapper.gm_navbar-default .gm_navbar-left {
     max-width: 220px;
   }
 }
 
-/* line 107, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+/* line 110, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.gm_navbar-centered .gm_navbar-inner {
   flex-direction: column;
 }
 
-/* line 108, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+/* line 111, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 .gm_navbar-wrapper.gm_navbar-centered .gm_navbar-bottom > div + div {
   margin-left: 16px;
 }
 
-/* line 117, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+/* line 120, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-default {
   display: none !important;
 }
 
-/* line 118, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
+/* line 121, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__header.scss */
 body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
   display: block !important;
 }
@@ -32539,92 +32587,92 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 66, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section {
-  margin-top: -100px;
+  margin-top: -60px;
 }
 
 @media (max-width: 959px) {
   /* line 66, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section {
-    margin-top: -80px;
+    margin-top: -60px;
   }
 }
 
 /* line 75, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block {
-  padding-top: 132px;
+  padding-top: 92px;
 }
 
 /* line 76, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block-mini {
-  padding-top: 108px;
+  padding-top: 68px;
 }
 
 /* line 77, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block-small {
-  padding-top: 116px;
+  padding-top: 76px;
 }
 
 /* line 78, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block-medium {
-  padding-top: 124px;
+  padding-top: 84px;
 }
 
 /* line 79, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block-large {
-  padding-top: 148px;
+  padding-top: 108px;
 }
 
 /* line 80, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
 .gm_clear-header-section.uk-block-xlarge {
-  padding-top: 164px;
+  padding-top: 124px;
 }
 
 @media (min-width: 960px) {
   /* line 85, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-large {
-    padding-top: 164px;
+    padding-top: 124px;
   }
   /* line 86, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-xlarge {
-    padding-top: 188px;
+    padding-top: 148px;
   }
 }
 
 @media (max-width: 959px) {
   /* line 92, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block {
-    padding-top: 112px;
+    padding-top: 92px;
   }
   /* line 93, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-mini {
-    padding-top: 88px;
+    padding-top: 68px;
   }
   /* line 94, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-small {
-    padding-top: 96px;
+    padding-top: 76px;
   }
   /* line 95, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-medium {
-    padding-top: 104px;
+    padding-top: 84px;
   }
   /* line 96, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-large {
-    padding-top: 128px;
+    padding-top: 108px;
   }
   /* line 97, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-xlarge {
-    padding-top: 144px;
+    padding-top: 124px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
   /* line 104, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-large {
-    padding-top: 144px;
+    padding-top: 124px;
   }
   /* line 105, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/layout/__title-section.scss */
   .gm_clear-header-section.uk-block-xlarge {
-    padding-top: 168px;
+    padding-top: 148px;
   }
 }
 
@@ -36752,9 +36800,9 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
 
 /* line 44, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/widgets/__user-menu.scss */
 .user-menu .user-link:active, .user-menu .user-link.uk-active {
-  background-color: #a2a8b1;
+  background-color: #868e9a;
   color: #ffffff;
-  border-color: #a2a8b1;
+  border-color: #868e9a;
   box-shadow: none;
 }
 

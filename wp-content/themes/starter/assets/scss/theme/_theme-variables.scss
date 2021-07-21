@@ -16,8 +16,8 @@ $gm_primary-muted-color:                         desaturate(darken($gm_primary-c
 $gm_primary-light-color:                         lighten($gm_primary-color, 10%);
 
 $gm_secondary-color:                             #6c7481;
-$gm_secondary-muted-color:                       lighten($gm_secondary-color, 10%);
-$gm_secondary-light-color:                       lighten($gm_secondary-color, 20%);
+$gm_secondary-muted-color:                       darken($gm_secondary-color, 10%);
+$gm_secondary-light-color:                       lighten($gm_secondary-color, 10%);
 
 $gm_dark-color:                                  #191919;
 $gm_dark-muted-color:                            lighten($gm_dark-color, 10%);
@@ -218,14 +218,14 @@ $gm_form-toggler-radius:                         $gm_small-radius;
 
 // Navbar
 
-$gm_navbar-height:                               100px;
-$gm_navbar-height-small:                         80px;
+$gm_navbar-height:                               60px;
+$gm_navbar-height-small:                         $gm_navbar-height;
 
 $gm_navbar-brand-height:                         $gm_navbar-height;
 $gm_navbar-brand-height-small:                   $gm_navbar-height-small;
 
-$gm_navbar-nav-height:                           $gm_navbar-height;
-$gm_navbar-nav-height-small:                     $gm_navbar-height-small;
+$gm_navbar-nav-height:                           40px;
+$gm_navbar-nav-height-small:                     $gm_navbar-nav-height;
 
 $gm_navbar-nav-break:                            $gm_media-medium-max;
 $gm_navbar-nav-break-min:                        $gm_navbar-nav-break + 1;
@@ -233,16 +233,16 @@ $gm_navbar-nav-break-min:                        $gm_navbar-nav-break + 1;
 $gm_navbar_icons-font-size:                      $gm_base-font-size + 4 * $px;
 
 $gm_navbar-nav-font-family:                      $gm_base-font-family;
-$gm_navbar-nav-font-size:                        $gm_base-font-size + 2 * $px;
+$gm_navbar-nav-font-size:                        $gm_base-font-size;
 $gm_navbar-nav-font-weight:                      $gm_base-font-weight;
 $gm_navbar-nav-text-transform:                   none;
 
-$gm_navbar-nav-padding-horizontal:               $gm_offset-medium;
+$gm_navbar-nav-padding-horizontal:               $gm_offset-small;
 
 
 /// Navbar Contrast
 
-$gm_navbar-contrast:                             false;
+$gm_navbar-contrast:                             true;
 
 
 /// Navbar Default Colors
@@ -273,14 +273,14 @@ $gm_contrast-navbar-link-hover-color:            $gm_primary-color;
 
 $gm_contrast-navbar-nav-color:                   #ffffff;
 
-$gm_contrast-navbar-nav-hover-background:        transparent;
-$gm_contrast-navbar-nav-hover-color:             $gm_primary-color;
+$gm_contrast-navbar-nav-hover-background:        rgba( $gm_secondary-color, 0.3 );
+$gm_contrast-navbar-nav-hover-color:             #ffffff;
 
-$gm_contrast-navbar-nav-onclick-background:      transparent;
-$gm_contrast-navbar-nav-onclick-color:           $gm_primary-light-color;
+$gm_contrast-navbar-nav-onclick-background:      $gm_contrast-navbar-nav-hover-background;
+$gm_contrast-navbar-nav-onclick-color:           $gm_contrast-navbar-nav-hover-color;
 
-$gm_contrast-navbar-nav-active-background:       transparent;
-$gm_contrast-navbar-nav-active-color:            $gm_primary-color;
+$gm_contrast-navbar-nav-active-background:       $gm_contrast-navbar-nav-hover-background;
+$gm_contrast-navbar-nav-active-color:            $gm_contrast-navbar-nav-hover-color;
 
 
 

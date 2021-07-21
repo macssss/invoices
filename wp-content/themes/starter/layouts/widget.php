@@ -43,6 +43,8 @@ if ($widget->menu) {
     } else if (in_array($widget->position, array('menu'))) {
         $renderer = 'navbar';
         $widget->nav_settings["modifier"] = "uk-hidden-small";
+    } else if (in_array($widget->position, array('more'))) {
+        $renderer = 'navbar';
     } else if (in_array($widget->position, array('footer', 'footer-menu'))) {
         $renderer = 'subnav';
         $widget->nav_settings["modifier"] = "uk-subnav-line";

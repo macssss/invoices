@@ -1,7 +1,7 @@
 <div class="gm_navbar-wrapper gm_navbar-default" <?php echo $args['sticky']; ?>>
     <div class="gm_navbar uk-navbar">
 
-        <div class="uk-container uk-container-center">
+        <div class="uk-container uk-container-large uk-container-center">
 			<div class="gm_navbar-inner">
 	            
 	            <?php if ($this['widgets']->count('logo')) : ?>
