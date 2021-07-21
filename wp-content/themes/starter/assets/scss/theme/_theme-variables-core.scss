@@ -655,7 +655,7 @@ $form-font-weight:                               $gm_form-font-weight;
 $form-text-transform:                            $gm_form-text-transform;
 
 $form-font-size:                                 $gm_base-font-size;
-$form-small-font-size:                           $form-font-size - 2 * $px;
+$form-small-font-size:                           $form-font-size;
 $form-large-font-size:                           $form-font-size + 2 * $px;
 
 $form-border-width:                              $gm_form-border-width;
@@ -666,7 +666,7 @@ $form-color:                                     $gm_base-color;
 $form-shadow:                                    none;
 
 $form-focus-background:                          #ffffff;
-$form-focus-border:                              $gm_primary-color;
+$form-focus-border:                              $gm_dark-color;
 $form-focus-color:                               $gm_base-color;
 $form-focus-shadow:                              none;
 
