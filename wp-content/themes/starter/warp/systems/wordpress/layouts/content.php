@@ -19,8 +19,8 @@ $content = '';
 
 if (is_home()) {
     $content = 'index';
-} elseif (is_page()) {
-    $content = 'page';
+} elseif ( is_page() ) {
+    $content = get_page_template_slug() ? str_replace( '.php', '', get_page_template_slug() ) : 'page';
 } elseif (is_attachment()) {
     $content = 'attachment';
 } elseif (is_single()) {

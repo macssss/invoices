@@ -1,6 +1,8 @@
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
+    <?php echo get_page_template_slug(); ?>
+    
 	<?php
 		$visual_composer_detect = "";
 		
@@ -20,7 +22,7 @@
         <?php endif; ?>
 
         <?php if (!$this['config']->get('title_section') && $visual_composer_detect != 'true') : ?>
-        <h1 class="gm_page-title"><span><?php the_title(); ?></span></h1>
+        <h1 class="gm_page-title uk-h3"><span><?php the_title(); ?></span></h1>
         <?php endif; ?>
 
         <?php the_content(''); ?>
