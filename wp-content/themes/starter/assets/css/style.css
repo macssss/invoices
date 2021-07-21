@@ -25234,12 +25234,18 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > l
   padding: 0;
 }
 
-/* line 18, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
+/* line 16, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
+.uk-offcanvas .user-menu {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 20, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
 .uk-offcanvas-bar {
   overflow: visible;
 }
 
-/* line 20, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
+/* line 22, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
 .uk-offcanvas-bar-inner {
   max-height: 120%;
   padding: 16px 0;
@@ -25247,7 +25253,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .uk-navbar-nav > l
   box-sizing: border-box;
 }
 
-/* line 27, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
+/* line 29, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_offcanvas.scss */
 .uk-offcanvas-bar-inner .simplebar-track.simplebar-horizontal {
   display: none;
 }
