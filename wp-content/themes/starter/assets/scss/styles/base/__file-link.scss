@@ -1,0 +1,39 @@
+
+.gm_file-link {
+	
+	color: $gm_dark-color;
+	display: inline-block;
+	text-decoration: none !important;
+	transition: $gm_transition-default;
+	
+	&:before {
+		
+		content: $gm_fa-file;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-regular-style;
+		margin-right: $gm_offset-mini;
+		display: inline-block;
+		vertical-align: middle;
+		width: 1em;
+		font-size: 1.3em;
+		text-align: center;
+		color: $gm_primary-color;
+	}
+	
+	&.gm_archive:before      { content: $gm_fa-file-archive; }
+	&.gm_audio:before        { content: $gm_fa-file-audio; }
+	&.gm_code:before         { content: $gm_fa-file-code; }
+	&.gm_excel:before        { content: $gm_fa-file-excel; }
+	&.gm_image:before        { content: $gm_fa-file-image; }
+	&.gm_pdf:before          { content: $gm_fa-file-pdf; }
+	&.gm_powerpoint:before   { content: $gm_fa-file-powerpoint; }
+	&.gm_text:before         { content: $gm_fa-file-alt; }
+	&.gm_video:before        { content: $gm_fa-file-video; }
+	&.gm_word:before         { content: $gm_fa-file-word; }
+	
+	
+	&:hover, &:focus { color: $gm_primary-color; }
+	&:active { color: $gm_primary-light-color; }
+	
+	& + & { margin-left: $gm_offset-default; }
+}

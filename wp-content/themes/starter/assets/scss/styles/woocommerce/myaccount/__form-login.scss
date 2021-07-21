@@ -1,0 +1,49 @@
+
+.gm_woo-customer-login {
+	
+	margin-top: $gm_offset-medium;
+	margin-bottom: $gm_offset-medium;
+	
+	.gm_woo-customer-login-box { min-height: 100%; box-sizing: border-box; }
+}
+
+
+
+.gm_woo-customer-login-box-login {
+	
+	&__password { margin-bottom: $gm_offset-mini; }
+	
+	&__remember-me { width: calc(100% - 200px); }
+	
+	&__login-button { width: 200px; }
+	
+	&__lost-password { text-align: center; }
+	
+	@media ( max-width: $gm_media-medium-max ) and ( min-width: $gm_media-medium ), ( max-width: 500px ) {
+		
+		&__remember-me, &__login-button { width: 100%; }
+	}
+}
+
+
+
+.gm_woo-customer-login-box-register {
+	
+	&__register-button-wrap { text-align: right; }
+	
+	&__register-button { width: 270px; }
+	
+	@media ( max-width: $gm_media-medium-max ) and ( min-width: $gm_media-medium ), ( max-width: 500px ) {
+		
+		&__register-button { width: 100%; }
+	}
+	
+	@media ( max-width: 360px ) {
+		
+		&__register-button {
+			
+			padding: 0;
+			font-size: $button-font-size - 1 * $px;
+		}
+	}
+}

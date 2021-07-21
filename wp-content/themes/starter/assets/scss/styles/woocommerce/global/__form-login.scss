@@ -1,0 +1,22 @@
+
+.gm_woo-form-login {
+	
+	
+	&, .uk-form-field { text-align: center; }
+	
+	.uk-form-togglers { text-align: left; }
+	
+	&__message { margin-bottom: $gm_offset-small; }
+	
+	&__password { margin-bottom: $gm_offset-mini; }
+	
+	
+	@media ( min-width: 501px ) {
+	
+		&__remember-me { width: calc(100% - 200px); }
+		&__login-button { width: 200px; }
+		
+	}
+}
+
+.gm-login-form-modal__heading { text-align: center; }

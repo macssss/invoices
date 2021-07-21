@@ -1,0 +1,13 @@
+
+.gm_woo-formatted-address {
+	
+	.gm_table-list{
+		
+		&__cell { width: 50%; }
+		
+		@media ( max-width: $gm_media-mini-max ) {
+			
+			@include gm_table-list-collapse();
+		}
+	}
+}

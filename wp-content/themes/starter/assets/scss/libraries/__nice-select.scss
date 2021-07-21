@@ -1,0 +1,210 @@
+// Style the dropdown
+
+.nice-select { 
+	font-family: $form-font-family;
+	font-size: $form-font-size;
+	line-height: $form-line-height;
+	font-weight: $form-font-weight;
+	
+	height: $form-height;
+	padding-left: $form-padding-horizontal;
+	padding-right: calc( #{$form-padding-horizontal} + 0.8em + #{$gm_offset-mini} );
+	
+	border-radius: $form-radius;
+	border: solid $form-border-width $form-border;
+	box-shadow: $form-shadow;
+	
+	background-color: $form-background;
+	transition: $gm_transition-default;
+	
+	box-sizing: border-box;
+	clear: both;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	text-align: left;
+	user-select: none;
+	white-space: nowrap;
+	
+	
+	&:active, &:focus, &.open {
+		border-color: $form-focus-border;
+		background: $form-focus-background;
+		color: $form-focus-color;
+		box-shadow: $form-focus-shadow;
+	}
+	
+	
+	// Arrow
+	
+	&:after { 
+		content: $gm_fa-chevron-down;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		
+		font-size: 0.8em;
+		
+		display: block;
+		width: 1em;
+		text-align: center;
+		
+		position: absolute; 
+		right: $form-padding-horizontal; 
+		top: 0; 
+		
+		pointer-events: none;
+		transform-origin: center center;
+		transition: $gm_transition-default;
+	}
+	
+	
+	&.open { 
+		
+		&:after { transform: rotate(-180deg); }
+		
+		.list { 
+			opacity: 1;
+			pointer-events: auto;
+			transform: scale(1) translateY(0);
+		}
+	}
+	
+	
+	&.disabled { 
+		background: $form-disabled-background;
+		color: $form-disabled-color;
+		pointer-events: none;
+	}
+	
+	
+	// Modifiers
+	
+	&.uk-form-small { 
+		font-size: $form-small-font-size;
+		line-height: $form-small-line-height;
+		height: $form-small-height;
+		padding-left: $form-small-padding-horizontal;
+		padding-right: calc( #{$form-small-padding-horizontal} + 0.8em + #{$gm_offset-mini} );
+		border-radius: $form-small-radius;
+		
+		&:after { right: $form-small-padding-horizontal; }
+		
+		.list { max-height: $form-small-height * 5 - $form-small-height / 2; }
+		.option { line-height: $form-small-height; padding: $form-small-padding; }
+	}
+	
+	
+	&.uk-form-large { 
+		font-size: $form-large-font-size;
+		line-height: $form-large-line-height;
+		height: $form-large-height;
+		padding-left: $form-large-padding-horizontal;
+		padding-right: calc( #{$form-large-padding-horizontal} + 0.8em + #{$gm_offset-mini} );
+		border-radius: $form-large-radius;
+		
+		&:after { right: $form-large-padding-horizontal; }
+		
+		.list { max-height: $form-large-height * 5 - $form-large-height / 2; }
+		.option { line-height: $form-large-height; padding: $form-large-padding; }
+	}
+	
+	
+	&.uk-width-1-1 .list { left: $form-border-width * (-1); right: $form-border-width * (-1); }
+
+	
+	// List and options
+	
+	.list { 
+		background-color: #ffffff;
+		border-radius: $gm_base-radius;
+		border: solid $form-border-width $form-border;
+		box-shadow: $form-shadow;
+		box-sizing: border-box;
+		margin-top: $gm_offset-mini;
+		opacity: 0;
+		overflow: hidden;
+		padding: 0;
+		pointer-events: none;
+		position: absolute;
+		
+		top: 100%;
+		left: $form-border-width * (-1);
+		
+		transform-origin: 50% 0;
+		transform: scale(.75) translateY(-$gm_offset-mini);
+		transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
+		
+		z-index: 9;
+		overflow: auto;
+		
+		max-height: $form-height * 5 - $form-height / 2;
+	}
+	
+	
+	.option { 
+		line-height: $form-height;
+		padding: $form-padding;
+		
+		cursor: pointer;
+		font-weight: $gm_base-font-weight;
+		color: $gm_base-color;
+		list-style: none;
+		outline: none;
+		text-align: left;
+		transition: $gm_transition-default;
+		
+		&:hover, &.focus, &.selected.focus { background-color: $gm_light-color; }
+		
+		&.selected { font-weight: $gm_bold-font-weight; }
+		
+		&.disabled { 
+			background-color: transparent !important;
+			color: $gm_muted-color;
+			cursor: default;
+		}
+	}
+}
+
+
+.uk-contrast .nice-select { 
+	border-color: $contrast-form-border;
+	background-color: $contrast-form-background;
+	color: $contrast-form-color;
+	box-shadow: $contrast-form-shadow;
+	
+	
+	&:active, &:focus, &.open {
+		border-color: $contrast-form-focus-border;
+		background: $contrast-form-focus-background;
+		color: $contrast-form-focus-color;
+		box-shadow: $contrast-form-focus-shadow;
+	}
+}
+
+
+.uk-contrast-reset .nice-select { 
+	border-color: $form-border;
+	background-color: $form-background;
+	color: $form-color;
+	box-shadow: $form-shadow;
+	
+	&:active, &:focus, &.open {
+		border-color: $form-focus-border;
+		background: $form-focus-background;
+		color: $form-focus-color;
+		box-shadow: $form-focus-shadow;
+	}
+}
+
+
+// Use display instead of opacity for IE <= 10
+
+.no-csspointerevents .nice-select { 
+	
+	.list { display: none; }
+	
+	&.open { 
+		.list{ display: block; }
+	}
+}

@@ -1,0 +1,31 @@
+
+.gm_woo-myaccount {
+	
+	&__title { text-align: center; }
+	
+	
+	
+	
+	&__navigation { width: 300px; }
+	&__content { width: calc( 100% - 300px ); }
+	
+	@media ( max-width: 1000px ) {
+		
+		&__navigation { width: 250px; }
+		&__content { width: calc( 100% - 250px ); }	
+	}
+	
+	@media ( max-width: 850px ) {
+		
+		&__navigation { width: 100%; }
+		&__content { width: 100%; }	
+	}
+
+}
+
+.gm_woo-myaccount-info {
+	
+	margin-bottom: $gm_offset-small;
+	font-size: $gm_medium-font-size;
+	text-align: center;
+}

@@ -1,0 +1,15 @@
+
+.gm_woo-review-order {
+	
+	margin-top: $gm_offset-large;
+	
+	&__title { text-align: center; }
+	
+	&__payment {
+		
+		max-width: 710px;
+		margin-top: $gm_offset-default;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

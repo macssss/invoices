@@ -1,0 +1,44 @@
+
+.uk-close {
+	
+	font-size: $close-font-size;
+	color: $gm_base-color;
+	transition: $gm_transition-default;
+	opacity: 1 !important;
+	
+	&:after {
+		content: $gm_fa-times;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		opacity: 1 !important;
+	} 
+	
+	&:hover, &:focus {
+		color: $gm_dark-color;
+	}
+	
+}
+
+.uk-close-small {
+	
+	width: $close-small-size;
+	height: $close-small-size;
+	font-size: $close-small-size;
+	line-height: $close-small-size;
+}
+
+.uk-close-alt { 
+	
+	&:hover, &:focus {
+		background: $gm_primary-color;
+		color: white;
+	}
+}
+
+.uk-close-alt-remove {
+	
+	&:hover, &:focus {
+		background: $gm_danger-color;
+		color: white;
+	}
+}

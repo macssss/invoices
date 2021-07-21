@@ -1,0 +1,337 @@
+// Colors
+
+$gm_base-color:                                  #555555;
+$gm_muted-color:                                 #9b9b9b;
+
+$gm_light-color:                                 #f9f9f9;
+$gm_light-muted-color:                           darken($gm_light-color, 10%);
+$gm_light-lighten-color:                         darken($gm_light-color, 5%);
+
+$gm_contrast-light-color:                        rgba(255, 255, 255, 0.2);
+$gm_contrast-light-muted-color:                  rgba(255, 255, 255, 0.1);
+$gm_contrast-light-lighten-color:                rgba(255, 255, 255, 0.15);
+
+$gm_primary-color:                               #6194e5;
+$gm_primary-muted-color:                         desaturate(darken($gm_primary-color, 10%), 10%);
+$gm_primary-light-color:                         lighten($gm_primary-color, 10%);
+
+$gm_secondary-color:                             #3e579b;
+$gm_secondary-muted-color:                       lighten($gm_secondary-color, 10%);
+$gm_secondary-light-color:                       lighten($gm_secondary-color, 20%);
+
+$gm_dark-color:                                  #333333;
+$gm_dark-muted-color:                            lighten($gm_dark-color, 10%);
+$gm_dark-light-color:                            lighten($gm_dark-color, 20%);
+
+$gm_overlay-color:                               rgba(0, 0, 0, 0.6);
+$gm_overlay-primary-color:                       rgba($gm_primary-color, 0.6);
+$gm_overlay-secondary-color:                     rgba($gm_secondary-color, 0.6);
+$gm_overlay-dark-color:                          rgba($gm_dark-color, 0.6);
+$gm_overlay-loading:                             rgba(255, 255, 255, 0.5);
+
+$gm_darken-color:                                rgba(0, 0, 0, 0.1);
+
+$gm_contrast-color:                              rgba(255, 255, 255, 0.9);
+$gm_contrast-muted-color:                        #ffffff;
+
+$gm_success-color:                               #a5e437;
+$gm_warning-color:                               #ffc238;
+$gm_danger-color:                                #ff454e;
+
+$gm_border-color:                                #e6e6e6;
+$gm_border-contrast-color:                       rgba(255, 255, 255, 0.25);
+
+$gm_body-background:                             #ffffff;
+
+// END Colors
+
+
+
+// Fonts
+
+$gm_base-font-family:                            'Open Sans', sans-serif;
+$gm_second-font-family:                          'Open Sans', sans-serif;
+
+$gm_ma:                                          'Material Icons';
+
+$gm_fa:                                          'Font Awesome 5 Free';
+$gm_fa-brands:                                   'Font Awesome 5 Brands';
+$gm_fa-regular-style:                            400;
+$gm_fa-solid-style:                              900;
+$gm_fa-spin-animation:                           fa-spin 2s infinite linear;
+ 
+$px:                                             0.0625rem; // = 1/16 px;
+
+$gm_base-font-size:                              1rem;
+$gm_base-line-height:                            1.6;
+$gm_base-font-weight:                            400;
+$gm_bold-font-weight:                            700;
+
+$gm_xxlarge-font-size:                           42 * $px;
+$gm_xlarge-font-size:                            32 * $px;
+$gm_large-font-size:                             24 * $px;
+$gm_medium-font-size:                            18 * $px;
+$gm_small-font-size:                             14 * $px;
+$gm_small-font-size-r:                           80%;
+
+
+$gm_heading-font-family:                         $gm_second-font-family;
+$gm_heading-font-weight:                         $gm_base-font-weight;
+$gm_heading-line-height:                         1.4;
+$gm_heading-text-transform:                      none;
+$gm_heading-color:                               $gm_dark-color;
+
+$gm_h1-font-size:                                48 * $px;
+$gm_h1-font-size-small:                          42 * $px;
+$gm_h1-line-height:                              1.4;
+
+$gm_h2-font-size:                                40 * $px;
+$gm_h2-font-size-small:                          38 * $px;
+$gm_h2-line-height:                              1.4;
+
+$gm_h3-font-size:                                34 * $px;
+$gm_h3-font-size-small:                          30 * $px;
+$gm_h3-line-height:                              1.4;
+
+$gm_h4-font-size:                                28 * $px;
+$gm_h4-line-height:                              1.4;
+
+$gm_h5-font-size:                                22 * $px;
+$gm_h5-line-height:                              1.4;
+
+$gm_h6-font-size:                                18 * $px;
+$gm_h6-line-height:                              1.4;
+
+// END Fonts
+
+
+
+// Borders
+
+$gm_border-width:                                1px;
+$gm_border-style:                                $gm_border-width solid $gm_border-color;
+$gm_contrast-border-style:                       $gm_border-width solid $gm_border-contrast-color;
+
+// END Borders
+
+
+
+// Radius
+
+$gm_base-radius:                                 5px;
+$gm_small-radius:                                5px;
+
+// END Radius
+
+
+
+// Shadows
+
+$gm_small-box-shadow:                            0 2px 8px rgba(0, 0, 0, 0.08);
+$gm_medium-box-shadow:                           0 5px 15px rgba(0, 0, 0, 0.08);
+$gm_large-box-shadow:                            0 14px 25px rgba(0, 0, 0, 0.16);
+$gm_xlarge-box-shadow:                           0 28px 50px rgba(0, 0, 0, 0.16);
+
+// END Shadows
+
+
+
+// Offset
+
+$gm_offset-nano:                                 2px;
+$gm_offset-micro:                                4px;
+$gm_offset-mini:                                 8px;
+$gm_offset-small:                                16px;
+$gm_offset-medium:                               24px;
+$gm_offset-default:                              32px;
+$gm_offset-large:                                48px;
+$gm_offset-xlarge:                               64px;
+$gm_offset-xxlarge:                              88px;
+$gm_offset-xxxlarge:                             128px;
+
+// END Offset
+
+
+
+// Breakpoints
+
+$gm_media-small:                                 480px;
+$gm_media-medium:                                768px;
+$gm_media-large:                                 960px;
+$gm_media-xlarge:                                1220px;
+
+$gm_media-mini-max:                              ($gm_media-small - 1);
+$gm_media-small-max:                             ($gm_media-medium - 1);
+$gm_media-medium-max:                            ($gm_media-large - 1);
+$gm_media-large-max:                             ($gm_media-xlarge - 1);
+
+// END Breakpoints
+
+
+
+// Button
+
+$gm_button-font-family:                          $gm_base-font-family;
+$gm_button-font-weight:                          $gm_base-font-weight;
+$gm_button-text-transform:                       none;
+
+$gm_button-border-width:                         $gm_border-width;
+
+$gm_button-height:                               50px;
+$gm_button-mini-height:                          30px;
+$gm_button-small-height:                         40px;
+$gm_button-large-height:                         60px;
+
+$gm_button-radius:                               $gm_base-radius;
+$gm_button-mini-radius:                          $gm_button-radius;
+$gm_button-small-radius:                         $gm_button-radius;
+$gm_button-large-radius:                         $gm_button-radius;
+
+// END Button
+
+
+
+// Form
+
+$gm_form-font-family:                            $gm_base-font-family;
+$gm_form-font-weight:                            $gm_base-font-weight;
+$gm_form-text-transform:                         none;
+
+$gm_form-border-width:                           $gm_border-width;
+
+$gm_form-height:                                 50px;
+$gm_form-small-height:                           40px;
+$gm_form-large-height:                           60px;
+
+$gm_form-radius:                                 $gm_base-radius;
+$gm_form-small-radius:                           $gm_form-radius;
+$gm_form-large-radius:                           $gm_form-radius;
+
+$gm_form-toggler-size:                           22px;
+$gm_form-toggler-font-size:                      10px;
+$gm_form-toggler-radius:                         $gm_small-radius;
+
+// END Form
+
+
+
+// Navbar
+
+$gm_navbar-height:                               100px;
+$gm_navbar-height-small:                         80px;
+
+$gm_navbar-brand-height:                         $gm_navbar-height;
+$gm_navbar-brand-height-small:                   $gm_navbar-height-small;
+
+$gm_navbar-nav-height:                           $gm_navbar-height;
+$gm_navbar-nav-height-small:                     $gm_navbar-height-small;
+
+$gm_navbar-nav-break:                            $gm_media-medium-max;
+$gm_navbar-nav-break-min:                        $gm_navbar-nav-break + 1;
+
+$gm_navbar_icons-font-size:                      $gm_base-font-size + 4 * $px;
+
+$gm_navbar-nav-font-family:                      $gm_base-font-family;
+$gm_navbar-nav-font-size:                        $gm_base-font-size + 2 * $px;
+$gm_navbar-nav-font-weight:                      $gm_base-font-weight;
+$gm_navbar-nav-text-transform:                   none;
+
+$gm_navbar-nav-padding-horizontal:               $gm_offset-medium;
+
+
+/// Navbar Contrast
+
+$gm_navbar-contrast:                             false;
+
+
+/// Navbar Default Colors
+
+$gm_navbar-background:                           #ffffff;
+$gm_navbar-color:                                $gm_dark-color;
+$gm_navbar-link-color:                           inherit;
+$gm_navbar-link-hover-color:                     $gm_primary-color;
+
+$gm_navbar-nav-color:                            $gm_dark-color;
+
+$gm_navbar-nav-hover-background:                 transparent;
+$gm_navbar-nav-hover-color:                      $gm_primary-color;
+
+$gm_navbar-nav-onclick-background:               transparent;
+$gm_navbar-nav-onclick-color:                    $gm_primary-light-color;
+
+$gm_navbar-nav-active-background:                transparent;
+$gm_navbar-nav-active-color:                     $gm_primary-color;
+
+
+/// Navbar Contrast
+
+$gm_contrast-navbar-background:                  $gm_dark-color;
+$gm_contrast-navbar-color:                       #ffffff;
+$gm_contrast-navbar-link-color:                  inherit;
+$gm_contrast-navbar-link-hover-color:            $gm_primary-color;
+
+$gm_contrast-navbar-nav-color:                   #ffffff;
+
+$gm_contrast-navbar-nav-hover-background:        transparent;
+$gm_contrast-navbar-nav-hover-color:             $gm_primary-color;
+
+$gm_contrast-navbar-nav-onclick-background:      transparent;
+$gm_contrast-navbar-nav-onclick-color:           $gm_primary-light-color;
+
+$gm_contrast-navbar-nav-active-background:       transparent;
+$gm_contrast-navbar-nav-active-color:            $gm_primary-color;
+
+
+
+// END Navbar
+
+
+
+// Container
+
+$gm_container-width:                             1200px;
+$gm_container-small-width:                       980px;
+$gm_container-large-width:                       1600px;
+
+// END Container
+
+
+
+// Transitions
+
+$gm_transition-duration:                         0.3s;
+$gm_transition-slow-duration:                    0.7s;
+
+$gm_transition-default:                          all $gm_transition-duration ease-in-out;
+$gm_transition-slow:                             all $gm_transition-slow-duration ease-in-out;
+
+// END Transitions
+
+
+
+// Title Section
+
+$gm_title-section-height-default:                400px;
+$gm_title-section-height-small:                  300px;
+$gm_title-section-height-break:                  $gm_media-medium-max;
+$gm_title-section-overlay:                       rgba(0, 0, 0, 0.5);
+
+// END Title Section
+
+
+
+// Maintenance
+
+$gm_maintenance-logo-width:                      250px;
+
+// END Maintenance
+
+
+
+// Login
+
+$gm_login-logo-background:                       url(/wp-content/uploads/images/logo.svg) no-repeat center center / 75% auto;
+$gm_login-logo-height:                           120px;
+
+// END Login
+

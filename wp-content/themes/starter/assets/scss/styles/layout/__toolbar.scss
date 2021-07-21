@@ -1,0 +1,20 @@
+
+.gm_block-toolbar { 
+	
+	.gm_toolbar-inner {
+		
+		&:before, &:after { content: ""; display: block; } 
+		&:after { clear: both; } 
+	}
+	
+	@media ( min-width: $gm_media-medium ) {
+		
+		.gm_toolbar-left { float: left; }
+		.gm_toolbar-right { float: right; }
+	}
+	
+	@media ( max-width: $gm_media-small-max ) {
+		
+		.gm_toolbar-left, .gm_toolbar-right { text-align: center; }
+	}
+}

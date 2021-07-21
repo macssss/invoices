@@ -1,0 +1,100 @@
+
+.gm_woo-myaccount-orders {
+	
+	.gm_table-list {
+	
+		&__cell {
+				
+			&--order-number  { width: 100px; }
+			&--order-date    { width: 180px; }
+			&--order-status  { width: 50%; }
+			&--order-total   { width: 50%; }
+			&--order-actions { width: $gm_button-small-height * 3 + $gm_offset-mini * 2; }
+			
+			&--order-number a { text-decoration: none !important; }
+		}
+		
+		&__cell-group--data { width: calc(100% - 100px - 180px - #{$gm_button-small-height * 3 + $gm_offset-mini * 2}); }
+		
+		
+		&__body {
+			
+			.gm_table-list__cell--order-status { color: $gm_warning-color; }
+			
+			.gm_table-list__row--status-completed .gm_table-list__cell--order-status { color: $gm_success-color; }
+			.gm_table-list__row--status-cancelled .gm_table-list__cell--order-status { color: $gm_danger-color; }
+			.gm_table-list__row--status-failed .gm_table-list__cell--order-status    { color: $gm_danger-color; }
+		}
+		
+		.gm_controls-list__link {
+			
+			&:before { font-family: $gm_fa; font-weight: $gm_fa-solid-style; }
+			
+			&--view:before   { content: $gm_fa-eye; }
+			&--pay:before    { content: $gm_fa-credit-card; }
+			&--cancel:before { content: $gm_fa-times; }
+		}
+		
+		
+		
+		@media ( max-width: 1170px ) {
+			
+			@include gm_table-list-collapse();
+			
+			&__row { padding-right: $gm_button-small-height + $gm_offset-mini; }
+			
+			&__cell {
+				
+				&--order-number  { width: 100%; }
+				&--order-date    { width: 100%; }
+				&--order-status  { width: 100%; }
+				&--order-total   { width: 100%; }
+				
+				&--order-actions {
+					
+					width: auto;
+					position: absolute;
+					top: $gm_offset-mini;;
+					right: 0;
+				}
+				
+				&[data-title] {
+					
+					display: flex;
+					flex-wrap: wrap;
+					
+					&:before {
+						
+						display: block;
+						width: 120px;
+						content: attr(data-title) ":";
+						color: $gm_muted-color;
+					}
+					
+					> * { width: calc( 100% - 120px ); }
+					
+				}
+				
+				& + * { margin-top: $gm_offset-mini; }
+			}
+			
+			&__cell-group--data { width: 100%; }
+			
+			
+			.gm_controls-list { flex-direction: column; }
+			
+		}
+		
+		
+		@media ( max-width: 400px ) {
+			
+			&__cell[data-title] {
+				
+				&:before, > * { width: 100%; }
+			}
+			
+		}
+		
+		
+	}
+}

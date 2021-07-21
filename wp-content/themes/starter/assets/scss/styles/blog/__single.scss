@@ -1,0 +1,115 @@
+
+.gm_blog-single {
+	
+	&__image img { border-radius: $gm_base-radius; }
+	
+	
+	
+	&__content {
+		
+		h1, .uk-h1 { font-size: $gm_h3-font-size; line-height: $gm_h3-line-height; }
+		h2, .uk-h2 { font-size: $gm_h4-font-size; line-height: $gm_h4-line-height; }
+		h3, .uk-h3 { font-size: $gm_h5-font-size; line-height: $gm_h5-line-height; }
+		h4, .uk-h4 { font-size: $gm_h6-font-size; line-height: $gm_h6-line-height; }
+		h5, .uk-h5 { font-size: $gm_h6-font-size; line-height: $gm_h6-line-height; }
+		h5, .uk-h5 { font-size: $gm_h6-font-size; line-height: $gm_h6-line-height; }
+		
+		&--locked .pld-like-dislike-wrap { display: none !important; }
+		
+		img { border-radius: $gm_base-radius; }
+		
+		.alignleft, .alignright {
+			
+			width: 100%;
+			margin-bottom: $gm_offset-small;
+		}
+		
+		@media ( min-width: $gm_media-medium ) {
+			
+			.alignleft, .alignright { max-width: 50%; }
+			
+			.alignleft { float: left; margin-right: $gm_offset-medium; }
+			.alignright { float: right; margin-left: $gm_offset-small; }
+			
+		}
+	}
+	
+	
+	
+	&__tags-share { margin-top: $gm_offset-default; }
+	
+	&__tags-share-inner {
+		
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: -$gm_offset-mini;
+		
+		> div { margin-top: $gm_offset-mini; }
+	}
+	
+	
+	
+	&__tags {
+		a { text-decoration: none; }
+		a:before { content: "#"; }
+	}
+	
+	
+	
+	&__post-nav {
+		
+		margin-top: $gm_offset-default;
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			margin-top: -$gm_offset-micro;
+			margin-left: -$gm_offset-small;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			
+			> li { padding-top: $gm_offset-micro; padding-left: $gm_offset-small; }
+			
+		}
+		
+		&--first-post ul { justify-content: flex-end; }
+		
+		a { text-decoration: none; }
+	}
+	
+	&__comments .gm_comment { padding-top: $gm_offset-large; }
+}
+
+
+
+.gm_single-password-form {
+	
+	
+	.gm_inputs {
+		
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-top: $gm_offset-small;
+		
+		.gm_button { margin-left: $gm_offset-mini; }
+		
+		@media ( min-width: $gm_media-small ) {
+			
+			.gm_label { margin-right: $gm_offset-mini; }
+		}
+		
+		@media ( max-width: $gm_media-mini-max ) {
+			
+			.gm_label { width: 100%; margin-bottom: $gm_offset-micro; }
+			
+			.gm_field { width: calc(100% - #{$gm_offset-mini} - 100px); }
+			.gm_button { width: 100px; }
+		}
+	}
+	
+}

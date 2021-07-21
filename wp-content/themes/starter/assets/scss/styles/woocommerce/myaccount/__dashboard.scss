@@ -1,0 +1,45 @@
+
+.gm_woo-myaccount-dashboard {
+	
+	&__blocks {
+		
+		justify-content: center;
+		
+		> * {
+		
+			width: 100%;
+			
+			@media ( min-width: 600px ) { width: 50%; }
+			@media ( min-width: $gm_media-xlarge ) { width: 33.333%; }
+		}
+	}
+	
+	&__block {
+		
+		
+		text-align: center;
+		
+		&-icon {
+			
+			font-size: 36 * $px;
+			color: $gm_primary-color;
+		}
+		
+		&-title {
+			
+			margin: 0;
+			
+			font-size: $base-h4-font-size;
+			line-height: $base-h4-line-height;
+			
+			@include hook-base-h4();
+		}
+		
+		@media ( max-width: 599px ) {
+			
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

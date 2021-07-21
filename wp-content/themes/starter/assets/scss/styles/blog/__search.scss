@@ -1,0 +1,43 @@
+
+.gm_blog-search-list__items > div + div { margin-top: $gm_offset-default; }
+
+
+.gm_blog-search-list-item {
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+	&__image-cont { width: 300px; }
+	&__image { display: block; }
+	&__image img { border-radius: $gm_base-radius; }
+	
+	&__title { margin-bottom: $gm_offset-mini; }
+	
+	&__meta { font-size: $gm_small-font-size; margin-bottom: $gm_offset-mini; }
+	
+	&__data { width: calc(100% - 300px); box-sizing: border-box; padding-left: $gm_offset-medium; }
+	
+	@media ( max-width: $gm_media-small-max ) {
+		
+		&__image-cont { width: 100%; }
+		&__data { width: 100%; padding-left: 0; margin-top: $gm_offset-small; }
+	}
+}
+
+
+
+.gm_blog-search-form {
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	.gm_field { width: 250px; }
+	.gm_button { margin-left: $gm_offset-mini; }
+	
+	@media ( max-width: $gm_media-mini-max ) {
+		
+		.gm_field { width: 100%; }
+		.gm_button { width: 100%; margin-left: 0; margin-top: $gm_offset-mini; }
+	}
+}

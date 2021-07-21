@@ -1,0 +1,68 @@
+.has-cookie-bar #catapult-cookie-bar { 
+	font-size: $gm_base-font-size;
+	color: white;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.cookie-bar-bar button#catapultCookie { 
+	
+	-webkit-appearance: none;
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: $button-primary-color;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    background: $button-primary-background;
+    vertical-align: middle;
+    min-height: $button-small-height;
+    padding: 0 $button-small-padding-horizontal;
+    line-height: $button-small-line-height;
+    font-size: $button-small-font-size;
+    text-decoration: none;
+    text-align: center;
+    border-radius: $button-small-radius;
+    
+    @include hook-button();
+	@include hook-button-primary();
+	
+	
+	&:not(:disabled) { cursor: pointer; }
+	&::-moz-focus-inner { border: 0; padding: 0; }
+	
+	&:hover, &:focus {
+	    background-color: $button-primary-hover-background;
+	    color: $button-primary-hover-color;
+	    @include hook-button-primary-hover();
+	}
+	
+	&:active, &.uk-active {
+	    background-color: $button-primary-active-background;
+	    color: $button-primary-active-color;
+	    @include hook-button-primary-active();
+	}
+}
+
+#catapult-cookie-bar a { 
+	color: $gm_primary-color !important;
+	text-decoration: none !important;
+	
+	&:hover, &:focus { color: $gm_primary-muted-color !important; }
+}
+
+.cookie-bar-bar .ctcc-right-side { margin-left: $gm_offset-small}
+
+
+@media ( max-width: $gm_media-small-max ) { 
+	
+	.cookie-bar-bar .ctcc-inner { 
+		display: block;
+		text-align: center;
+		
+		> * { display: block; margin: 0; }
+		
+		button#catapultCookie { margin: 0; margin-top: $gm_offset-small; }
+	}
+}

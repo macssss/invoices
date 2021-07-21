@@ -1,0 +1,27 @@
+#wpadminbar { position: fixed !important; }
+
+@media (max-width: 400px ) { 
+	#wpadminbar #wp-admin-bar-customize>.ab-item,
+	#wpadminbar #wp-admin-bar-edit>.ab-item,
+	#wpadminbar #wp-admin-bar-my-account>.ab-item,
+	#wpadminbar #wp-admin-bar-my-sites>.ab-item,
+	#wpadminbar #wp-admin-bar-site-name>.ab-item { width: 45px; }
+}
+
+
+body.admin-bar { 
+	
+	margin-top: 32px;
+	
+	[data-uk-sticky].uk-active { top: 32px !important; }
+	.uk-offcanvas-bar { top: 32px !important; }
+
+	@media (max-width: 782px) { 
+		
+		margin-top: 46px;
+		
+		[data-uk-sticky].uk-active { top: 46px !important; }
+		.uk-offcanvas-bar { top: 46px !important; }
+	}
+	
+}

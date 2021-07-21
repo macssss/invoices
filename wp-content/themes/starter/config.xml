@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields name="Settings" icon="uk-icon-cogs">
+        <field type="section" name="Posts" />
+        <field type="checkbox" name="wpautop" value="1" label="Enable the wpautop function which automatically formats your posts." />
+        <field type="section" name="Widgets" description="Choose the default widgets style for each position." />
+        <field type="table" name="panel_default">
+            <rows label="Position">
+              <row>top-a</row>
+              <row>top-b</row>
+              <row>top-c</row>
+              <row>top-d</row>
+              <row>bottom-a</row>
+              <row>bottom-b</row>
+              <row>bottom-c</row>
+              <row>bottom-d</row>
+              <row>main-top</row>
+              <row>main-bottom</row>
+              <row>sidebar-a</row>
+              <row>sidebar-b</row>
+            </rows>
+            <field type="select" name="panel" label="Style">
+                <option value="uk-panel">Blank</option>
+                <option value="uk-panel uk-panel-box">Box</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-white">Box White</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-secondary">Box Secondary</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-dark">Box Dark</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-primary">Box Primary</option>
+                <option value="uk-panel uk-panel-header">Header</option>
+                <option value="uk-panel uk-panel-space">Space</option>
+            </field>
+        </field>
+    </fields>
+    <fields name="Layouts" icon="uk-icon-columns">
+        <field type="layouts" name="layouts">
+	        
+	        <field type="section" name="One Page" />
+	        <field type="checkbox" name="one_page" value="1" label="One Page website" />
+	        
+	        
+	        <field type="section" name="Title Section" />
+	        <field type="checkbox" name="title_section" value="1" label="Show Title Section" />
+	        
+	        <field type="checkbox" name="title_section_kernburns" value="1" label="Title Section Kernburns" />
+	        
+	        <field type="section" name="Navigation" description="Options for the theme main menu navbar." />
+			<field type="select" name="navbar_mode" description="Navigation Style">
+			  <option value="0">Not sticky</option>
+			  <option value="1">Always sticky</option>
+			  <option value="2">Sticky and Fade animate</option>
+			  <option value="3">Sticky and Slide animate</option>
+			</field>
+			<field type="text" name="navbar_mode_break" value="0" description="Sticky Break" />
+			<field type="text" name="navbar_sticky_active_height" value="0" description="Navbar Active Sticky Height" />
+			
+			<field type="select" name="navbar_template" description="Navigation Layout">
+			  <option value="default">Single Row</option>
+			  <option value="centered">Centered</option>
+			</field>
+			<field type="checkbox" name="dropdown_center" value="1" label="Dropdown Center" />
+			
+			<field type="section" name="Footer Options" description="Options for the theme footer display." />
+			<field type="select" name="footer_template" label="Footer Layout">
+			  <option value="default">Single Row</option>
+			  <option value="centered">Centered</option>
+			</field>
+			
+			
+	        
+	        
+            <field type="section" name="Content" description="Display specific content elements in the theme." />
+            <field type="select" name="post_image_align_posts" description="Post Image Alignment (Posts View)">
+                <option value="top">Top</option>
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </field>
+            
+            <field type="section" name="Sidebars" description="Choose the sidebar widths and align the sidebar to the left or right." />
+            <field type="table" name="sidebars">
+                <rows label="Position">
+                    <row>sidebar-a</row>
+                    <row>sidebar-b</row>
+                </rows>
+                <field type="select" name="width" label="Width">
+                    <option value="12" data-gcf="6">20%</option>
+                    <option value="15" data-gcf="15">25%</option>
+                    <option value="18" data-gcf="6">30%</option>
+                    <option value="20" data-gcf="20">33%</option>
+                    <option value="24" data-gcf="6">40%</option>
+                    <option value="30" data-gcf="3">50%</option>
+                </field>
+                <field type="checkbox" name="first" value="1" column="Display First" />
+            </field>
+              <field type="section" name="Grid" description="Choose the grid layout for each position. Further, you can enable horizontal dividers and prevent the responsive grid behavior. Note: Both options are not taken into account for the stacked layout." />
+              <field type="table" name="grid">
+                  <rows label="Position">
+                    <row>top-a</row>
+                    <row>top-b</row>
+                    <row>top-c</row>
+                    <row>top-d</row>
+                    <row>bottom-a</row>
+                    <row>bottom-b</row>
+                    <row>bottom-c</row>
+                    <row>bottom-d</row>
+                    <row>main-top</row>
+                    <row>main-bottom</row>
+                  </rows>
+                  <field type="select" name="layout" label="Layout">
+                      <option value="parallel">Parallel</option>
+                      <option value="stacked">Stacked</option>
+                      <option value="doubled">First doubled</option>
+                      <option value="doubled-last">Last doubled</option>
+                  </field>
+                  <field type="select" name="responsive" label="Responsive" default="medium">
+                      <option value="">Disabled</option>
+                      <option value="medium">Stack on phones</option>
+                      <option value="large">Stack on ≤ tablets</option>
+                  </field>
+                  <field type="checkbox" name="divider" value="1" column="Divider" />
+              </field>
+
+
+
+              
+
+              <field type="section" name="Block Appearance" description="Choose the appearance settings for each block position. (Image blend options are currently not supported by any Internet Explorer version!)" />
+              <field type="table" name="blocks">
+                  <rows label="Position">
+                      <row>top-a</row>
+                      <row>top-b</row>
+                      <row>top-c</row>
+                      <row>top-d</row>
+                      <row>main</row>
+                      <row>bottom-a</row>
+                      <row>bottom-b</row>
+                      <row>bottom-c</row>
+                      <row>bottom-d</row>
+                  </rows>
+                  <field type="select" name="background" label="Background">
+                      <option value="default">Default</option>
+                      <option value="muted">Muted</option>
+                      <option value="primary">Primary</option>
+                      <option value="secondary">Secondary</option>
+                      <option value="dark">Dark</option>
+                  </field>
+                  <field type="text" name="image" label="Image" class="uk-form-width-small" />
+                  <field type="select" name="image_blend" label="Image Blend">
+                      <option value="">Normal</option>
+                      <option value="multiply">Multiply</option>
+                      <option value="screen">Screen</option>
+                      <option value="overlay">Overlay</option>
+                      <option value="darken">Darken</option>
+                      <option value="lighten">Lighten</option>
+                      <option value="color-dodge">Color Dodge</option>
+                      <option value="color-burn">Color Burn</option>
+                      <option value="hard-light">Hard Light</option>
+                      <option value="soft-light">Soft Light</option>
+                      <option value="difference">Difference</option>
+                      <option value="exclusion">Exclusion</option>
+                      <option value="hue">Hue</option>
+                      <option value="saturation">Saturation</option>
+                      <option value="color">Color</option>
+                      <option value="luminosity">Luminosity</option>
+                  </field>
+                  <field type="select" name="image_opacity" label="Image Opacity">
+                      <option value="">100%</option>
+                      <option value="90">90%</option>
+                      <option value="80">80%</option>
+                      <option value="70">70%</option>
+                      <option value="60">60%</option>
+                      <option value="50">50%</option>
+                      <option value="40">40%</option>
+                      <option value="30">30%</option>
+                      <option value="20">20%</option>
+                      <option value="10">10%</option>
+                  </field>
+                  <field type="checkbox" name="contrast" value="1" column="Contrast" />
+                  <field type="select" name="padding" label="Padding">
+                      <option value="">Default</option>
+                      <option value="mini">Mini</option>
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                      <option value="xlarge">X-Large</option>
+                      <option value="none">None</option>
+                  </field>
+                  <field type="checkbox" name="width" value="1" column="Full Width" />
+                  <field type="checkbox" name="height" value="1" column="Full Height" />
+                  <field type="checkbox" name="collapse" value="1" column="Grid Collapse" />
+                  <field type="text" name="class" label="Class" class="uk-form-width-small" />
+              </field>
+
+          </field>
+      </fields>
+    <fields name="Widgets" icon="uk-icon-th">
+        <field type="widgets" name="widgets">
+            <field type="checkbox" name="title" column="Title" value="1" default="1" center="1" />
+            <field type="text" name="class" label="Class" class="uk-form-width-small" tooltip="Add custom classes." />
+            <field type="select" name="panel" label="Style" tooltip="Choose widget styles. Set the default widget style in the settings.">
+                <option value="">Default</option>
+                <option value="uk-panel uk-panel-box">Box</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-white">Box White</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-secondary">Box Secondary</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-dark">Box Dark</option>
+                <option value="uk-panel uk-panel-box uk-panel-box-primary">Box Primary</option>
+                <option value="uk-panel uk-panel-header">Header</option>
+                <option value="uk-panel uk-panel-space">Space</option>
+                <option value="uk-panel">Blank</option>
+            </field>
+            <field type="checkbox" name="center" value="1" label="Center" />
+            <field type="checkbox" name="contrast" value="1" label="Contrast" />
+            <field type="checkbox" name="contrast_reset" value="1" label="Contrast Reset" />
+            <field type="select" name="title_size" label="Title" tooltip="Set the size of the title.">
+                <option value="">Default</option>
+                <option value="uk-h1">H1</option>
+                <option value="uk-h2">H2</option>
+                <option value="uk-h3">H3</option>
+                <option value="uk-h4">H4</option>
+                <option value="uk-h5">H5</option>
+                <option value="uk-h6">H6</option>
+                <option value="uk-heading-large">Extra Large</option>
+            </field>
+            <field type="text" name="icon" label="Icon" class="uk-form-width-small" tooltip="Add UIkit icon classes or image urls." />
+            <field type="badge" name="badge" label="Badge" tooltip="Set the badge colors and text.">
+                <option value="uk-panel-badge uk-badge">Default</option>
+                <option value="uk-panel-badge uk-badge uk-badge-success">Success</option>
+                <option value="uk-panel-badge uk-badge uk-badge-warning">Warning</option>
+                <option value="uk-panel-badge uk-badge uk-badge-danger">Danger</option>
+            </field>
+            <field name="display" type="display" label="Display" tooltip="Display or hide widgets on certain devices." />
+        </field>
+    </fields>
+    <fields name="Menus" icon="uk-icon-bars">
+        <field type="menus">
+            <field type="select" name="columns" default="1" label="Columns" max-depth="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </field>
+            <field type="text" name="columnwidth" label="Column Width" class="uk-form-width-small" placeholder="px" max-depth="1" />
+            <field type="text" name="icon" label="Icon" class="uk-form-width-small" tooltip="Add UIkit icon classes or image urls." />
+            <field type="text" name="subtitle" label="Subtitle" class="uk-form-width-small" tooltip="Add subtitles tu menu items." />
+        </field>
+    </fields>
+</config>

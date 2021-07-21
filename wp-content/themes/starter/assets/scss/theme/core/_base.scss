@@ -1,0 +1,71 @@
+
+* { outline: none !important; -webkit-tap-highlight-color: transparent; }
+
+b, strong { font-weight: $gm_bold-font-weight; }
+
+p, ul:not(.uk-subnav):not(.uk-subnav-line):not(.uk-subnav-pill):not(.uk-dotnav), ol, dl, blockquote, pre, address, fieldset, figure {
+	
+	&:first-child { margin-top: 0; }
+	&:last-child { margin-bottom: 0; }
+}
+
+.tm-error-icon { font-size: 250px; }
+
+h1, h2, h3, h4, h5, h6 {
+	
+	a {
+		color: inherit !important;
+		text-decoration: none !important;
+		font-weight: inherit !important;
+	}
+	
+	&:last-child { margin-bottom: 0; }
+}
+
+
+@media ( max-width: $gm_media-small-max ) {
+	h1, .uk-h1 { font-size: $gm_h1-font-size-small; }
+	h2, .uk-h2 { font-size: $gm_h2-font-size-small; }
+	h3, .uk-h3 { font-size: $gm_h3-font-size-small; }
+}
+
+
+@media ( max-width: $gm_media-small-max ) {
+	
+	.uk-br-remove-max-medium br { display: none; }
+}
+
+
+
+.uk-contrast-reset {
+	
+	color: $base-body-color;
+
+    a:not([class]),
+    .uk-link  {
+        color: $base-link-color;
+		text-decoration: $base-link-text-decoration;
+    }
+
+    a:not([class]):hover,
+    .uk-link:hover {
+        color: $base-link-hover-color;
+		text-decoration: $base-link-hover-text-decoration;
+    }
+
+    :not(pre) > code,
+    :not(pre) > kbd,
+    :not(pre) > samp {
+        color: $base-code-color;
+        @include hook-base-code();
+    }
+
+
+    em { color: $base-em-color; }
+
+
+    h1, h2, h3, h4, h5, h6 { color: $base-heading-color; }
+
+
+    hr { border-top-color: $base-hr-border; }
+}

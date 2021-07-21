@@ -1,0 +1,347 @@
+
+.gm_progress_bar {
+	
+	.uk-progress { height: 28px; line-height: 28px; position: relative; }
+	
+	.vc_label {
+		display: block;
+		position: absolute; 
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0 $gm_offset-mini;
+		color: #fff;
+	}
+
+
+	
+	// Primary
+	 
+	&.gm_progress-bar-color-primary .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-primary .uk-progress-bar { background-color: $gm_primary-color; }
+	
+	&.gm_progress-bar-color-primary .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-primary .vc_label { color: #fff; }
+	
+	// END Primary
+	
+	
+	
+	// Secondary
+	 
+	&.gm_progress-bar-color-secondary .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-secondary .uk-progress-bar { background-color: $gm_secondary-color; }
+	
+	&.gm_progress-bar-color-secondary .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-secondary .vc_label { color: #fff; }
+	
+	// END Secondary
+	
+	
+	
+	// Dark
+	 
+	&.gm_progress-bar-color-dark .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-dark .uk-progress-bar { background-color: $gm_dark-color; }
+	
+	&.gm_progress-bar-color-dark .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-dark .vc_label { color: #fff; }
+	
+	// END Dark
+	
+	
+	
+	// Classic Grey
+	 
+	&.gm_progress-bar-color-bar_grey .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_grey .uk-progress-bar { background-color: $vc-classic-grey-color; }
+	
+	&.gm_progress-bar-color-bar_grey .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_grey .vc_label { color: $base-body-color; }
+	
+	// END Classic Grey
+	
+	
+	
+	// Classic Blue
+	 
+	&.gm_progress-bar-color-bar_blue .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_blue .uk-progress-bar { background-color: $vc-classic-blue-color; }
+	
+	&.gm_progress-bar-color-bar_blue .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_blue .vc_label { color: #fff; }
+	
+	// END Classic Blue
+	
+	
+	
+	// Classic Turquoise
+	 
+	&.gm_progress-bar-color-bar_turquoise .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_turquoise .uk-progress-bar { background-color: $vc-classic-turquoise-color; }
+	
+	&.gm_progress-bar-color-bar_turquoise .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_turquoise .vc_label { color: #fff; }
+	
+	// END Classic Turquoise
+	
+	
+	
+	// Classic Green
+	 
+	&.gm_progress-bar-color-bar_green .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_green .uk-progress-bar { background-color: $vc-classic-green-color; }
+	
+	&.gm_progress-bar-color-bar_green .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_green .vc_label { color: #fff; }
+	
+	// END Classic Green
+	
+	
+	
+	// Classic Orange
+	 
+	&.gm_progress-bar-color-bar_orange .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_orange .uk-progress-bar { background-color: $vc-classic-orange-color; }
+	
+	&.gm_progress-bar-color-bar_orange .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_orange .vc_label { color: #fff; }
+	
+	// END Classic Orange
+	
+	
+	
+	// Classic Red
+	 
+	&.gm_progress-bar-color-bar_red .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-red .uk-progress-bar { background-color: $vc-classic-red-color; }
+	
+	&.gm_progress-bar-color-bar_red .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-red .vc_labell { color: #fff; }
+	
+	// END Classic Red
+	
+	
+	
+	// Classic Black
+	 
+	&.gm_progress-bar-color-bar_black .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_black .uk-progress-bar { background-color: $vc-classic-black-color; }
+	
+	&.gm_progress-bar-color-bar_black .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-bar_black .vc_label { color: #fff; }
+	
+	// END Classic Black
+	
+	
+	
+	// Blue
+	 
+	&.gm_progress-bar-color-blue .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-blue .uk-progress-bar { background-color: $vc-blue-color; }
+	
+	&.gm_progress-bar-color-blue .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-blue .vc_label { color: #fff; }
+	
+	// END Blue
+	
+	
+	
+	// Turquoise
+	 
+	&.gm_progress-bar-color-turquoise .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-turquoise .uk-progress-bar { background-color: $vc-turquoise-color; }
+	
+	&.gm_progress-bar-color-turquoise .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-turquoise .vc_label { color: #fff; }
+	
+	// END Turquoise
+	
+	
+	
+	// Pink
+	 
+	&.gm_progress-bar-color-pink .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-pink .uk-progress-bar { background-color: $vc-pink-color; }
+	
+	&.gm_progress-bar-color-pink .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-pink .vc_label { color: #fff; }
+	
+	// END Pink
+	
+	
+	
+	// Violet
+	 
+	&.gm_progress-bar-color-violet .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-violet .uk-progress-bar { background-color: $vc-violet-color; }
+	
+	&.gm_progress-bar-color-violet .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-violet .vc_label { color: #fff; }
+	
+	// END Violet
+	
+	
+	
+	// Peacoc
+	 
+	&.gm_progress-bar-color-peacoc .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-peacoc .uk-progress-bar { background-color: $vc-peacoc-color; }
+	
+	&.gm_progress-bar-color-peacoc .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-peacoc .vc_label { color: #fff; }
+	
+	// END Peacoc
+	
+	
+	
+	// Chino
+	 
+	&.gm_progress-bar-color-chino .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-chino .uk-progress-bar { background-color: $vc-chino-color; }
+	
+	&.gm_progress-bar-color-chino .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-chino .vc_label { color: #fff; }
+	
+	// END Chino
+	
+	
+	
+	// Mulled Wine
+	 
+	&.gm_progress-bar-color-mulled-wine .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-mulled-wine .uk-progress-bar { background-color: $vc-mulled-wine-color; }
+	
+	&.gm_progress-bar-color-mulled-wine .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-mulled-wine .vc_label { color: #fff; }
+	
+	// END Mulled Wine
+	
+	
+	
+	// Vista Blue
+	 
+	&.gm_progress-bar-color-vista_blue .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-vista_blue .uk-progress-bar { background-color: $vc-vista-blue-color; }
+	
+	&.gm_progress-bar-color-vista_blue .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-vista_blue .vc_label { color: #fff; }
+	
+	&.gm_progress-bar-color-vista-blue .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-vista-blue .uk-progress-bar { background-color: $vc-vista-blue-color; }
+	
+	&.gm_progress-bar-color-vista-blue .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-vista-blue .vc_label { color: #fff; }
+	
+	// END Vista Blue
+	
+	
+	
+	// Black
+	 
+	&.gm_progress-bar-color-black .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-black .uk-progress-bar { background-color: $vc-black-color; }
+	
+	&.gm_progress-bar-color-black .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-black .vc_label { color: #fff; }
+	
+	// END Black
+	
+	
+	
+	// Grey
+	 
+	&.gm_progress-bar-color-grey .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-grey .uk-progress-bar { background-color: $vc-grey-color; }
+	
+	&.gm_progress-bar-color-grey .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-grey .vc_label { color: $base-body-color; }
+	
+	// END Grey
+	
+	
+	
+	// Orange
+	 
+	&.gm_progress-bar-color-orange .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-orange .uk-progress-bar { background-color: $vc-orange-color; }
+	
+	&.gm_progress-bar-color-orange .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-orange .vc_label { color: #fff; }
+	
+	// END Orange
+	
+	
+	
+	// Sky
+	 
+	&.gm_progress-bar-color-sky .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-sky .uk-progress-bar { background-color: $vc-sky-color; }
+	
+	&.gm_progress-bar-color-sky .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-sky .vc_label { color: #fff; }
+	
+	// END Sky
+	
+	
+	
+	// Green
+	 
+	&.gm_progress-bar-color-green .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-green .uk-progress-bar { background-color: $vc-green-color; }
+	
+	&.gm_progress-bar-color-green .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-green .vc_label { color: #fff; }
+	
+	// END Green
+	
+	
+	
+	// Juicy Pink
+	 
+	&.gm_progress-bar-color-juicy-pink .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-juicy-pink .uk-progress-bar { background-color: $vc-juicy-pink-color; }
+	
+	&.gm_progress-bar-color-juicy-pink .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-juicy-pink .vc_label { color: #fff; }
+	
+	// END Juicy Pink
+	
+	
+	
+	// Sandy Brown
+	 
+	&.gm_progress-bar-color-sandy-brown .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-sandy-brown .uk-progress-bar { background-color: $vc-sandy-brown-color; }
+	
+	&.gm_progress-bar-color-sandy-brown .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-sandy-brown .vc_label { color: #fff; }
+	
+	// END Sandy Brown
+	
+	
+	
+	// Purple
+	 
+	&.gm_progress-bar-color-purple .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-purple .uk-progress-bar { background-color: $vc-purple-color; }
+	
+	&.gm_progress-bar-color-purple .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-purple .vc_label { color: #fff; }
+	
+	// END Purple
+	
+	
+	
+	// White
+	 
+	&.gm_progress-bar-color-white .uk-progress .uk-progress-bar,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-white .uk-progress-bar { background-color: $vc-white-color; }
+	
+	&.gm_progress-bar-color-white .uk-progress .vc_label,
+	.uk-progress.vc_single_bar.gm_progress-bar-color-white .vc_label { color: $base-body-color; }
+	
+	// END White
+
+}

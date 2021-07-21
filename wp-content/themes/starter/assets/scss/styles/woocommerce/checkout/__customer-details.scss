@@ -1,0 +1,33 @@
+
+// Layout
+
+.gm_woo-checkout-customer-details__title {
+	
+	font-size: $base-h4-font-size;
+	line-height: $base-h4-line-height;
+	
+	@include hook-base-h4();
+}
+
+// END Layout
+
+
+
+// Shipping
+
+.gm_woo-checkout-customer-details__shipping {
+	
+	.uk-form-toggler label > span:before { top: 0.9em; }
+}
+
+.gm_woo-checkout-customer-details__shipping-address { padding-bottom: $gm_offset-default; }
+
+// END Shipping
+
+
+
+// Additional
+
+.gm_woo-checkout-customer-details__additional #order_comments { height: 200px }
+
+// END Additional

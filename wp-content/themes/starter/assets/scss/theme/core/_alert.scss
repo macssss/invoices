@@ -1,0 +1,32 @@
+
+.uk-alert a {
+	
+	color: $alert-link-color;
+	font-weight: $gm_bold-font-weight;
+	
+	&:hover, &:focus { color: $alert-link-hover-color; }
+}
+
+
+.uk-alert-success a {
+	
+	color: $alert-success-link-color;
+	
+	&:hover, &:focus { color: $alert-success-link-hover-color; }
+}
+
+
+.uk-alert-warning a {
+	
+	color: $alert-warning-link-color;
+	
+	&:hover, &:focus { color: $alert-warning-link-hover-color; }
+}
+
+
+.uk-alert-danger a {
+	
+	color: $alert-danger-link-color;
+	
+	&:hover, &:focus { color: $alert-danger-link-hover-color; }
+}

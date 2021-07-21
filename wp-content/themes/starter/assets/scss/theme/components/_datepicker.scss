@@ -1,0 +1,8 @@
+
+.uk-datepicker-table a { border-radius: $datepicker-nav-radius; }
+
+.uk-datepicker-previous:after,
+.uk-datepicker-next:after { font-family: $gm_fa; font-weight: $gm_fa-solid-style; }
+
+.uk-datepicker-previous:after { content: $gm_fa-chevron-left; }
+.uk-datepicker-next:after { content: $gm_fa-chevron-right; }

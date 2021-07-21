@@ -1,0 +1,13 @@
+
+body.wp-product-archive {
+	
+	.gm_woo-product-list > * {
+		
+		width: 33.333%;
+		
+		@media ( max-width: 1100px )              { width: 50%; }
+		@media ( max-width: 850px )               { width: 33.333%; }
+		@media ( max-width: $gm_media-small-max ) { width: 50%; }
+		@media ( max-width: $gm_media-mini-max )  { width: 100%; }
+	}
+}

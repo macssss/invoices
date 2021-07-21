@@ -1,0 +1,330 @@
+// Global
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.wpcf7-form-control-wrap { position: relative; display: block; }
+.wpcf7-display-none { display: none; }
+div.wpcf7 div.ajax-error { display: none; }
+
+// END Global
+
+
+
+// Checkbox & Radio
+
+.wpcf7-checkbox, .wpcf7-acceptance, .wpcf7-radio { 
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	input { display: none !important; }
+	
+	.wpcf7-list-item { display: block; }
+	
+	.wpcf7-list-item-label { @include gm_hook-toggler-cont(); }
+	
+	.wpcf7-list-item-label:before { @include gm_hook-toggler(); }
+	
+	input:checked + .wpcf7-list-item-label:before { @include gm_hook-toggler-active(); }
+	
+	&.wpcf7-not-valid .wpcf7-list-item-label:before {
+		
+		border-color: $form-danger-border !important;
+	    color: $form-danger-color !important;
+	    
+	    @include hook-form-danger();
+	}
+}
+
+.wpcf7-checkbox, .wpcf7-radio { 
+	
+	margin-left: -$gm_offset-small;
+	
+	.wpcf7-list-item {
+		
+		margin-left: $gm_offset-small;
+		margin-bottom: $gm_offset-mini;
+	}
+	
+	
+	&.column { 
+		
+		flex-direction: column;
+		margin: 0;
+		
+		.wpcf7-list-item { margin: 0; }
+		.wpcf7-list-item + .wpcf7-list-item { margin-top: $gm_offset-mini; }
+	}
+}
+
+.uk-text-center { 
+	
+	.wpcf7-checkbox, .wpcf7-radio { 
+		&:not(.column) { justify-content: center; }
+	}
+	
+	.wpcf7-acceptance { justify-content: center; text-align: left; }
+}
+
+
+.uk-text-center { 
+	
+	.wpcf7-checkbox, .wpcf7-radio { 
+		&:not(.column) { justify-content: center; }
+	}
+	
+	.wpcf7-acceptance { justify-content: center; text-align: left; }
+}
+
+
+.wpcf7-checkbox, .wpcf7-acceptance { 
+	input:checked + .wpcf7-list-item-label:before { @include gm_hook-checkbox-active() }
+}
+
+
+.wpcf7-radio { 
+	.wpcf7-list-item-label:before { @include gm_hook-radio(); }
+	input:checked + .wpcf7-list-item-label:before { @include gm_hook-radio-active(); }
+}
+
+
+.uk-contrast { 
+	
+	.wpcf7-checkbox, .wpcf7-acceptance, .wpcf7-radio { 
+
+		.wpcf7-list-item-label:before { @include gm_hook-toggler-contrast(); }
+		
+		input:checked + .wpcf7-list-item-label:before { @include gm_hook-toggler-contrast-active(); }
+	}
+}
+
+
+.uk-contrast-reset { 
+	
+	.wpcf7-checkbox, .wpcf7-acceptance, .wpcf7-radio { 
+		
+		.wpcf7-list-item-label:before { @include gm_hook-toggler-default(); }
+		
+		input:checked + .wpcf7-list-item-label:before { @include gm_hook-toggler-default-active(); }
+	}
+}
+
+// END Checkbox & Radio
+
+
+
+// Select File
+
+.field-file-cont > .wpcf7-form-control-wrap > .wpcf7-form-control { display: none; }
+
+.gm_field-file { 
+	
+	.wpcf7-form-control { display: none; }
+	
+	.gm_field-file__path { 
+		
+		display: none;
+		font-size: $gm_small-font-size;
+		max-width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	
+	.gm_field-file__clear { 
+		
+		display: inline-block;
+		cursor: pointer;
+		width: 30px;
+		margin-right: -30px;
+		box-sizing: border-box;
+		text-align: center;
+		transition: $gm_transition-default;
+		
+		&:hover { opacity: 0.75; }
+	}
+
+}
+
+
+.gm_field-file-area {
+	
+	&__inner {
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 250px;
+		
+		padding: $gm_offset-default;
+		border: $gm_form-border-width solid $form-border;
+		box-sizing: border-box;
+		
+		position: relative;
+		z-index: 1;
+		
+		border-radius: $gm_form-radius;
+		text-align: center;
+		
+		.wpcf7-form-control {
+			
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			cursor: pointer;
+			opacity: 0;
+		}
+	}
+	
+	&__icon { font-size: 42px; color: $gm_primary-color; }
+	&__content { margin-top: $gm_offset-small; }
+	&__button { margin-top: $gm_offset-small; }
+	
+	&__path--data { color: $gm_base-color; }
+
+	&__path--clear {
+
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -0.15em;
+		padding: $gm_offset-mini;
+		line-height: 1;
+		color: $gm_danger-color;
+		cursor: pointer;
+	}
+
+	
+	.uk-form-danger + .gm_field-file-area__inner { border-color: $gm_danger-color; color: $gm_danger-color; }
+	
+	&:not(.gm_selected) {
+		.gm_field-file-area__path { display: none; }
+	}
+	
+	&.gm_selected {
+		
+		.wpcf7-form-control,
+		.gm_field-file-area__text,
+		.gm_field-file-area__button { display: none; }
+	}
+}
+
+// Select File
+
+
+
+// Not Valid Title
+
+span.wpcf7-not-valid-tip { 
+	font-size: $gm_small-font-size;
+	display: block;
+	text-align: left;
+	color: $gm_danger-color;
+}
+
+.uk-text-center span.wpcf7-not-valid-tip { text-align: center; }
+.uk-text-right span.wpcf7-not-valid-tip { text-align: right; }
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+}
+
+// END Not Valid Title
+
+
+
+// Recaptcha
+
+.grecaptcha-badge { display: none; }
+
+// END Recaptcha
+
+
+
+// Loader
+
+div.wpcf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	
+	font-family: $gm_fa;
+	font-weight: $gm_fa-solid-style;
+	animation: $gm_fa-spin-animation;
+    
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    
+    margin-left: $gm_offset-micro;
+    margin-right: -$gm_offset-micro - 14px;
+	
+	&:before { content: $gm_fa-circle-notch; }
+	
+	@media ( max-width: $breakpoint-mini-max ) { 
+	    width: 10px;
+	    height: 10px;
+	    font-size: 10px;
+	    line-height: 10px;
+	    
+	    margin-right: -$gm_offset-micro - 10px;
+	}
+	
+	&.is-active { visibility: visible; }
+}
+
+// END Loader
+
+
+
+// Alert
+
+.wpcf7-response-output  { 
+	
+    padding: $alert-padding;
+    background: $alert-background;
+    color: $alert-color;
+    display: none;
+    
+    @include hook-alert();
+    
+	margin-top: $alert-margin-vertical;
+	margin-bottom: $alert-margin-vertical;
+
+}
+
+.wpcf7-form.invalid .wpcf7-response-output {
+	
+	background: $alert-danger-background;
+    color: $alert-danger-color;
+    
+    @include hook-alert-danger();
+}
+
+.wpcf7-form.sent .wpcf7-response-output {
+	
+	background: $alert-success-background;
+    color: $alert-success-color;
+    
+    @include hook-alert-success();
+}
+
+// END Alert

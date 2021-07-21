@@ -1,0 +1,14 @@
+
+.gm_chart-legend {
+	list-style: none;
+	padding: 0;
+	
+	li span {
+		border-radius: $gm_form-toggler-radius;
+	    display: inline-block;
+	    height: 1.3em;
+	    width: 1.3em;
+	    margin-right: $gm_offset-mini;
+	    vertical-align: middle;
+	}
+}

@@ -1,0 +1,31 @@
+
+.uk-notify {
+	
+	max-width: calc( 100vw - #{$notify-position * 2} );
+	text-align: center;
+}
+
+
+
+.uk-notify-message > .uk-close {
+	
+	position: absolute;
+	top: $gm_offset-mini;
+	right: $gm_offset-mini;
+	float: none;
+	
+	font-size: $gm_small-font-size;
+}
+
+
+body.admin-bar .uk-notify {
+	
+	&.uk-notify-top-center, &.uk-notify-top-left, &.uk-notify-top-right {
+		margin-top: 32px;
+		
+		@media ( max-width: 782px ) { 
+			margin-top: 46px;
+		}
+	}
+}
+

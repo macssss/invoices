@@ -1,0 +1,32 @@
+
+.gm_woo-edit-account {
+	
+	&__password-change { margin-top: $gm_offset-default }
+	&__save-button-wrap { margin-top: $gm_offset-default; text-align: center; }
+}
+
+
+
+.gm_woo-edit-account-password-change {
+	
+	&__toggler {
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	&__fields-wrap {
+		
+		display: none;
+		padding-top: $gm_offset-small;
+	}
+	
+	&__fields > * {
+		
+		@media ( min-width: 700px ) and ( max-width: 850px ), ( min-width: $gm_media-large ) {
+			
+			width: 33.333%;
+		}
+	}
+}

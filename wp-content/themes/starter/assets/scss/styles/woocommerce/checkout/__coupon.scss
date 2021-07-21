@@ -1,0 +1,51 @@
+
+.gm_woo-checkout-coupon {
+	
+	margin-bottom: $gm_offset-default;
+	
+	&__toggle {
+		
+		font-size: $base-h5-font-size;
+		line-height: $base-h5-line-height;
+		
+		@include hook-base-h5();
+		
+		margin: 0;
+		text-align: center;
+	}
+	
+	&__description { margin-top: $gm_offset-mini; text-align: center; }
+	
+	&__form {
+		
+		position: relative;
+		z-index: 1;
+		
+		.blockOverlay { background-color: rgba($panel-box-background, 0.6) !important; }
+	}
+	
+	&__fields { margin-top: $gm_offset-small; }
+	
+	&__fields-inner {
+		
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		
+		margin-top: -$gm_offset-mini;
+		margin-left: -$gm_offset-mini;
+		
+		> * { margin-top: $gm_offset-mini !important; margin-left: $gm_offset-mini !important; }	
+	}
+	
+	&__field { width: 200px; }
+	
+	
+	@media ( max-width: 500px ) {
+		
+		&__fields-inner { flex-direction: column; }
+		
+		&__field { text-align: center; }
+	}
+}

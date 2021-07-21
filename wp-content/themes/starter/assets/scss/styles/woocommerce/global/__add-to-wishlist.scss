@@ -1,0 +1,31 @@
+
+.gm_woo-add-to-wishlist {
+	
+	position: relative;
+	
+	&__link {
+		
+		display: block;
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+		
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		font-size: 16px;
+		line-height: 32px;
+		text-align: center;
+		color: $gm_muted-color;
+		text-decoration: none !important;
+		
+		background: $gm_light-color;
+		border-radius: 100%;
+		
+		&:before { content: $gm_fa-star ; }
+		
+		&:hover { background: $gm_secondary-color; color: white; }
+		
+		&--remove { background: $gm_warning-color; color: white; }
+		
+	}
+}

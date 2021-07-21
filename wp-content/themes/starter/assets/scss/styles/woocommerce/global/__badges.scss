@@ -1,0 +1,52 @@
+
+.gm_woo-badges {
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin-top: -$gm_offset-mini;
+	margin-left: -$gm_offset-mini;
+	
+	> * {
+		
+		margin-top: $gm_offset-mini;
+		margin-left: $gm_offset-mini;
+	}
+}
+
+.gm_woo-badge {
+	
+	height: 32px;
+	min-width: 32px;
+	padding: 0 $gm_offset-mini;
+	box-sizing: border-box;
+	
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: $gm_bold-font-weight;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	
+	background: $gm_primary-color;
+	border-radius: 32px;
+	
+	&--bestseller { background: $gm_success-color; }
+	
+	&--sale { background: $gm_danger-color; }
+	
+	&--recommended {
+		
+		width: 32px;
+		padding: 0;
+		
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		font-size: 16px;
+		line-height: 30px;
+		
+		background: $gm_warning-color;
+		
+		&:before { content: $gm_fa-thumbs-up; }
+	}
+}

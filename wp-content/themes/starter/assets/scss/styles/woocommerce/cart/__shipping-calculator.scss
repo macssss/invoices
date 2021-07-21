@@ -1,0 +1,18 @@
+
+.gm_woo-shipping-calculator {
+	
+	&__form { margin-top: $gm_offset-mini; }
+	
+	&__button { text-decoration: none !important; }
+	&__button i { margin-right: $gm_offset-micro; }
+	
+	@media ( max-width: 650px ) {
+		
+		.select2 { text-align: left; }
+	}
+	
+	@media ( max-width: 550px ) {
+		
+		&__form-fields > * { width: 100%; }
+	}
+}

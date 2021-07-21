@@ -1,0 +1,24 @@
+
+.gm_parallax {
+	
+	position: relative;
+	z-index: 1;
+	
+	.gm_media-cont, .gm_overlay-background {
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.gm_media-cont { z-index: 1; }
+	.gm_overlay-background { z-index: 2; }
+	
+	.gm_data-panel {
+		
+		position: relative;
+		z-index: 3;
+	}
+}

@@ -1,0 +1,54 @@
+
+.gm_woo-terms-and-conditions {
+	
+	&__privacy-policy-text { padding: $gm_offset-small; }
+	
+	&__terms-and-conditions {
+		
+		max-height: 300px;
+		margin-top: $gm_offset-small;
+		border: $gm_border-style;
+		overflow: auto;
+		
+		text-align: left;
+		
+		border-radius: $gm_base-radius;
+		
+		&-inner { padding: $gm_offset-small; }
+		
+		.simplebar-mask:before,
+		.simplebar-mask:after {
+			
+			content: "";
+			display: block;
+			height: $gm_offset-small;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			
+		}
+		
+		.simplebar-mask:before {
+			
+			top: 0;
+			background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+		}
+		
+		.simplebar-mask:after {
+			
+			bottom: 0;
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+		}
+	}
+	
+	
+	&__list {
+		
+		display: table !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: $gm_offset-small !important;
+		text-align: left;
+	}
+}

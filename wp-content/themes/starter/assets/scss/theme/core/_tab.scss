@@ -1,0 +1,28 @@
+
+.uk-tab { font-size: $tab-font-size; }
+
+.uk-tab > li {
+	
+	> a {
+	
+		border-radius: $tab-radius $tab-radius 0 0;
+		border: none;
+		border-bottom: $tab-border-width solid transparent;
+		margin-bottom: 0 !important;
+		padding-bottom: $tab-padding-bottom !important;
+	}
+	
+	a:hover, a:focus, &.uk-open > a, &.uk-active > a { border-bottom-color: $tab-hover-border; }
+}
+
+.uk-tab-left > li > a { border-radius: $tab-radius 0 0 $tab-radius; }
+.uk-tab-right > li > a { border-radius: 0 $tab-radius $tab-radius 0; }
+
+.uk-tab-bottom,
+.uk-tab-center-bottom {
+	
+	> li > a { border-radius: 0 0 $tab-radius $tab-radius; }
+
+}
+
+.uk-tab-responsive > a:before { margin-right: 0.2em; }

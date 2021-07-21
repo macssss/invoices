@@ -1,0 +1,11 @@
+
+.gm_woo-product-stock {
+	
+	font-weight: $gm_bold-font-weight;
+	color: $gm_warning-color;
+	
+	&--out-of-stock           { color: $gm_danger-color; }
+	&--available-on-backorder { color: $gm_warning-color; }
+	&--only-left              { color: $gm_warning-color; }
+	&--in-stock               { color: $gm_success-color; }
+}

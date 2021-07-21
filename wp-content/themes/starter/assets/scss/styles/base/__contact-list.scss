@@ -1,0 +1,31 @@
+
+.contact-list {
+	
+	list-style: none;
+	padding: 0;
+	
+	li + li { margin-top: $gm_offset-small; }
+	
+	a { display: block; text-decoration: none !important; }
+	
+	li.no-link, a {
+		
+		position: relative;
+		padding-left: calc(1em + #{$gm_offset-mini});
+		
+		&:before {
+			font-family: $gm_fa;
+			font-weight: $gm_fa-solid-style;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1em;
+			text-align: center;
+		}
+	}
+	
+	li.phone a:before { content: $gm_fa-phone-alt; }
+	li.email a:before { content: $gm_fa-envelope; }
+	li.address:before { content: $gm_fa-map-marker-alt; }	
+}

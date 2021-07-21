@@ -1,0 +1,44 @@
+
+@import "_vc-animation";
+@import "_vc-chart";
+@import "_vc-column";
+@import "_vc-progress-bar";
+@import "_vc-row";
+@import "_vc-single-image";
+@import "_vc-video";
+
+
+
+.gm_section { display: flex; flex-wrap: wrap; }
+
+.gm_heading {
+	
+	&:first-child { margin-top: 0; }
+	&:last-child { margin-bottom: 0; }
+}
+
+.gm_content-element {
+	
+	margin: $gm_offset-small 0;
+	
+	&:first-child { margin-top: 0; }
+	&:last-child { margin-bottom: 0; }
+}
+
+.gm_content-element--margin-top-remove { margin-top: 0; }
+.gm_content-element--margin-bottom-remove { margin-bottom: 0; }
+
+.gm_content-element--margin-top-mini { margin-top: $gm_offset-mini; }
+.gm_content-element--margin-bottom-mini { margin-bottom: $gm_offset-mini; }
+
+.gm_content-element--margin-top-medium { margin-top: $gm_offset-medium; }
+.gm_content-element--margin-bottom-medium { margin-bottom: $gm_offset-medium; }
+
+.gm_content-element--margin-top-default { margin-top: $gm_offset-default; }
+.gm_content-element--margin-bottom-default { margin-bottom: $gm_offset-default; }
+
+.gm_content-element--margin-top-large { margin-top: $gm_offset-large; }
+.gm_content-element--margin-bottom-large { margin-bottom: $gm_offset-large; }
+
+.gm_content-element--margin-top-xlarge { margin-top: $gm_offset-xlarge; }
+.gm_content-element--margin-bottom-xlarge { margin-bottom: $gm_offset-xlarge; }

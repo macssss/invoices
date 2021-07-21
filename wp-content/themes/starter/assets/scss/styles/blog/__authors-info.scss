@@ -1,0 +1,19 @@
+
+.gm_blog-single__authors-info {
+	
+	margin-top: $gm_offset-default;
+	
+	.gm_item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		
+		&__image { width: 75px; }
+		&__image img { border-radius: $gm_base-radius; }
+		
+		&__content { width: calc(100% - 75px); padding-left: $gm_offset-small; box-sizing: border-box; }
+	}
+	
+	.gm_item + .gm_item { margin-top: $gm_offset-small; }
+	
+}

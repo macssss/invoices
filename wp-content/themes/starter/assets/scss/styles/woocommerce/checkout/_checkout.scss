@@ -1,0 +1,11 @@
+
+@import "_bank-details";
+@import "_cart-errors";
+@import "_coupon";
+@import "_customer-details";
+@import "_payment";
+@import "_review-order";
+@import "_terms";
+@import "_thankyou";
+
+body.woocommerce-checkout .gm_page-title { text-align: center; }

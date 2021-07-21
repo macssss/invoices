@@ -1,0 +1,27 @@
+
+.gm_woo-order-details {
+	
+	.gm_table-list {
+		
+		&__cell { width: 50%; }
+		
+		@media ( max-width: $gm_media-mini-max ) {
+			
+			@include gm_table-list-collapse();
+			
+			.gm_woo-cart-shipping__methods {
+				
+				margin-top: $gm_offset-mini !important;
+			}
+		}
+	}
+	
+	&--centered .gm_table-list {
+		
+		@media ( min-width: $gm_media-small ) {
+			
+			&__cell:first-child { text-align: right; }
+		}
+	}
+	
+}

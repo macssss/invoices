@@ -1,0 +1,28 @@
+
+.gm_woo-single-product-tabs {
+	
+	&__switcher { clear: both; }
+	
+	&__content { margin-top: $gm_offset-medium; }
+	
+	@media ( max-width: $gm_media-mini-max ) {
+		
+		&__nav { position: relative; }
+		
+		.uk-tab-responsive {
+			
+			display: table;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			position: static;
+			
+			.uk-dropdown {
+				
+				width: 100%;
+				margin-top: $gm_offset-small;
+				text-align: center;
+			}
+		}
+	}
+}

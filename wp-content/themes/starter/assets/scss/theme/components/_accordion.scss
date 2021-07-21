@@ -1,0 +1,52 @@
+
+.uk-accordion {
+	
+	counter-reset: gm_accordion;
+}
+
+.uk-accordion-title {
+	
+	position: relative;
+	padding-right: 24px + $accordion-title-padding-horizontal * 2;
+	border-radius: $gm_base-radius;
+	
+	&:after {
+		
+		display: block;
+		width: 24px;
+		height: 24px;
+		
+		position: absolute;
+		top: $accordion-title-padding-vertical;
+		right: $accordion-title-padding-horizontal;
+		
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		font-size: 15px;
+		line-height: 24px;
+		text-align: center;
+		content: $gm_fa-plus;
+		
+		background: $gm_light-lighten-color;
+		border-radius: 100%;
+	}
+	
+	&.uk-active:after {
+		
+		content: $gm_fa-minus;
+		color: white;
+		background-color: $gm_primary-color;
+	}
+}
+
+.uk-accordion-numbered {
+	
+	counter-reset: gm_accordion;
+		
+	.uk-accordion-title:before {
+		
+		counter-increment: gm_accordion;
+		content: counter(gm_accordion) ". ";
+	}
+	
+}

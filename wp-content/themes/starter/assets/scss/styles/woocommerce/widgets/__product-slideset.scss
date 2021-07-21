@@ -1,0 +1,10 @@
+
+.gm_product-slideset {
+	
+	@media ( max-width: $gm_media-small-max ) {
+		
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,1583 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 08:42:58
+* VERSION: 1.4.2
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.3.5                                 |7.3.5
+OS__________________: Darwin                                |Darwin
+CREATED_____________: 2021-07-21 08:26:23
+WP VERSION__________: 5.7.2
+DUP VERSION_________: 1.4.2
+DB__________________: 8.0.16
+DB TABLES___________: 114
+DB ROWS_____________: 64,287
+DB FILE SIZE________: 39.44MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.5 | SAPI: fpm-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: nginx/1.16.0
+DOC ROOT____________: "/Users/Max/Desktop/CreateIT/Site/app/public"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "https://invoices.local/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ACTION______: "donothing"
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "/Users/Max/Desktop/CreateIT/Site/app/public/Starter_[HASH]_20210721082623_archive.zip"
+SIZE________________: 222.06MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+BEFORE EXTRACION ACTIONS
+MAINTENANCE MODE ENABLE
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 08:43:41 - RUNTIME: 42.8835 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 08:44:32
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTION CREATION___: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.16 -- Build Server: 8.0.16
+FILE SIZE:	dup-database__[HASH].sql (22.74MB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/Users/Max/Desktop/CreateIT/Site/app/public/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+DB FUNCTIONS:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	12
+RENAMED TABLES:	0
+QUERIES RAN:	65149
+
+cerber_acl: (3)
+cerber_blocks: (0)
+cerber_countries: (0)
+cerber_lab: (0)
+cerber_lab_ip: (0)
+cerber_lab_net: (0)
+cerber_log: (25)
+cerber_qmem: (2)
+cerber_traffic: (872)
+wp_actionscheduler_actions: (8)
+wp_actionscheduler_claims: (0)
+wp_actionscheduler_groups: (4)
+wp_actionscheduler_logs: (24)
+wp_berocket_termmeta: (0)
+wp_braapf_product_stock_status_parent: (12)
+wp_braapf_product_variation_attributes: (0)
+wp_braapf_term_taxonomy_hierarchical: (10)
+wp_braapf_variation_attributes: (2)
+wp_cerber_files: (28759)
+wp_cerber_sets: (33)
+wp_cerber_uss: (2)
+wp_cf7_vdata: (0)
+wp_cf7_vdata_entry: (0)
+wp_commentmeta: (3)
+wp_comments: (8)
+wp_duplicator_packages: (0)
+wp_gglcptch_allowlist: (0)
+wp_links: (0)
+wp_litespeed_cssjs: (75)
+wp_litespeed_img_optm: (0)
+wp_options: (1096)
+wp_popularpostsdata: (7)
+wp_popularpostssummary: (0)
+wp_postmeta: (1147)
+wp_posts: (140)
+wp_realmedialibrary: (17)
+wp_realmedialibrary_debug: (0)
+wp_realmedialibrary_meta: (0)
+wp_realmedialibrary_posts: (60)
+wp_realmedialibrary_tmp: (0)
+wp_structuring_markup: (11)
+wp_term_relationships: (117)
+wp_term_taxonomy: (75)
+wp_termmeta: (51)
+wp_terms: (75)
+wp_tm_taskmeta: (0)
+wp_tm_tasks: (0)
+wp_usermeta: (171)
+wp_users: (2)
+wp_wc_admin_note_actions: (32)
+wp_wc_admin_notes: (30)
+wp_wc_category_lookup: (10)
+wp_wc_customer_lookup: (1)
+wp_wc_download_log: (0)
+wp_wc_order_coupon_lookup: (0)
+wp_wc_order_product_lookup: (1)
+wp_wc_order_stats: (1)
+wp_wc_order_tax_lookup: (1)
+wp_wc_product_meta_lookup: (12)
+wp_wc_reserved_stock: (0)
+wp_wc_tax_rate_classes: (2)
+wp_wc_webhooks: (0)
+wp_wfBlockedIPLog: (0)
+wp_wfBlocks7: (0)
+wp_wfConfig: (281)
+wp_wfCrawlers: (0)
+wp_wfFileChanges: (0)
+wp_wfFileMods: (7473)
+wp_wfHits: (4)
+wp_wfHoover: (0)
+wp_wfIssues: (12)
+wp_wfKnownFileList: (17377)
+wp_wfLiveTrafficHuman: (0)
+wp_wfLocs: (1)
+wp_wfLogins: (353)
+wp_wfls_2fa_secrets: (0)
+wp_wfls_settings: (19)
+wp_wfNotifications: (178)
+wp_wfPendingIssues: (0)
+wp_wfReverseCache: (1)
+wp_wfSNIPCache: (0)
+wp_wfStatus: (971)
+wp_wfTrafficRates: (0)
+wp_widgetkit: (3)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (3)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (16)
+wp_woocommerce_order_items: (2)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (1)
+wp_woocommerce_shipping_zone_locations: (0)
+wp_woocommerce_shipping_zone_methods: (0)
+wp_woocommerce_shipping_zones: (0)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (1)
+wp_wpmailsmtp_tasks_meta: (45)
+wp_wps_hit: (0)
+wp_wps_index: (4230)
+wp_wps_key: (149)
+wp_wps_object_type: (22)
+wp_wps_query: (0)
+wp_wps_uri: (0)
+wp_wps_user_agent: (0)
+wp_yith_wcwl: (0)
+wp_yith_wcwl_lists: (1)
+wp_yoast_indexable: (108)
+wp_yoast_indexable_hierarchy: (36)
+wp_yoast_migrations: (21)
+wp_yoast_primary_term: (28)
+wp_yoast_seo_links: (183)
+wp_yoast_seo_meta: (529)
+Removed '83' cache/transient rows
+
+INSERT DATA RUNTIME: 14.4028 sec.
+STEP-2 COMPLETE @ 08:44:46 - RUNTIME: 14.4377 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 08:45:04
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Invoices"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/Users/Max/Desktop/Starter/Site/app/public"
+path_new______________: "/Users/Max/Desktop/CreateIT/Site/app/public"
+siteurl_______________: "https://invoices.local"
+url_old_______________: "https://starter.local"
+url_new_______________: "https://invoices.local"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: true
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "cerber_acl"______________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "cerber_blocks"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_countries"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab_ip"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab_net"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_log"______________________________________[ROWS:    25][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "cerber_qmem"_____________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "cerber_traffic"__________________________________[ROWS:   872][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_actionscheduler_actions"______________________[ROWS:     8][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_actionscheduler_claims"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_actionscheduler_groups"_______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_actionscheduler_logs"_________________________[ROWS:    24][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_berocket_termmeta"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_braapf_product_stock_status_parent"___________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_braapf_product_variation_attributes"__________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_braapf_term_taxonomy_hierarchical"____________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_braapf_variation_attributes"__________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_cerber_files"_________________________________[ROWS: 28759][PG:   9][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_cerber_sets"__________________________________[ROWS:    33][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_cerber_uss"___________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_cf7_vdata"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_cf7_vdata_entry"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_gglcptch_allowlist"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_litespeed_cssjs"______________________________[ROWS:    75][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_litespeed_img_optm"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:  1096][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_popularpostsdata"_____________________________[ROWS:     7][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_popularpostssummary"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  1147][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   140][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_realmedialibrary"_____________________________[ROWS:    17][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_realmedialibrary_debug"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_realmedialibrary_meta"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_realmedialibrary_posts"_______________________[ROWS:    60][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_realmedialibrary_tmp"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_structuring_markup"___________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   117][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    75][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:    51][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    75][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_tm_taskmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_tm_tasks"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:   171][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_admin_note_actions"________________________[ROWS:    32][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_admin_notes"_______________________________[ROWS:    30][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_category_lookup"___________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_customer_lookup"___________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_download_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_coupon_lookup"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_product_lookup"______________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_order_stats"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_order_tax_lookup"__________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_product_meta_lookup"_______________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_reserved_stock"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_tax_rate_classes"__________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wc_webhooks"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfBlockedIPLog"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfBlocks7"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfConfig"_____________________________________[ROWS:   281][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfCrawlers"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfFileChanges"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfFileMods"___________________________________[ROWS:  7473][PG:   3][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfHits"_______________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfHoover"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfIssues"_____________________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfKnownFileList"______________________________[ROWS: 17377][PG:   5][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfLiveTrafficHuman"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfLocs"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfLogins"_____________________________________[ROWS:   353][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfls_2fa_secrets"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfls_settings"________________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfNotifications"______________________________[ROWS:   178][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfPendingIssues"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfReverseCache"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfSNIPCache"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfStatus"_____________________________________[ROWS:   971][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wfTrafficRates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_widgetkit"____________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_woocommerce_api_keys"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_itemmeta"___________________[ROWS:    16][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_woocommerce_order_items"______________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokens"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_sessions"_________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_locations"__________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_methods"____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zones"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rates"________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wpmailsmtp_tasks_meta"________________________[ROWS:    45][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wps_hit"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wps_index"____________________________________[ROWS:  4230][PG:   2][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wps_key"______________________________________[ROWS:   149][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wps_object_type"______________________________[ROWS:    22][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_wps_query"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wps_uri"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wps_user_agent"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yith_wcwl"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yith_wcwl_lists"______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_indexable"______________________________[ROWS:   108][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_indexable_hierarchy"____________________[ROWS:    36][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_migrations"_____________________________[ROWS:    21][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_primary_term"___________________________[ROWS:    28][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_seo_links"______________________________[ROWS:   183][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+
+EVALUATE TABLE: "wp_yoast_seo_meta"_______________________________[ROWS:   529][PG:   1][SCAN:text columns]
+	SEARCH  1:"/Users/Max/Desktop/Starter/Site/app/public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  2:"\/Users\/Max\/Desktop\/Starter\/Site\/app\/public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  3:"%2FUsers%2FMax%2FDesktop%2FStarter%2FSite%2Fapp%2Fpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  4:"\Users\Max\Desktop\Starter\Site\app\public" ======> "/Users/Max/Desktop/CreateIT/Site/app/public"
+	SEARCH  5:"\\Users\\Max\\Desktop\\Starter\\Site\\app\\public" => "\/Users\/Max\/Desktop\/CreateIT\/Site\/app\/public"
+	SEARCH  6:"%5CUsers%5CMax%5CDesktop%5CStarter%5CSite%5Capp%5Cpublic" => "%2FUsers%2FMax%2FDesktop%2FCreateIT%2FSite%2Fapp%2Fpublic"
+	SEARCH  7:"//starter.local" =================================> "//invoices.local"
+	SEARCH  8:"\/\/starter.local" ===============================> "\/\/invoices.local"
+	SEARCH  9:"%2F%2Fstarter.local" =============================> "%2F%2Finvoices.local"
+	SEARCH 10:"//www.starter.local" =============================> "//invoices.local"
+	SEARCH 11:"\/\/www.starter.local" ===========================> "\/\/invoices.local"
+	SEARCH 12:"%2F%2Fwww.starter.local" =========================> "%2F%2Finvoices.local"
+	SEARCH 13:"http://invoices.local" ===========================> "https://invoices.local"
+	SEARCH 14:"http:\/\/invoices.local" =========================> "https:\/\/invoices.local"
+	SEARCH 15:"http%3A%2F%2Finvoices.local" =====================> "https%3A%2F%2Finvoices.local"
+--------------------------------------
+SCANNED:	Tables:114 	|	 Rows:64949 	|	 Cells:699332 
+UPDATED:	Tables:17 	|	 Rows:30333 	|	 Cells:31101 
+ERRORS:		0 
+RUNTIME:	21.435900 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME "** OBSCURED **"
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE WP_CACHE true
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => simple-google-recaptcha/simple-google-recaptcha.php
+    [1] => js_composer/js_composer.php
+)
+
+deactivate js_composer/js_composer.php
+Plugin(s) listed here are deactivated: js_composer/js_composer.php
+Plugin(s) reactivated after installation: js_composer/js_composer.php
+MAINTENANCE MODE DISABLE
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 08:45:26 - RUNTIME: 21.5905 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] Info
+	SECTIONS: general
+	LONG MSG:             The following is a list of notices that may need to be fixed in order to finalize your setup. These values should only be investigated if you're running into
+            issues with your site. For more details see the <a href="https://codex.wordpress.org/Editing_wp-config.php" target="_blank">WordPress Codex</a>.
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] Deactivated Plugin:  WPBakery Page Builder
+	SECTIONS: general
+	LONG MSG: This plugin is deactivated automatically, because it requires a reacivation to work properly.  <b>Please reactivate from the WordPress admin panel after logging in.</b> This will re-enable your site's frontend.
+
+====================================

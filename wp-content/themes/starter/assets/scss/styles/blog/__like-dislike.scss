@@ -1,0 +1,88 @@
+
+.pld-like-dislike-wrap { display: none; }
+
+.gm_blog-single {
+	
+	.pld-like-dislike-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		
+		> div + div { margin-left: $gm_offset-small; }
+	}
+	
+	.pld-common-wrap { display: flex; flex-wrap: wrap; align-items: center; }
+	.pld-count-wrap { display: inline-block; vertical-align: middle; margin-left: $gm_offset-mini; }
+	
+	.pld-like-dislike-trigger {
+		
+	    -webkit-appearance: none;
+	    margin: 0;
+	    border: none;
+	    overflow: visible;
+	    font: inherit;
+	    color: $button-color;
+	    text-transform: none;
+	    display: inline-block;
+	    box-sizing: border-box;
+	    background: $button-background;
+	    vertical-align: middle;
+	    
+	    
+	    text-decoration: none;
+	    text-align: center;
+	    
+	    @include hook-button();
+	    
+	    padding: 0;
+	    width: $button-mini-height;
+	    min-height: $button-mini-height;
+	    line-height: $button-mini-line-height;
+	    font-size: $button-icon-mini-font-size;
+		
+		&:not(:disabled) { cursor: pointer; }
+		&::-moz-focus-inner { border: 0; padding: 0; }
+		
+		&:hover, &:focus {
+		    background-color: $button-hover-background;
+		    color: $button-hover-color;
+		    outline: none;
+		    text-decoration: none;
+		    @include hook-button-hover();
+		}
+		
+		&:active, &.uk-active {
+		    background-color: $button-active-background;
+		    color: $button-active-color;
+		    @include hook-button-active();
+		}
+	}
+	
+	.pld-like-trigger {
+		
+	    background-color: $button-success-background;
+	    color: $button-success-color;
+	    @include hook-button-success();
+		
+		&:hover, &:focus {
+		    background-color: $button-success-hover-background;
+		    color: $button-success-hover-color;
+		    @include hook-button-success-hover();
+		}
+		
+		&:active, &.uk-active {
+		    background-color: $button-success-active-background;
+		    color: $button-success-active-color;
+		    @include hook-button-success-active();
+		}
+	}
+	
+	.pld-dislike-trigger:hover,
+	.pld-dislike-trigger:focus {
+		
+		background-color: $button-danger-hover-background;
+	    color: $button-danger-hover-color;
+	    
+	    @include hook-button-danger-hover();
+	}
+	
+}

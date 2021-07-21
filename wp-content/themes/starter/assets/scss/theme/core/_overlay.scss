@@ -1,0 +1,11 @@
+.uk-overlay {
+	
+	display: block;
+	
+	img { width: 100%; }
+	
+	&.uk-border-rounded .uk-overlay-background { border-radius: $utility-border-rounded; }
+}
+
+.gm_overlay-inner-offset { padding: $overlay-panel-padding; }
+.gm_overlay-inner-vetical-offset { padding: $overlay-panel-padding 0; }

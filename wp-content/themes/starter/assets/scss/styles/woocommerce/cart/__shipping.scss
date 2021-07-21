@@ -1,0 +1,13 @@
+
+.gm_woo-cart-shipping {
+	
+	&__contents, &__message + &__message, &__calculator { margin-top: $gm_offset-mini; }
+	
+	&__details {
+		
+		margin-bottom: $gm_offset-small;
+		padding: $gm_offset-small;
+		
+		&:not(:first-child) { margin-top: $gm_offset-small; }
+	}
+}

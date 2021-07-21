@@ -1,0 +1,113 @@
+
+.uk-panel-hover { border-radius: $panel-box-radius; }
+
+.uk-panel-hover,
+.uk-panel-box-hover,
+.uk-panel-box-white-hover,
+.uk-panel-box-secondary-hover,
+.uk-panel-box-dark-hover,
+.uk-panel-box-primary-hover {
+	transition: $gm_transition-default;
+}
+
+
+.uk-panel:not(.uk-panel-box) { 
+	
+	.uk-nav:not(.uk-nav-search) > li > a { padding-left: 0; padding-right: 0; } 
+}
+
+.uk-panel-hover > .uk-panel-teaser { overflow: hidden; border-radius: $panel-box-radius $panel-box-radius 0 0; }
+
+
+.uk-panel-box { 
+	
+	border-radius: $panel-box-radius;
+	box-shadow: $panel-box-shadow;
+	
+	ul.uk-nav-sub { padding-left: $nav-sub-padding-left + $panel-box-padding; } 
+	
+	> .uk-panel-teaser { overflow: hidden; border-radius: $panel-box-radius $panel-box-radius 0 0; }
+	> .uk-panel-teaser:last-child { margin-bottom: -$panel-box-padding; border-radius: $panel-box-radius; }
+}
+
+.uk-panel-box-hover:hover {
+	background-color: $panel-box-hover-background;
+	box-shadow: $panel-box-hover-shadow;
+}
+
+
+
+.uk-panel-box-white {
+	border-radius: $panel-box-white-radius;
+	color: $panel-box-white-color;
+	background-color: $panel-box-white-background;
+	box-shadow: $panel-box-white-shadow;
+	
+	h1, h2, h3, h4, h5, h6, .uk-panel-title  { color: $panel-box-white-title-color; } 
+	
+	> .uk-panel-teaser { border-radius: $panel-box-white-radius $panel-box-white-radius 0 0; }
+	> .uk-panel-teaser:last-child { border-radius: $panel-box-white-radius; }
+}
+
+.uk-panel-box-white-hover:hover {
+	color: $panel-box-white-color;
+	background-color: $panel-box-white-hover-background;
+	box-shadow: $panel-box-white-hover-shadow;
+}
+
+
+
+.uk-panel-box-secondary { 
+	
+	border-radius: $panel-box-secondary-radius;
+	box-shadow: $panel-box-secondary-shadow;
+	
+	h1, h2, h3, h4, h5, h6 { color: $panel-box-secondary-title-color; } 
+	
+	> .uk-panel-teaser { border-radius: $panel-box-secondary-radius $panel-box-secondary-radius 0 0; }
+	> .uk-panel-teaser:last-child { border-radius: $panel-box-secondary-radius; }
+}
+
+.uk-panel-box-secondary-hover:hover {
+	background-color: $panel-box-secondary-hover-background;
+	box-shadow: $panel-box-secondary-hover-shadow;
+}
+
+
+
+.uk-panel-box-dark {
+	border-radius: $panel-box-dark-radius;
+	color: $panel-box-dark-color;
+	background-color: $panel-box-dark-background;
+	box-shadow: $panel-box-dark-shadow;
+	
+	h1, h2, h3, h4, h5, h6, .uk-panel-title  { color: $panel-box-dark-title-color; } 
+	
+	> .uk-panel-teaser { border-radius: $panel-box-dark-radius $panel-box-dark-radius 0 0; }
+	> .uk-panel-teaser:last-child { border-radius: $panel-box-dark-radius; }
+}
+
+.uk-panel-box-dark-hover:hover {
+	color: $panel-box-dark-color;
+	background-color: $panel-box-dark-hover-background;
+	box-shadow: $panel-box-dark-hover-shadow;
+}
+
+
+
+.uk-panel-box-primary { 
+	
+	border-radius: $panel-box-primary-radius;
+	box-shadow: $panel-box-primary-shadow;
+	
+	h1, h2, h3, h4, h5, h6 { color: $panel-box-primary-title-color; } 
+	
+	> .uk-panel-teaser { border-radius: $panel-box-primary-radius $panel-box-primary-radius 0 0; }
+	> .uk-panel-teaser:last-child { border-radius: $panel-box-primary-radius; }
+}
+
+.uk-panel-box-primary-hover:hover {
+	background-color: $panel-box-primary-hover-background;
+	box-shadow: $panel-box-primary-hover-shadow;
+}
+

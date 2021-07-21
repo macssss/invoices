@@ -1,0 +1,199 @@
+
+.uk-icon-button { 
+	
+	-webkit-appearance: none;
+	display: inline-block;
+	
+	height: $button-height;
+    width: $button-height;
+	font-size: $button-icon-font-size;
+	line-height: $button-line-height;
+    min-height: $button-height;
+    transition: $gm_transition-default;
+    
+    background: $button-background;
+    border: $button-border-width solid $button-border-color;
+    color: $button-color;
+    
+    &:hover, &:focus { 
+	    background: $button-hover-background;
+	    border-color: $button-hover-border-color;
+	    color: $button-hover-color;
+    }
+    
+    &:active { 
+	    background: $button-active-background;
+	    border: $button-active-border-color;
+	    color: $button-active-color;
+    }
+   
+}
+
+
+.uk-icon-button-mini { 
+	
+    height: $button-mini-height;
+	width: $button-mini-height;
+    font-size: $button-icon-mini-font-size;
+    line-height: $button-mini-line-height;
+    min-height: $button-mini-height;
+}
+
+
+.uk-icon-button-small { 
+	
+    height: $button-small-height;
+	width: $button-small-height;
+    font-size: $button-icon-small-font-size;
+    line-height: $button-small-line-height;
+    min-height: $button-small-height;
+}
+
+
+.uk-icon-button-large { 
+	
+    height: $button-large-height;
+	width: $button-large-height;
+    font-size: $button-icon-large-font-size;
+    line-height: $button-large-line-height;
+    min-height: $button-large-height;
+}
+
+
+.uk-icon-button-secondary { 
+	
+    background: $button-secondary-background;
+    border-color: $button-secondary-border-color;
+    color: $button-secondary-color;
+    
+    &:hover, &:focus { 
+	    background: $button-secondary-hover-background;
+	    border-color: $button-secondary-hover-border-color;
+	    color: $button-secondary-hover-color;
+    }
+    
+    &:active { 
+	    background: $button-secondary-active-background;
+	    border: $button-secondary-active-border-color;
+	    color: $button-secondary-active-color;
+    }
+}
+
+
+.uk-icon-button-dark { 
+    background: $button-dark-background;
+    border-color: $button-dark-border-color;
+    color: $button-dark-color;
+    
+    &:hover, &:focus { 
+	    background: $button-dark-hover-background;
+	    border-color: $button-dark-hover-border-color;
+	    color: $button-dark-hover-color;
+    }
+    
+    &:active { 
+	    background: $button-dark-active-background;
+	    border: $button-dark-active-border-color;
+	    color: $button-dark-active-color;
+    }
+}
+
+
+.uk-icon-button-primary { 
+    background: $button-primary-background;
+    border-color: $button-primary-border-color;
+    color: $button-primary-color;
+    
+    &:hover, &:focus { 
+	    background: $button-primary-hover-background;
+	    border-color: $button-primary-hover-border-color;
+	    color: $button-primary-hover-color;
+    }
+    
+    &:active { 
+	    background: $button-primary-active-background;
+	    border: $button-primary-active-border-color;
+	    color: $button-primary-active-color;
+    }
+}
+
+
+
+.uk-contrast { 
+	
+	.uk-icon-button { 
+		background: $contrast-button-background;
+	    border-color: $contrast-button-border-color;
+	    color: $contrast-button-color;
+	    
+	    &:hover, &:focus { 
+		    background: $contrast-button-hover-background;
+		    border-color: $contrast-button-hover-border-color;
+		    color: $contrast-button-hover-color;
+	    }
+	    
+	    &:active { 
+		    background: $contrast-button-active-background;
+		    border: $contrast-button-active-border-color;
+		    color: $contrast-button-active-color;
+	    }
+	}
+	
+	
+	.uk-icon-button-secondary { 
+	    background: $contrast-button-secondary-background;
+	    border-color: $contrast-button-secondary-border-color;
+	    color: $contrast-button-secondary-color;
+	    
+	    &:hover, &:focus { 
+		    background: $contrast-button-secondary-hover-background;
+		    border-color: $contrast-button-secondary-hover-border-color;
+		    color: $contrast-button-secondary-hover-color;
+	    }
+	    
+	    &:active { 
+		    background: $contrast-button-secondary-active-background;
+		    border: $contrast-button-secondary-active-border-color;
+		    color: $contrast-button-secondary-active-color;
+	    }
+	}
+	
+	
+	.uk-icon-button-dark { 
+	    background: $contrast-button-dark-background;
+	    border-color: $contrast-button-dark-border-color;
+	    color: $contrast-button-dark-color;
+	    
+	    &:hover, &:focus { 
+		    background: $contrast-button-dark-hover-background;
+		    border-color: $contrast-button-dark-hover-border-color;
+		    color: $contrast-button-dark-hover-color;
+	    }
+	    
+	    &:active { 
+		    background: $contrast-button-dark-active-background;
+		    border: $contrast-button-dark-active-border-color;
+		    color: $contrast-button-dark-active-color;
+	    }
+	}
+	
+	
+	.uk-icon-button-primary { 
+	    background: $contrast-button-primary-background;
+	    border-color: $contrast-button-primary-border-color;
+	    color: $contrast-button-primary-color;
+	    
+	    &:hover, &:focus { 
+		    background: $contrast-button-primary-hover-background;
+		    border-color: $contrast-button-primary-hover-border-color;
+		    color: $contrast-button-primary-hover-color;
+	    }
+	    
+	    &:active { 
+		    background: $contrast-button-primary-active-background;
+		    border: $contrast-button-primary-active-border-color;
+		    color: $contrast-button-primary-active-color;
+	    }
+	}
+	
+}

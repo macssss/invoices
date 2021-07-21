@@ -1,0 +1,29 @@
+
+.uk-article table { 
+	
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0;
+	
+	th, td { padding: $gm_offset-micro; border: $gm_border-style; }
+	
+	&:not(.no-scroll) { min-width: 600px; }
+}
+
+
+.uk-article * + table { margin-top: $gm_offset-default; }
+
+
+.table-container-scroll { margin-bottom: -$gm_offset-small; padding-bottom: $gm_offset-small; }
+
+
+.table-container.overflowing { 
+
+	.table-container-inner { overflow: hidden; }
+	.table-container-scroll { overflow: auto; }
+}
+
+
+.table-controls { margin-top: $gm_offset-small; display: none; }
+.table-container.overflowing .table-controls { display: block; }

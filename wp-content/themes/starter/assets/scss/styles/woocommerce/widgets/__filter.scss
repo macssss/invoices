@@ -1,0 +1,448 @@
+
+// Theme Layout
+
+.gm_sidebar-a {
+	
+	.uk-panel + .uk-panel { margin-top: 0; }
+	
+	.uk-panel:not(:first-child) .berocket_single_filter_widget { margin-top: $gm_offset-small; }
+}
+
+// END Theme Layout
+
+
+
+// Global
+
+.berocket_single_filter_widget {
+	
+	padding: $gm_offset-small $gm_offset-mini;
+	padding-bottom: 0;
+	border: $gm_border-style;
+	border-radius: $gm_base-radius;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	
+	&:after {
+		
+		content: "";
+		display: block;
+		height: $gm_offset-small;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	}
+	
+	& + & { margin-top: $gm_offset-small; }
+	
+	.bapf_head > h3 {
+		
+		padding: $gm_offset-small #{$gm_offset-mini + $gm_offset-mini};
+		margin: #{-$gm_offset-small} #{-$gm_offset-mini} !important;
+		margin-bottom: 0 !important;
+		position: relative;
+		z-index: 2;
+		
+		font-size: $gm_h5-font-size;
+		line-height: $gm_h5-line-height;
+	}
+	
+	.bapf_sfilter { margin: 0; }
+		
+	.bapf_body {
+		
+		padding: 0 $gm_offset-mini;
+		
+		border-top: $gm_border-style;
+		padding-top: $gm_offset-small;
+		
+		ul { padding: 0; padding-bottom: $gm_offset-small; }
+	}
+	
+	
+	
+	.mCSB_scrollTools {
+		
+		width: 11px;
+		margin: $gm_offset-small 0 !important;
+		opacity: 1;
+		
+		.mCSB_dragger .mCSB_dragger_bar {
+			width: 7px;
+			background: rgba(0, 0, 0, 0.5);
+		}
+	}
+	
+	
+	
+	.bapf_hideckbox li {
+		
+		label, label a {
+		
+			color: $gm_base-color;
+			transition: $gm_transition-default;
+		}
+		
+		
+		input:checked + label:hover
+		input:checked + label:hover a,
+		input:checked + label,
+		input:checked + label a,
+		label:hover,
+		label:hover a {
+			
+			color: $gm_primary-color;	
+		}
+	}
+	
+	.bapf_sfilter.bapf_ckbox label {
+		
+		display: block;
+		padding: $gm_offset-micro 0;
+		vertical-align: baseline;
+		
+		@include gm_hook-toggler-cont();
+		
+		&:before {
+			
+			@include gm_hook-toggler();
+			
+			top: calc( #{$gm_offset-micro} + 0.2em );
+		}
+	}
+	
+	.bapf_sfilter.bapf_ckbox li.checked label:before {
+		
+		@include gm_hook-toggler-active();
+		@include gm_hook-checkbox-active();
+	}
+	
+	
+	
+	.bapf_slidr_all {
+		
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: $gm_offset-small;
+		margin-left: -$gm_offset-small;
+	
+		
+		.bapf_from, .bapf_to {
+			
+			display: block;
+			width: calc( 50% - #{$gm_offset-small} );
+			margin-left: $gm_offset-small;
+			
+			position: relative;
+			z-index: 1;
+			
+			input {
+				
+				-webkit-appearance: none;
+				box-sizing: border-box;
+				margin: 0;
+				border-radius: 0;
+				font: inherit;
+				color: inherit;
+				
+				height: 34px;
+				width: 100%;
+				padding: 0 $gm_offset-mini;
+				border: $form-border-width solid $form-border;
+				background: $form-background;
+				color: $form-color;
+				-webkit-transition: all 0.2s linear;
+				-webkit-transition-property: border, background, color, box-shadow, padding;
+				transition: all 0.2s linear;
+				transition-property: border, background, color, box-shadow, padding;
+			
+				@include hook-form();
+			
+				font-size: $form-small-font-size;
+				border-radius: $form-small-radius;
+				box-shadow: none;
+			
+				&:focus {
+					border-color: $form-focus-border;
+					outline: 0;
+					background: $form-focus-background;
+					color: $form-focus-color;
+					@include hook-form-focus();
+				}
+				
+			}
+			
+			.bapf_taprice {
+				
+				display: block;
+				height: calc( 34px - #{$gm_form-border-width * 2} );
+				padding: 0 $gm_offset-mini;
+				
+				position: absolute;
+				top: $gm_form-border-width;
+				right: $gm_form-border-width;
+				z-index: 2;
+				
+				line-height: calc( 34px - #{$gm_form-border-width * 2} );
+				
+				background: white;
+				border-radius: 0 $form-small-radius $form-small-radius 0;
+			}
+		}
+		
+		
+		.bapf_slidr_main.ui-widget-content {
+			
+			width: calc( 100% - #{$gm_offset-small} );
+			height: 8px;
+			margin-left: $gm_offset-small;
+			
+			background: $gm_light-muted-color;
+			border-radius: 8px;
+			
+			.ui-slider-range { background: $gm_primary-color; }
+			
+			.ui-slider-handle {
+				
+				width: 20px;
+				height: 20px;
+				border: 2px solid white;
+				box-sizing: border-box;
+				
+				font-size: 20px;
+				
+				background: $gm_primary-color;
+			}
+		}
+		
+		
+	}
+	
+	
+	
+	.berocket_aapf_widget_selected_area {
+		
+		padding-bottom: $gm_offset-small;
+		
+		.bapf_sfa_taxonomy {
+			
+			margin-bottom: $gm_offset-small;
+			
+			> span {
+				
+				display: block;
+				margin-bottom: $gm_offset-micro;
+				
+				font-size: $gm_medium-font-size;
+				font-weight: $gm_bold-font-weight;
+			}
+			
+			> ul {
+				
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0;
+				margin: 0;
+				margin-left: -$gm_offset-micro;
+				margin-top: -$gm_offset-micro;
+				
+				> li {
+					
+					margin: 0 !important;
+					margin-left: $gm_offset-micro !important;;
+					margin-top: $gm_offset-micro !important;
+				}
+			}
+		}
+		
+		.braapf_unselect {
+			
+			display: block;
+			padding: $gm_offset-nano $gm_offset-mini;
+			
+			text-decoration: none;
+			color: $gm_dark-color;
+			
+			background: $gm_light-color;
+			border-radius: 999px;
+			
+			i {
+				font-size: 0.75em;
+				vertical-align: middle;
+				display: inline-block;
+				margin-top: -0.2em;
+				margin-right: 0.2em;
+			}
+			
+			&:hover, &:focus {
+				
+				background-color: $button-danger-background;
+				color: $button-danger-color;
+			}
+			
+			&:active {
+				
+				background-color: $button-danger-active-background;
+				color: $button-danger-active-color;
+			}
+		}
+		
+		.bapf_sfa_unall {
+			
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			
+			a {
+				
+				text-decoration: none;
+				
+				i {
+					font-size: 0.75em;
+					vertical-align: middle;
+					display: inline-block;
+					margin-top: -0.2em;
+					margin-right: 0.2em;
+				}
+				
+				&:hover, &:focus, &:active { color: $gm_danger-color; }
+			}
+		}
+	}
+	
+}
+
+// END Global
+
+
+
+// Filter widget with mobile collapse
+
+.product-filter-widget .berocket_single_filter_widget {
+	
+	@media ( min-width: 851px ) {
+		
+		.bapf_body { display: block !important; }
+	}
+	
+	@media ( max-width: 850px ) {
+		
+		.bapf_head > h3 {
+			
+			padding-right: calc( #{$gm_offset-mini * 3} + 1.2em );
+			cursor: pointer;
+			
+			&:after {
+				
+				content: $gm_fa-plus;
+				display: block;
+				width: 1.6em;
+				height: 1.6em;
+				
+				position: absolute;
+				top: calc( 50% - 0.8em );
+				right: $gm_offset-mini * 2;
+				
+				font-family: $gm_fa;
+				font-weight: $gm_fa-solid-style;
+				font-size: 0.75em;
+				line-height: 1.6em;
+				text-align: center;
+				color: $gm_dark-color;
+				
+				background: $gm_light-muted-color;
+				border-radius: 100%;
+				transition: $gm_transition-default;
+			} 
+			
+			&.active:after {
+				
+				color: white;
+				background-color: $gm_secondary-color;
+			}
+		}
+		
+		.bapf_body { display: none; }
+		
+	}
+	
+}
+
+// END Filter widget with mobile collapse
+
+
+
+// All filters collapse
+
+.product-filter-widget-mobile-collapse {
+	
+	@media ( min-width: 851px ) {
+		
+		&__header { display: none; }
+		&__content { display: block !important; }
+	}
+	
+	@media ( max-width: 850px ) {
+		
+		padding: $gm_offset-small $gm_offset-mini;
+		border: $gm_border-style;
+		border-radius: $gm_base-radius;
+		
+		&:not(:first-child) { margin-top: $gm_offset-small !important; }
+		
+		&__header {
+			
+			padding: $gm_offset-small #{$gm_offset-mini + $gm_offset-mini};
+			padding-right: calc( #{$gm_offset-mini * 3} + 1.2em );
+			margin: #{-$gm_offset-small} #{-$gm_offset-mini} !important;
+			position: relative;
+			cursor: pointer;
+			
+			&:after {
+				
+				content: $gm_fa-plus;
+				display: block;
+				width: 1.6em;
+				height: 1.6em;
+				
+				position: absolute;
+				top: calc( 50% - 0.8em );
+				right: $gm_offset-mini * 2;
+				
+				font-family: $gm_fa;
+				font-weight: $gm_fa-solid-style;
+				font-size: 0.75em;
+				line-height: 1.6em;
+				text-align: center;
+				color: $gm_dark-color;
+				
+				background: $gm_light-muted-color;
+				border-radius: 100%;
+				transition: $gm_transition-default;
+			}
+			
+			&.active:after {
+				
+				color: white;
+				background-color: $gm_secondary-color;
+			}
+		}
+		
+		&__content { display: none; }
+	}
+}
+
+// END All filters collapse
+
+
+
+// Loader
+
+.bapf_lcontainer .bapf_loader .bapf_lfirst,
+.bapf_lcontainer .bapf_loader .bapf_lsecond { background: $gm_secondary-color; }
+
+// END Loader
+

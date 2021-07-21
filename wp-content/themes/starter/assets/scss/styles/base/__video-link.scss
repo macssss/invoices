@@ -1,0 +1,45 @@
+
+.gm_video-link > .uk-overlay {
+	
+	position: relative;
+	z-index: 1;
+	
+	a{ display: block; }
+	
+	a:before {
+		content: $gm_fa-play;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		display: block;
+		background: $gm_primary-color;
+		border-radius: 100%;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 24px;
+		text-align: center;
+		color: white;
+		
+		position: absolute;
+		top: calc(50% - 35px);
+		left: calc(50% - 35px);
+		transition: $gm_transition-default;
+	}
+	
+	a:hover:before { background: $gm_primary-muted-color; }
+}
+
+.gm_video-link--size-small > .uk-overlay a:before {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	top: calc(50% - 25px);
+	left: calc(50% - 25px);
+}
+
+
+.gm_video-link--pos-top-left > .uk-overlay a:before { top: $gm_offset-small; left: $gm_offset-small; right: auto; bottom: auto; }
+.gm_video-link--pos-top-right > .uk-overlay a:before { top: $gm_offset-small; left: auto; right: $gm_offset-small; bottom: auto; }
+.gm_video-link--pos-bottom-left > .uk-overlay a:before { top: auto; left: $gm_offset-small; right: auto; bottom: $gm_offset-small; }
+.gm_video-link--pos-bottom-right > .uk-overlay a:before { top: auto; left: auto; right: $gm_offset-small; bottom: $gm_offset-small; }

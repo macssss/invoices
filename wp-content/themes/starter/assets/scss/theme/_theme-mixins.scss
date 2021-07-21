@@ -1,0 +1,362 @@
+// Core
+
+
+
+/// Base
+
+@mixin hook-base-link() { transition: $gm_transition-default; }
+
+/// END Base
+
+
+
+// Alert
+
+@mixin hook-alert() { border-radius: $gm_base-radius; text-align: center; }
+
+// END Alert
+
+
+
+// Button
+
+@mixin hook-button() { 
+	
+	font-family: $button-font-family;
+	font-weight: $button-font-weight;
+	max-width: 100%;
+	border-radius: $button-radius;
+	border: $button-border-width solid $button-border-color;
+	transition: $gm_transition-default;
+	text-transform: $button-text-transform;
+	box-shadow: $button-shadow;
+}
+
+@mixin hook-button-hover() { 
+	
+	border-color: $button-hover-border-color;
+	box-shadow: $button-hover-shadow;
+}
+
+@mixin hook-button-active() { 
+	
+	border-color: $button-active-border-color;
+	box-shadow: $button-active-shadow;
+}
+
+
+
+@mixin hook-button-primary() {
+	
+	border-color: $button-primary-border-color;
+	box-shadow: $button-primary-shadow;
+}
+
+@mixin hook-button-primary-hover() {
+	
+	border-color: $button-primary-hover-border-color;
+	box-shadow: $button-primary-hover-shadow;
+}
+
+@mixin hook-button-primary-active() { 
+	
+	border-color: $button-primary-active-border-color;
+	box-shadow: $button-primary-active-shadow;
+}
+
+
+
+@mixin hook-button-success() {
+	
+	border-color: $button-success-border-color;
+	box-shadow: $button-success-shadow;
+}
+
+@mixin hook-button-success-hover() {
+	
+	border-color: $button-success-hover-border-color;
+	box-shadow: $button-success-hover-shadow;
+}
+
+@mixin hook-button-success-active() {
+	
+	border-color: $button-success-active-border-color;
+	box-shadow: $button-success-active-shadow;
+}
+
+
+
+@mixin hook-button-danger() {
+	
+	border-color: $button-danger-border-color;
+	box-shadow: $button-danger-shadow;
+}
+
+@mixin hook-button-danger-hover() {
+	
+	border-color: $button-danger-hover-border-color;
+	box-shadow: $button-danger-hover-shadow;
+}
+
+@mixin hook-button-danger-active() {
+	
+	border-color: $button-danger-active-border-color;
+	box-shadow: $button-danger-active-shadow;
+}
+
+
+@mixin hook-button-disable() {
+	
+	opacity: 0.5;
+}
+
+
+
+@mixin hook-button-link() {
+	
+	min-height: 0 !important;
+	line-height: $gm_base-line-height !important;
+	padding: 0 !important;
+	background: none !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border: none !important;
+	
+	&:after {
+		
+		content: $gm_fa-angle-right;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: $gm_offset-micro;
+	}
+}
+
+
+
+@mixin hook-contrast-button() {
+	
+	border-color: $contrast-button-border-color;
+	box-shadow: $contrast-button-shadow;
+}
+
+@mixin hook-contrast-button-hover() {
+	
+	border-color: $contrast-button-hover-border-color;
+	box-shadow: $contrast-button-hover-shadow;
+}
+
+@mixin hook-contrast-button-active() {
+	
+	border-color: $contrast-button-active-border-color;
+	box-shadow: $contrast-button-active-shadow;
+}
+
+
+
+@mixin hook-contrast-button-primary() {
+	
+	border-color: $contrast-button-primary-border-color;
+	box-shadow: $contrast-button-primary-shadow;
+}
+
+@mixin hook-contrast-button-primary-hover() {
+	
+	border-color: $contrast-button-primary-hover-border-color;
+	box-shadow: $contrast-button-primary-hover-shadow;
+}
+
+@mixin hook-contrast-button-primary-active() {
+	
+	border-color: $contrast-button-primary-active-border-color;
+	box-shadow: $contrast-button-primary-active-shadow;
+}
+
+// END Button
+
+
+
+// Comment
+
+@mixin hook-comment-avatar() { border-radius: $gm_base-radius; }
+
+// END Comment
+
+
+
+// Dropdown
+
+@mixin hook-dropdown() { 
+	
+	border-radius: $dropdown-radius;
+	border: $gm_border-style;
+}
+
+@mixin hook-dropdown-navbar() { 
+		
+	margin-top: -$gm_offset-mini;
+	margin-left: $gm_offset-mini;
+	border: none;
+	border-radius: $dropdown-navbar-radius;
+	
+	@if ( $gm_navbar-contrast == true ) {
+		
+		box-shadow: $contrast-dropdown-navbar-shadow;
+	}
+}
+
+// END Dropdown
+
+
+
+// Form
+
+@mixin hook-form() { 
+	
+	font-family: $form-font-family;
+	font-size: $form-font-size;
+	line-height: $gm_base-line-height;
+	font-weight: $form-font-weight;
+	text-transform: $form-text-transform;
+	border-radius: $form-radius;
+	box-shadow: $form-shadow;
+	transition: $gm_transition-default !important;
+}
+
+@mixin hook-form-focus() { box-shadow: $form-focus-shadow; }
+
+@mixin hook-contrast-form() { box-shadow: $contrast-form-shadow; }
+@mixin hook-contrast-form-focus() { box-shadow: $contrast-form-focus-shadow; }
+
+
+@mixin hook-form-danger() { box-shadow: $form-danger-shadow; }
+@mixin hook-form-success() { box-shadow: $form-success-shadow; }
+
+
+
+@mixin gm_hook-toggler-cont() {
+	
+	padding-left: $gm_form-toggler-size + $gm_offset-mini;
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+
+@mixin gm_hook-toggler() {
+	
+	content: "";
+	display: inline-block;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0.1em;
+	left: 0;
+	
+	width: $form-toggler-size;
+	height: $form-toggler-size;
+	
+	border-radius: $form-toggler-radius;
+	border: $form-border-width solid $form-border;
+	background: $form-background;
+	box-shadow: $form-toggler-shadow;
+	
+	font-family: $gm_fa;
+	font-weight: $gm_fa-solid-style;
+	font-size: $form-toggler-font-size;
+	line-height: $form-toggler-size - $form-border-width * 2;
+	text-align: center;
+	color: $form-color;
+	
+	transition: $gm_transition-default;
+	cursor: pointer;
+}
+
+@mixin gm_hook-toggler-active() {
+	
+	border-color: $form-focus-border;
+	box-shadow: $form-toggler-active-shadow;
+}
+
+@mixin gm_hook-checkbox-active() { content: $gm_fa-check; }
+
+@mixin gm_hook-radio() { border-radius: 100%; }
+@mixin gm_hook-radio-active() { content: $gm_fa-circle; }
+
+
+@mixin gm_hook-toggler-default() {
+	
+	border-color: $form-border;
+	background-color: $form-background;
+	color: $form-color;
+	box-shadow: $form-toggler-shadow;
+}
+
+@mixin gm_hook-toggler-default-active() {
+	
+	border-color: $form-focus-border;
+	box-shadow: $form-toggler-active-shadow;
+}
+
+@mixin gm_hook-toggler-contrast() {
+	
+	border-color: $contrast-form-border;
+	background-color: $contrast-form-background;
+	color: $gm_contrast-muted-color;
+	box-shadow: $contrast-toggler-shadow;
+}
+
+@mixin gm_hook-toggler-contrast-active() {
+	
+	border-color: $contrast-form-focus-border;
+	box-shadow: $contrast-toggler-active-shadow;
+}
+
+// END Form
+
+
+
+// END Core
+
+
+
+
+
+
+// Components
+
+
+
+// Accordion
+
+@mixin hook-accordion-title() { border-radius: $gm_base-radius; }
+
+// END Accordion
+
+
+
+// Notify
+
+@mixin hook-notify() { border-radius: $gm_base-radius; }
+
+// END Notify
+
+
+
+// Progress
+
+@mixin hook-progress() { border-radius: $gm_base-radius; }
+
+// END Progress
+
+
+
+// Tooltip
+
+@mixin hook-tooltip() { border-radius: $gm_base-radius; }
+
+// END Tooltip
+
+
+
+// END Components

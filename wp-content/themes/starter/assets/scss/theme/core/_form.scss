@@ -1,0 +1,271 @@
+
+.uk-form { 
+	
+	.uk-form-label[for] { cursor: pointer; }
+	
+	.uk-form-required { color: $gm_danger-color; }
+	
+	.uk-form-help-block { font-size: $gm_small-font-size; }
+	
+	select:not(.gm_no-niceselect) {
+		
+		display: block !important;
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+
+	textarea { 
+		padding-top: $gm_offset-medium / 2;
+		padding-bottom: $gm_offset-medium / 2;
+		resize: none;
+		
+		&.uk-form-small { 
+			padding-top: $gm_offset-small / 2;
+			padding-bottom: $gm_offset-small / 2;
+		}
+		
+		&.uk-form-large { 
+			padding-top: $gm_offset-default / 2;
+			padding-bottom: $gm_offset-default / 2;
+		}
+	}
+	
+	
+	
+	.uk-form-date {
+		
+		position: relative;
+		
+		.uk-form-field { padding-right: $form-height; }
+		
+		.uk-form-date-icon {
+			
+			display: block;
+			height: $form-height;
+			width: $form-height;
+			
+			position: absolute;
+			top: 0;
+			right: 0;
+			
+			font-family: $gm_fa;
+			font-weight: $gm_fa-solid-style;
+			font-size: $form-font-size * 1.2;
+			line-height: $form-height;
+			text-align: center;
+			color: $form-color;
+			cursor: pointer;
+			
+			&:before { content: $gm_fa-calendar; }
+		}
+		
+		
+		.uk-form-field.uk-form-small { padding-right: $form-small-height; }
+		
+		.uk-form-field.uk-form-small + .uk-form-date-icon {
+			
+			height: $form-small-height;
+			width: $form-small-height;	
+			font-size: $form-small-font-size * 1.2;
+			line-height: $form-small-height;
+		}
+		
+		
+		.uk-form-field.uk-form-large { padding-right: $form-large-height; }
+		
+		.uk-form-field.uk-form-large + .uk-form-date-icon {
+			
+			height: $form-large-height;
+			width: $form-large-height;	
+			font-size: $form-large-font-size * 1.2;
+			line-height: $form-large-height;
+		}
+	}
+	
+	
+	
+	.uk-form-toggler {
+		
+		box-shadow: none !important;
+		
+		label {
+			
+			position: relative;
+		
+			input {
+				
+				opacity: 0;
+				width: 0;
+				height: 0;
+				visibility: hidden;
+				
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			> span { @include gm_hook-toggler-cont(); }
+			> span:before { @include gm_hook-toggler(); }
+			
+			input[type="radio"] + span:before { @include gm_hook-radio(); }
+			
+			input:checked + span:before { @include gm_hook-toggler-active(); }
+			
+			input[type="checkbox"]:checked + span:before { @include gm_hook-checkbox-active(); }
+			input[type="radio"]:checked + span:before { @include gm_hook-radio-active(); }
+			
+		}
+		
+		&.uk-form-toggler-clear label {
+			
+			display: block;
+			width: $form-toggler-size;
+			height: $form-toggler-size;
+			
+			> span { padding: 0; }
+			> span:before { position: static; display: block; }
+		}
+		
+		&.uk-form-danger label > span:before {
+			
+			border-color: $form-danger-border !important;
+		    color: $form-danger-color !important;
+		    
+		    @include hook-form-danger();
+		}
+	}
+	
+	.uk-form-togglers {
+		
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -$gm_offset-small;
+		
+		.uk-form-toggler {
+			display: block;
+			margin-left: $gm_offset-small;
+			margin-bottom: $gm_offset-mini;
+		}
+		
+		&.uk-form-togglers-column { 
+			flex-direction: column;
+			margin: 0;
+			
+			.uk-form-toggler { margin: 0; }
+			.uk-form-toggler + .uk-form-toggler { margin-top: $gm_offset-mini; }
+		}
+	}
+	
+	.uk-form-range {
+		
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: $gm_border-width;
+		position: relative;
+		z-index: 1;
+		
+		> div {
+			width: 50%;
+			margin-left: -$gm_border-width;
+			position: relative;
+			box-sizing: border-box;
+		}
+		
+		input {
+			position: relative;
+			z-index: 1;
+			
+			&:focus { z-index: 2; }
+		}
+		
+		&.uk-form-range-offset {
+			padding-left: 0;
+			margin-left: -$gm_offset-mini;
+			
+			> div { margin-left: 0; padding-left: $gm_offset-mini; }
+		}
+	}
+}
+
+.uk-form-row-medium .uk-form-row + .uk-form-row { margin-top: $gm_offset-medium; }
+.uk-form-row-default .uk-form-row + .uk-form-row { margin-top: $gm_offset-default; }
+.uk-form-row-large .uk-form-row + .uk-form-row { margin-top: $gm_offset-large; }
+
+select.uk-form-small,
+textarea.uk-form-small,
+input[type].uk-form-small,
+input:not([type]).uk-form-small {
+    border-radius: $form-small-radius;
+}
+
+select.uk-form-large,
+textarea.uk-form-large,
+input[type].uk-form-large,
+input:not([type]).uk-form-large {
+    border-radius: $form-large-radius;
+}
+
+
+.uk-contrast .uk-form { 
+	
+	.uk-form-date .uk-form-date-icon { color: $contrast-form-color; }
+	
+	.uk-form-toggler label {
+		
+		> span:before { @include gm_hook-toggler-contrast(); }
+		
+		input:checked + span:before { @include gm_hook-toggler-contrast-active(); }
+	}
+	
+}
+
+.uk-contrast-reset .uk-form {
+	
+	select,
+    textarea,
+    input:not([type]),
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+        border-color: $form-border;
+        background: $form-background;
+        color: $form-color;
+        background-clip: padding-box;
+        @include hook-form();
+
+        &:focus {
+            border-color: $form-focus-border;
+            background: $form-focus-background;
+            color: $form-focus-color;
+            
+            @include hook-form-focus();
+        }
+    }
+
+
+    :-ms-input-placeholder { color: $form-placeholder-color !important; }
+    ::-moz-placeholder { color: $form-placeholder-color; }
+    ::-webkit-input-placeholder { color: $form-placeholder-color; }
+	
+	.uk-form-date .uk-form-date-icon { color: $form-color; }
+	
+	.uk-form-toggler label {
+		
+		> span:before { @include gm_hook-toggler-default(); }
+		
+		input:checked + span:before { @include gm_hook-toggler-default-active(); }
+	}
+}

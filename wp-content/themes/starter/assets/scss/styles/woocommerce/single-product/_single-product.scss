@@ -1,0 +1,65 @@
+
+@import "_add-to-cart";
+@import "_ask-us";
+@import "_attributes";
+@import "_brand";
+@import "_gallery";
+@import "_price";
+@import "_tabs";
+
+
+.gm_woo-single-product {
+	
+	&__short-description { margin-top: $gm_offset-default; }
+	
+	&__stock { margin-top: $gm_offset-default; }
+	
+	&__add-to-cart { margin-top: $gm_offset-default; }
+	
+	&__stock + &__add-to-cart { margin-top: $gm_offset-small; }
+	
+	&__meta {
+		
+		margin-top: $gm_offset-default;
+		padding-top: $gm_offset-medium;
+		border-top: $gm_border-style;
+	}
+	
+	&__brand + &__attributes { margin-top: $gm_offset-medium; }
+	
+	&__tabs { margin-top: $gm_offset-default; }
+	
+	&__description ul { list-style: disc; }
+	
+	
+	@media ( min-width: 800px ) {
+		
+		&__media { width: 50%; }
+		
+		&__details { width: 50%; }
+	}
+	
+	
+	@media ( min-width: $gm_media-large ) {
+		
+		&__media { width: 500px + $gm_offset-default; }
+		
+		&__details { width: calc(100% - 500px - #{$gm_offset-default}); }
+	}
+	
+	
+	@media ( max-width: $gm_media-mini-max ) {
+		
+		&__title { text-align: center; }
+		
+		&__brand { margin-left: auto; margin-right: auto; }
+		
+		&__short-description { text-align: center; }
+	}
+	
+	
+	@media ( max-width: 370px ) {
+		
+		&__stock { text-align: center; }
+	}
+}

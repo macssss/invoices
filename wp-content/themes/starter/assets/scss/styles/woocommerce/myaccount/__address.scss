@@ -1,0 +1,31 @@
+
+.gm_woo-myaccount-address__columns > * {
+	
+	@media ( max-width: 1100px ) and ( min-width: 851px ) {
+		
+		width: 100%;
+	}
+	
+}
+
+.gm_woo-myaccount-address-item {
+	
+	&__heading-block {
+		
+		position: relative;
+		padding-right: $gm_button-mini-height + $gm_offset-mini;
+		margin-bottom: $gm_offset-small;
+	}
+	
+	&__link {
+		
+		position: absolute;
+		right: 0;
+		top: calc(#{$gm_h3-font-size * $gm_h3-line-height / 2} - #{$gm_button-mini-height / 2});
+		
+		@media ( max-width: $gm_media-small-max ) {
+			
+			top: calc(#{$gm_h3-font-size-small * $gm_h3-line-height / 2} - #{$gm_button-mini-height / 2});
+		}
+	}
+}

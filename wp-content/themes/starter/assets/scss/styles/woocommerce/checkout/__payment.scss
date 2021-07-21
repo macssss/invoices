@@ -1,0 +1,24 @@
+
+.gm_woo-checkout-payment {
+	
+	&__method-box {
+		
+		padding-top: $gm_offset-mini;
+		padding-left: $gm_form-toggler-size + $gm_offset-mini;
+		
+		font-size: $gm_small-font-size;
+	}
+	
+	&__place-order { margin-top: $gm_offset-medium; text-align: center; }
+	
+	&__pay-button-cont { margin-top: $gm_offset-small; }
+	&__pay-button:before {
+		
+		content: $gm_fa-check;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		line-height: 1;
+		
+		margin-right: $gm_offset-mini;
+	}
+}

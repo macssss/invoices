@@ -1,0 +1,49 @@
+
+.widget_polylang ul {
+	
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	
+	li + li { margin-left: $gm_offset-mini; }
+	
+	a {
+		
+		color: inherit;
+		text-decoration: none;
+		
+		&:hover, &:focus { color: $gm_primary-color; } 
+	}
+}
+
+
+.widget_polylang.flags ul {
+	
+	a {
+		
+		display: block;
+		width: 30px;
+		height: 20px;
+		background: no-repeat center center / cover;
+		
+		img, span { display: none; }
+		
+		&[lang="de-DE"] { background-image: url(../images/flags/de.jpg); }
+		&[lang="en-US"] { background-image: url(../images/flags/en.jpg); }
+		&[lang="es-ES"] { background-image: url(../images/flags/es.jpg); }
+		&[lang="fr-FR"] { background-image: url(../images/flags/fr.jpg); }
+		&[lang="it-IT"] { background-image: url(../images/flags/it.jpg); }
+		&[lang="nb-NO"] { background-image: url(../images/flags/nb.jpg); }
+		&[lang="pl-PL"] { background-image: url(../images/flags/pl.jpg); }
+		&[lang="ru-RU"] { background-image: url(../images/flags/ru.jpg); }
+		&[lang="sv-SE"] { background-image: url(../images/flags/sv.jpg); }
+	}
+}
+
+.uk-offcanvas .widget_polylang ul {
+	
+	font-size: $gm_base-font-size + 2 * $px;
+	
+	a:hover, a:focus { color: white; }
+}

@@ -1,0 +1,99 @@
+
+.gm_woo-product-item {
+		
+	min-height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	padding: $gm_offset-mini;
+	box-sizing: border-box;
+	
+	text-align: center;
+	
+	&:before, &:after { content: none; }
+	
+	&__top { position: relative; z-index: 1; }
+	
+	&__badges {
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	
+	&__add-to-wishlist {
+		
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
+	
+	&__media {
+		
+		max-width: none;
+		margin-top: -$gm_offset-mini + $gm_offset-micro;
+		margin-left: -$gm_offset-mini + $gm_offset-micro;
+		margin-right: -$gm_offset-mini + $gm_offset-micro;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		border-radius: $panel-box-radius - $gm_offset-micro $panel-box-radius - $gm_offset-micro 0 0;
+		
+		padding-top: 90%;
+		
+		img {
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__bottom { margin-top: $gm_offset-small; }
+	
+	&__title { margin-top: $gm_offset-small; margin-bottom: 0; }
+	&__title a { display: block; }
+	
+	&__price {
+		
+		del { color: $gm_danger-color; }
+		ins { background: none; color: inherit; }
+		
+		.woocommerce-Price-amount {
+			
+			font-size: 22 * $px;
+			font-weight: $gm_bold-font-weight;
+		}
+		
+		
+		del {
+			.woocommerce-Price-amount {
+				
+				font-size: 16 * $px;
+				font-weight: inherit;
+				color: $gm_danger-color !important;
+			}
+			
+			.woocommerce-Price-currencySymbol { font-size: inherit; }
+		}
+		
+		.woocommerce-Price-currencySymbol {
+			
+			margin-left: 0.3em;
+			font-size: $gm_base-font-size;
+			font-weight: $gm_base-font-weight;
+		}
+	}
+	
+}

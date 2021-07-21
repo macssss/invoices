@@ -1,0 +1,35 @@
+
+.gm_price {
+	
+	font-size: $gm_base-font-size;
+	font-weight: $gm_bold-font-weight;
+	color: $gm_dark-color;
+}
+
+
+
+.gm_price-block {
+
+	font-size: $gm_base-font-size;
+	
+	.gm_price { font-size: inherit; }
+	
+	del { color: $gm_muted-color; }
+	del .gm_price {
+		
+		font-size: 0.9em;
+		font-weight: $gm_base-font-weight;
+		color: inherit;
+	}
+	
+	
+	
+	ins { background: none; color: inherit; }
+	
+	ins .gm_price {
+		
+		font-size: 1.6em;
+		line-height: 1;
+		color: $gm_success-color;
+	}
+}

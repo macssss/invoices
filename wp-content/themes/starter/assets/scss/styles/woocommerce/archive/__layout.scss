@@ -1,0 +1,27 @@
+
+body.wp-product-archive {
+	
+	.gm_sidebar-a {
+		
+		width: 350px;
+		
+		-ms-flex-order: -1;
+		-webkit-order: -1;
+		order: -1;
+	}
+	
+	.gm_main { width: calc( 100% - 350px ); }
+	
+	@media ( max-width: 1000px ) {
+		
+		.gm_sidebar-a { width: 300px; }
+		.gm_main { width: calc( 100% - 300px ); }	
+	}
+	
+	@media ( max-width: 850px ) {
+		
+		.gm_sidebar-a { width: 100%; }
+		.gm_main { width: 100%; }	
+	}
+
+}

@@ -1,0 +1,28 @@
+
+.uk-offcanvas { 
+	
+	.networks-block{
+		
+		li + li { margin-left: $gm_offset-mini; }
+		
+		a { padding: 0; }
+		
+		i { 
+			@extend .uk-icon-button;
+			@extend .uk-icon-button-small;
+		}
+	}
+}
+
+
+.uk-offcanvas-bar { overflow: visible; }
+
+.uk-offcanvas-bar-inner {
+	
+	max-height: 120%;
+	padding: $gm_offset-small 0;
+	overflow-y: auto;
+	box-sizing: border-box;
+	
+	.simplebar-track.simplebar-horizontal { display: none; }
+}

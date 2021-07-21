@@ -1,0 +1,8 @@
+// Fixed Width Icons
+// -------------------------
+.#{$fa-css-prefix}-fw {
+  text-align: center;
+  width: $fa-fw-width;
+}
+
+@mixin fa-fw { display: inline-block; text-align: center; width: $fa-fw-width; }

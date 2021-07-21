@@ -1,0 +1,331 @@
+
+body.login-action-login #loginform,
+body.login-action-lostpassword #lostpasswordform,
+body.login-action-register #registerform { 
+	width: 100% !important;
+}
+
+body.login { 
+	font-family: $base-body-font-family;
+	font-size: $base-body-font-size;
+	line-height: $base-body-line-height;
+	font-weight: $base-body-font-weight;
+	color: $base-body-color;
+	background: white;
+	
+	* { box-sizing: border-box !important; }
+	*:focus { box-shadow: none !important; }
+	
+	
+	h1.admin-email__heading {
+		@extend .uk-h4;
+		padding: 0;
+		border: none;
+		margin-bottom: $gm_offset-small;
+	}
+	
+	
+	#login { 
+		width: 352px;
+		padding: 0;
+		padding-top: $gm_offset-medium;
+		
+		> h1 a { 
+			background: $gm_login-logo-background;
+			height: $gm_login-logo-height;
+			width: 100%;
+			background-position: center center;
+			
+			margin: 0;
+		}
+		
+		@media ( max-width: 400px ) { 
+			width: 290px;
+		}
+	}
+	
+	
+	form {
+		
+		display: block;
+		position: relative;
+		
+	    background: $panel-box-white-background;
+	    color: $panel-box-white-color;
+		box-shadow: $panel-box-white-shadow;
+		border-radius: $panel-box-white-radius;
+		
+		@include hook-panel-box();
+		
+		padding: $gm_offset-medium;
+		margin-top: $gm_offset-medium;
+		border: none;
+		
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
+
+		
+		.forgetmenot { margin-top: $gm_offset-mini; }
+		
+		
+		.forgetmenot, .pw-weak {
+			
+			margin-top: $gm_offset-mini;
+			
+			input { display: none; }
+			
+			label {
+				line-height: $form-toggler-size !important;
+				padding-left: $form-toggler-size + $gm_offset-mini;
+				position: relative;
+				font-size: $gm_base-font-size;
+				
+				&:before { @include gm_hook-toggler(); }
+			}
+			
+			input:checked + label:before { 
+				@include gm_hook-toggler-active();
+				@include gm_hook-checkbox-active();
+			}
+		}
+		
+		
+		@media ( max-width: 400px ) { 
+			padding: 0;
+			background: none;
+			border: none;
+			box-shadow: none;
+		}
+		
+		
+		.gglcptch { margin-bottom: 0 !important; }
+	}
+	
+	
+	label { 
+		display: block;
+		font-size: $gm_base-font-size;
+		color: $gm_base-color;
+		font-weight: $gm_base-font-weight;
+	}
+	
+	
+	select,
+	textarea,
+	input:not([type]),
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] { 
+		
+		-webkit-appearance: none;
+	    box-sizing: border-box;
+	    margin: 0;
+	    border-radius: 0;
+	    font: inherit;
+	    color: inherit;
+		
+	    height: $form-height;
+	    max-width: 100%;
+	    padding: $form-padding;
+	    margin-bottom: $gm_offset-small;
+	    border: $form-border-width solid $form-border;
+	    background: $form-background;
+	    color: $form-color;
+	
+	    @include hook-form();
+	
+		height: $form-small-height;
+	    padding: $form-small-padding;
+	    font-size: $form-small-font-size;
+	    border-radius: $form-small-radius;
+	    box-shadow: none;
+	
+	    &:focus {
+			
+	        border-color: $form-focus-border;
+	        outline: 0;
+	        background: $form-focus-background;
+	        color: $form-focus-color;
+			
+	        @include hook-form-focus();
+	    }
+	
+	    &:disabled {
+			
+	        border-color: $form-disabled-border;
+	        background-color: $form-disabled-background;
+	        color: $form-disabled-color;
+			
+	        @include hook-form-disabled();
+	    }
+		
+		
+	}
+	
+	input::-moz-focus-inner { border: 0; padding: 0; }
+	::-moz-placeholder { opacity: 1; }
+	:invalid { box-shadow: none; }
+	
+	:-ms-input-placeholder { color: $form-placeholder-color !important; }
+	::-moz-placeholder { color: $form-placeholder-color; }
+	::-webkit-input-placeholder { color: $form-placeholder-color; }
+	
+	:disabled:-ms-input-placeholder { color: $form-disabled-color !important; }
+	:disabled::-moz-placeholder { color: $form-disabled-color; }
+	:disabled::-webkit-input-placeholder { color: $form-disabled-color; }
+	
+	
+	.message, .success, #login_error { 
+		
+		@extend .uk-alert;
+		
+		width: 100% !important;
+		margin-top: $gm_offset-medium;
+		margin-bottom: $gm_offset-medium;
+		border: none !important;
+		box-shadow: none !important;
+	}
+	
+	.success { @extend .uk-alert-success; }
+	#login_error { @extend .uk-alert-danger; }
+	
+	
+	#backtoblog, #nav, #reg_passmail { 
+		text-align: center;
+		font-size: $gm_base-font-size;
+		
+		a { 
+			color: $gm_base-color;
+			
+			&:hover, &:focus { color: $gm_secondary-color; }
+		}
+	}
+	
+	
+	.privacy-policy-page-link { margin: $gm_offset-medium 0; }
+	.privacy-policy-page-link a { text-decoration: none; }
+	
+	.wp-pwd { margin-bottom: $gm_offset-mini; }
+	
+	
+	.password-input-wrapper { 
+		display: flex;
+		flex-wrap: wrap;
+		
+		.password-input { 
+			width: calc( 100% - #{$form-small-height} - #{$gm_offset-mini} );
+			margin-right: $gm_offset-mini;
+			
+			&#pass1-text.strong, &#pass2-text.strong { border-color: $gm_success-color; }
+			&#pass1-text.good, &#pass2-text.good { border-color: $gm_warning-color; }
+			&#pass1-text.bad, &#pass2-text.bad { border-color: lighten($gm_danger-color, 15%); }
+			&#pass1-text.short, &#pass2-text.short { border-color: $gm_danger-color; }
+		}
+	}
+	
+	
+	.button.button-secondary.wp-hide-pw { 
+		min-height: $form-small-line-height;
+		border: none;
+		color: $gm_primary-color;
+		
+		&:hover, &:focus { color: $gm_primary-muted-color; }
+	}
+	
+	
+	#pass-strength-result { 
+		margin: 0;
+		margin-top: $gm_offset-mini;
+		padding: 0 $gm_offset-small;
+		
+		font-size: $form-small-font-size;
+		min-height: $form-small-height;
+		line-height: $form-line-height;
+		padding: $form-small-padding;
+		border-radius: $gm_base-radius;
+		
+		color: white;
+		
+		&.strong { border-color: $gm_success-color; background-color: $gm_success-color; }
+		&.good { border-color: $gm_warning-color; background-color: $gm_warning-color; }
+		&.bad { border-color: lighten($gm_danger-color, 15%); background-color: lighten($gm_danger-color, 15%); }
+		&.short { border-color: $gm_danger-color; background-color: $gm_danger-color; }
+	}
+	
+	
+	.indicator-hint { margin-top: $gm_offset-small; }
+}
+
+
+.wp-core-ui{
+	
+	.button{
+		
+	    -webkit-appearance: none;
+	    margin: 0;
+	    border: none;
+	    overflow: visible;
+	    font: inherit;
+	    color: $button-color;
+	    text-transform: none;
+	    display: inline-block;
+	    box-sizing: border-box;
+	    background: $button-background;
+	    vertical-align: middle;
+	    min-height: $button-small-height;
+	    padding: 0 $button-small-padding-horizontal;
+	    line-height: $button-small-line-height;
+	    font-size: $button-small-font-size;
+	    text-decoration: none;
+	    text-align: center;
+	    
+	    @include hook-button();
+		
+		border-radius: $button-small-radius;
+		text-shadow: none;
+		transform: none !important;
+		
+		&:not(:disabled) { cursor: pointer; }
+		&::-moz-focus-inner { border: 0; padding: 0; }
+		
+		&:hover, &:focus {
+		    background-color: $button-hover-background;
+		    color: $button-hover-color;
+		    outline: none;
+		    text-decoration: none;
+		    @include hook-button-hover();
+		}
+		
+		&:active, &.uk-active {
+		    background-color: $button-active-background;
+		    color: $button-active-color;
+		    @include hook-button-active();
+		}
+	}
+	
+	.button.button-large {
+		min-height: $button-small-height;
+	    padding: 0 $button-small-padding-horizontal;
+	    line-height: $button-small-line-height;
+	    font-size: $button-small-font-size;
+	}
+	
+	.button-primary {
+
+	    background-color: $button-primary-background;
+	    color: $button-primary-color;
+	    @include hook-button-primary();
+		
+		&:hover, &:focus {
+		    background-color: $button-primary-hover-background;
+		    color: $button-primary-hover-color;
+		    @include hook-button-primary-hover();
+		}
+		
+		&:active, &.uk-active {
+		    background-color: $button-primary-active-background;
+		    color: $button-primary-active-color;
+		    @include hook-button-primary-active();
+		}
+	}
+}

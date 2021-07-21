@@ -1,0 +1,56 @@
+
+.gm_woo-cart-totals {
+	
+	position: relative;
+	z-index: 1;
+	
+	@media ( min-width: $gm_media-large ), ( max-width: 650px ) {
+		
+		&__title { text-align: center; }
+	}
+	
+	.gm_table-list {
+		
+		&__cell { width: 50%; }
+		
+		&__cell--label { text-align: right; }
+		
+		
+		@media ( max-width: $gm_media-medium-max ) {
+			
+			&__cell { width: 66.666%; }
+			&__cell--label { width: 33.333%; text-align: inherit; }
+		}
+		
+		
+		@media ( max-width: $gm_media-small-max ) {
+			
+			&__cell { width: calc( 100% - 100px ); }
+			&__cell--label { width: 100px; }
+		}
+		
+		@media ( max-width: 650px ) {
+			
+			text-align: center;
+			
+			@include gm_table-list-collapse();
+			
+			.gm_woo-cart-shipping__methods {
+				
+				display: table !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				margin-top: $gm_offset-mini !important;
+				text-align: left;
+			}
+		}
+	}
+	
+	.gm_woo-remove-coupon {
+		
+		margin-top: -0.3em;
+		margin-left: 0.3em;
+	}
+	
+	&__proceed-to-checkout { margin-top: $gm_offset-default; text-align: center; }
+}

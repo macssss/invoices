@@ -1,0 +1,27 @@
+
+.uk-pagination-cont {
+	 
+	margin-top: $gm_offset-default - $gm_offset-mini;
+	margin-left: -$gm_offset-mini;
+}
+
+
+.uk-pagination { 
+	
+	> li {
+		
+		margin-left: $gm_offset-mini !important;
+		margin-top: $gm_offset-mini !important;
+		
+		> a { transition: $gm_transition-default; }
+		
+		> a, > span {
+			
+			min-width: $pagination-line-height;
+			height: $pagination-line-height;
+			box-sizing: border-box;
+			
+			border-radius: $gm_base-radius;
+		} 
+	}
+}

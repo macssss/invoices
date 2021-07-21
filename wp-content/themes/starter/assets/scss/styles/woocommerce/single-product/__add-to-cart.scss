@@ -1,0 +1,20 @@
+
+.gm_woo-single-product-add-to-cart {
+		
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	
+	@media ( min-width: 371px ) {
+		
+		> * + * { margin-left: $gm_offset-small; }
+	}
+	
+	@media ( max-width: 370px ) {
+		
+		flex-direction: column;
+		
+		> * + * { margin-top: $gm_offset-small; }
+	}
+}

@@ -1,0 +1,18 @@
+
+.networks-block {
+	
+	display: flex;
+	list-style: none;
+	padding: 0;
+	
+	&:not(.showed) { opacity: 0;  }
+	
+	a {
+		
+		text-decoration: none;
+		display: block;
+		width: 1.25em;
+		padding: $gm_offset-micro $gm_offset-mini;
+		overflow: hidden;
+	} 
+}
