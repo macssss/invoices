@@ -240,8 +240,8 @@ $button-small-line-height:                       $button-small-height - $button-
 $button-large-line-height:                       $button-large-height - $button-border-width * 2;
 
 $button-font-size:                               $gm_base-font-size;
-$button-mini-font-size:                          $button-font-size - 4 * $px;
-$button-small-font-size:                         $button-font-size - 2 * $px;
+$button-mini-font-size:                          $button-font-size - 2 * $px;
+$button-small-font-size:                         $button-font-size;
 $button-large-font-size:                         $button-font-size + 2 * $px;
 
 $button-icon-font-size:                          $gm_base-font-size + 10 * $px;

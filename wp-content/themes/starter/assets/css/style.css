@@ -16092,7 +16092,7 @@ select.uk-form-width-mini {
   min-height: 30px;
   padding: 0 16px;
   line-height: 28px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 /* line 321, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_button.scss */
@@ -16100,7 +16100,7 @@ select.uk-form-width-mini {
   min-height: 40px;
   padding: 0 16px;
   line-height: 38px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /* line 328, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_button.scss */
@@ -28727,7 +28727,7 @@ body.login .indicator-hint {
   min-height: 40px;
   padding: 0 16px;
   line-height: 38px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -28777,7 +28777,7 @@ body.login .indicator-hint {
   min-height: 40px;
   padding: 0 16px;
   line-height: 38px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /* line 313, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
@@ -29320,7 +29320,7 @@ body.admin-bar .uk-offcanvas-bar {
   min-height: 40px;
   padding: 0 16px;
   line-height: 38px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
@@ -36501,7 +36501,7 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
   min-height: 40px;
   padding: 0 16px;
   line-height: 38px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   font-family: "Open Sans", sans-serif;
