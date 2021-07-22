@@ -6,7 +6,7 @@
 		<div class="gm_table-list__actions">
 		</div>
 		
-		<div class="gm_table-list__list">
+		<div class="gm_table-list__items">
 			
 			<div class="gm_table-list__head">
 				<div class="gm_table-list__row">
@@ -24,7 +24,7 @@
 					
 					<div class="gm_table-list__cell-group gm_table-list__cell-group--global">
 						
-						<div class="gm_table-list__cell gm_table-list__cell--id">
+						<div class="gm_table-list__cell gm_table-list__cell--label gm_table-list__cell--id">
 							<?php _e( 'ID', 'warp' ); ?>
 						</div>
 						
