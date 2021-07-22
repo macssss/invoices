@@ -6,7 +6,7 @@
 	
 	$restaurant       = get_the_terms( $id, 'restaurant' )[0];
 	$restaurant_name  = $restaurant->name;
-	$restaurant_image = z_taxonomy_image( $restaurant->term_id, 'thumbnail', array( 'alt' => $restaurant_name ), false );
+	$restaurant_image = z_taxonomy_image( $restaurant->term_id, 'mini', array( 'alt' => $restaurant_name ), false );
 	
 	$status_label = get_field( 'status', $id )['label'];
 	$status_value = get_field( 'status', $id )['value'];

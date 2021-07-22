@@ -13,6 +13,7 @@
 		remove_image_size('crp_thumbnail');
 		
 		add_image_size( 'small', 300, 200, true );
+		add_image_size( 'mini', 80, 80, true );
 	}
 	
 	
