@@ -3,20 +3,6 @@
 	
 	.gm_table-list {
 		
-		&__body .gm_table-list__row {
-			
-			background: white;
-			transition: $gm_transition-default;
-			transform-origin: center center;
-			
-			&:hover {
-				
-				transform: scale(1.04);
-				box-shadow: $gm_medium-box-shadow;
-				z-index: 2;
-			}
-		}
-		
 		&__cell {
 		
 			&--id         { width: 8%; }
@@ -33,6 +19,24 @@
 		}
 		
 		&__cell-group--global { width: calc( 100% - 55px - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
+		
+		
+		@media ( min-width: 1351px ) {
+			
+			&__body .gm_table-list__row {
+				
+				background: white;
+				transition: $gm_transition-default;
+				transform-origin: center center;
+				
+				&:hover {
+					
+					transform: scale(1.04);
+					box-shadow: $gm_medium-box-shadow;
+					z-index: 2;
+				}
+			}
+		}
 	}
 	
 	
