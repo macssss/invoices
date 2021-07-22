@@ -1,0 +1,29 @@
+
+.gm_invoices__restaurant {
+		
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	&-media { width: 40px; }
+	
+	&-media img {
+		
+		width: 100%;
+		height: 40px;
+		object-fit: cover;
+		
+		border-radius: $gm_base-radius;
+	}
+	
+	&-title {
+		
+		width: calc(100% - 40px);
+		margin: 0;
+		padding-left: $gm_offset-small;
+		box-sizing: border-box;
+		
+		font-size: $gm_h6-font-size;
+		line-height: $gm_h6-line-height;
+	}
+}

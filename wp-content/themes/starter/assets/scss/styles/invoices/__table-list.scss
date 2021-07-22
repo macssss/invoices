@@ -1,0 +1,207 @@
+
+.gm_invoices .gm_table-list {
+	
+	&__cell {
+	
+		&--id         { width: 8%; }
+		&--restaurant { width: 25%; }
+		&--status     { width: 10%; }
+		&--srart-date { width: 10%; }
+		&--end-date   { width: 10%; }
+		&--total      { width: 10%; }
+		&--fees       { width: 9%; }
+		&--transfer   { width: 10%; }
+		&--orders     { width: 8%; }
+		
+		&--download   { width: 55px; }
+	}
+	
+	&__cell-group--global { width: calc( 100% - 55px - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
+	
+	
+	&__body {
+		
+		.gm_table-list__cell:before {
+			
+			margin-right: $gm_offset-micro;
+			
+			font-size: $gm_small-font-size;
+			text-transform: uppercase;
+			color: $gm_secondary-color;
+		}
+		
+		.gm_table-list__cell--check { align-self: flex-start; margin-top: 10px; }
+	
+	}
+	
+	
+	
+	@media ( max-width: 1350px ) {
+		
+		&__row {
+			
+			position: relative;
+			padding-right: calc( #{$gm_offset-small * 2} + #{$gm_medium-font-size * 1.8} ); 
+		}
+		
+		&__cell {
+			
+			&--id         { width: 15%; }
+			&--restaurant { width: 36%; }
+			&--status     { width: 17%; }
+			&--srart-date { width: 16%; }
+			&--end-date   { width: 16%; }
+			
+		}
+		
+		&__cell-group--global { width: calc( 100% - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
+		
+		
+		&__head .gm_table-list__cell {
+			
+			&--total, &--fees, &--transfer, &--orders, &--download { display: none; }
+		}
+		
+		
+		&__body .gm_table-list {
+		
+			&__cell {
+				
+				&--total, &--fees, &--transfer, &--orders {
+					
+					width: auto;
+					margin-top: $gm_offset-mini;
+					padding-top: $gm_offset-mini;
+					border-top: $gm_border-style;
+					
+					&:before { content: attr(data-title) ':'; }
+				}
+				
+				&--download {
+					
+					width: auto;
+					padding: 0;
+					position: absolute;
+					top: $gm_offset-mini;
+					right: $gm_offset-small;
+				}
+			}
+		
+			&__cell-group--global { justify-content: flex-end; }
+		}
+		
+		
+	}
+	
+	
+	
+	@media ( max-width: 860px ) {
+		
+		&__row { padding-right: 0; }
+		
+		&__cell {
+			
+			&--id         { width: 100px; }
+			&--restaurant { width: calc( 100% - 100px ); padding-right: calc( #{$gm_offset-small * 2} + #{$gm_medium-font-size * 1.8} ); }
+		}
+		
+		
+		&__head .gm_table-list__cell {
+			
+			&--status, &--srart-date, &--end-date { display: none; }
+		}
+		
+		
+		&__body .gm_table-list__cell {
+			
+			&--status, &--srart-date, &--end-date {
+				
+				&:before { content: attr(data-title) ':'; }
+				
+			}
+			
+			&:not(.gm_table-list__cell--check):not(.gm_table-list__cell--id):not(.gm_table-list__cell--restaurant):not(.gm_table-list__cell--download) {
+				
+				width: calc(100% - 100px);
+				
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				
+				margin-top: $gm_offset-mini;
+				padding-top: 0;
+				border: none;
+				
+				&:before { margin-right: $gm_offset-mini; }
+			}
+			
+			&--status { margin-top: $gm_offset-small !important; }
+		}
+	}
+	
+	
+	
+	@media ( max-width: 500px ) {
+		
+		
+		&__head .gm_table-list__cell-group--global { display: none; }
+		
+		
+		&__body .gm_table-list__cell-group--global .gm_table-list__cell:not(.gm_table-list__cell--download) { width: 100% !important; }
+		
+		&__body .gm_table-list__cell {
+			
+			&--restaurant { order: -1; }
+			
+			&--id {
+				
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				
+				margin-top: $gm_offset-mini;
+				
+				&:before { content: attr(data-title) ':'; margin-right: $gm_offset-mini; }
+			}
+			
+		}
+	}
+	
+	
+	
+	@media ( max-width: 350px ) {
+		
+		&__body .gm_table-list__cell {
+			
+			&--check { margin-top: 0; }
+			&--download { top: 14px; }
+		}
+		
+		&__cell-group--global { width: 100%; margin-top: $gm_offset-small; }
+		&__cell--restaurant { padding-right: $gm_offset-small; }
+		
+	}
+	
+	
+	
+	
+	@media ( min-width: 861px ) {
+		
+		&__body .gm_table-list__row {
+			
+			background: white;
+			transition: $gm_transition-default;
+			transform-origin: center center;
+			
+			&:hover {
+				
+				transform: scale(1.04);
+				box-shadow: $gm_medium-box-shadow;
+				z-index: 2;
+			}
+		}
+	}
+	
+}

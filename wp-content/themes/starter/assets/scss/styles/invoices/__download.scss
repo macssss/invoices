@@ -1,0 +1,20 @@
+
+.gm_invoices__download-link {
+		
+	display: inline-block;
+	width: 1.8em;
+	
+	font-size: $gm_medium-font-size;
+	text-align: center;
+	color: $gm_primary-color;
+	text-decoration: none !important;
+	
+	&:before {
+		
+		content: $gm_fa-cloud-download-alt;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+	}
+	
+	&:hover { color: $gm_primary-muted-color; }
+}
