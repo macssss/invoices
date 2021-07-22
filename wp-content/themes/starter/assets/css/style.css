@@ -33545,12 +33545,12 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 16, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
 .gm_invoices .gm_table-list__cell--download {
-  width: 55px;
+  width: 63px;
 }
 
 /* line 19, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
 .gm_invoices .gm_table-list__cell-group--global {
-  width: calc( 100% - 55px - 54px);
+  width: calc( 100% - 63px - 54px);
 }
 
 /* line 24, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */

@@ -13,10 +13,10 @@
 		&--transfer   { width: 10%; }
 		&--orders     { width: 8%; }
 		
-		&--download   { width: 55px; }
+		&--download   { width: 63px; }
 	}
 	
-	&__cell-group--global { width: calc( 100% - 55px - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
+	&__cell-group--global { width: calc( 100% - 63px - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
 	
 	
 	&__body {
