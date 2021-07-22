@@ -4,11 +4,20 @@
 	position: relative;
 	z-index: 1;
 	
+	&__items {
+		
+		border: $gm_border-style;
+		background: white;
+		border-radius: $gm_base-radius;
+	}
+	
 	* + &__items { margin-top: $gm_offset-default; }
 	
 	&__head, &__cell--label {
 		
-		color: $gm_muted-color;
+		font-size: $gm_small-font-size;
+		text-transform: uppercase;
+		color: $gm_secondary-color;
 		
 		a { color: inherit; text-decoration: none; }
 		a:hover, a:active { color: $gm_primary-color; }
@@ -36,7 +45,7 @@
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
-		padding: $gm_offset-small $gm_offset-mini;
+		padding: $gm_offset-small 0;
 		
 		&--highlighted { background: $gm_light-color; }
 	}
@@ -71,10 +80,10 @@
 	
 	&__cell {
 		
-		padding: 0 $gm_offset-mini;
+		padding: 0 $gm_offset-small;
 		box-sizing: border-box;
 		
-		&--check { width: $gm_offset-mini * 2 + $gm_form-toggler-size; }
+		&--check { width: $gm_offset-small * 2 + $gm_form-toggler-size; }
 		
 		&--check label { position: relative; z-index: 3; }
 		

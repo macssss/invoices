@@ -28952,107 +28952,116 @@ body.login .indicator-hint {
 }
 
 /* line 7, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+.gm_table-list__items {
+  border: 1px solid #e6e7eb;
+  background: white;
+  border-radius: 5px;
+}
+
+/* line 14, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 * + .gm_table-list__items {
   margin-top: 32px;
 }
 
-/* line 9, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 16, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__head, .gm_table-list__cell--label {
-  color: #9b9b9b;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #6c7481;
 }
 
-/* line 13, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 22, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__head a, .gm_table-list__cell--label a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 14, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 23, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__head a:hover, .gm_table-list__head a:active, .gm_table-list__cell--label a:hover, .gm_table-list__cell--label a:active {
   color: #fe9603;
 }
 
-/* line 17, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 26, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__body {
   border-bottom: 1px solid #e6e7eb;
 }
 
-/* line 18, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 27, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__body .gm_table-list__row {
   border-top: 1px solid #e6e7eb;
 }
 
-/* line 23, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 32, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__footer {
   margin-top: 8px;
 }
 
-/* line 27, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 36, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__footer .gm_table-list__row {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 34, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 43, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__row {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 16px 8px;
+  padding: 16px 0;
 }
 
-/* line 41, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 50, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__row--highlighted {
   background: #f7f8fa;
 }
 
-/* line 47, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 56, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list--middle .gm_table-list__row,
 .gm_table-list--middle .gm_table-list__cell-group {
   align-items: center;
 }
 
-/* line 54, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 63, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list--condensed .gm_table-list__row {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 57, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 66, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list--condensed .gm_table-list__footer {
   margin-top: 4px;
 }
 
-/* line 61, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 70, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list--condensed .gm_table-list__footer .gm_table-list__row {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-/* line 70, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 79, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell-group {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 72, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 81, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell {
-  padding: 0 8px;
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
-/* line 77, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 86, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell--check {
-  width: 38px;
+  width: 54px;
 }
 
-/* line 79, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 88, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell--check label {
   position: relative;
   z-index: 3;
 }
 
-/* line 81, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 90, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_media {
   position: relative;
   z-index: 1;
@@ -29061,7 +29070,7 @@ body.login .indicator-hint {
   padding-top: 90%;
 }
 
-/* line 90, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 99, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_media img {
   position: absolute;
   top: 0;
@@ -29075,7 +29084,7 @@ body.login .indicator-hint {
   object-fit: cover;
 }
 
-/* line 105, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 114, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_media a {
   position: absolute;
   top: 0;
@@ -29088,7 +29097,7 @@ body.login .indicator-hint {
   height: 100%;
 }
 
-/* line 120, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 129, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_title {
   font-size: 1.125rem;
   font-weight: 700;
@@ -29096,19 +29105,19 @@ body.login .indicator-hint {
   margin: 0;
 }
 
-/* line 127, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 136, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_title a:hover {
   color: #fe9603;
 }
 
-/* line 130, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 139, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__cell .gm_content {
   font-size: 1rem;
   color: #9b9b9b;
   margin-top: 4px;
 }
 
-/* line 138, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 147, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__link-full {
   display: block;
   position: absolute;
@@ -29119,7 +29128,7 @@ body.login .indicator-hint {
   z-index: 2;
 }
 
-/* line 153, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 162, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-list {
   display: flex;
   flex-wrap: wrap;
@@ -29128,7 +29137,7 @@ body.login .indicator-hint {
   margin: 0;
 }
 
-/* line 161, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 170, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-list__link {
   position: relative;
   z-index: 3;
@@ -29138,37 +29147,37 @@ body.login .indicator-hint {
   box-shadow: none !important;
 }
 
-/* line 170, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 179, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-list__link:hover, .gm_table-list .gm_controls-list__link:focus {
   background-color: #f7f8fa;
   border-color: #f7f8fa;
 }
 
-/* line 176, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 185, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-list__link:active, .gm_table-list .gm_controls-list__link.uk-active {
   background-color: #e7eaf0;
   border-color: #e7eaf0;
 }
 
-/* line 184, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 193, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-dropdown {
   position: relative;
 }
 
-/* line 188, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 197, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-dropdown.uk-open .gm_controls-dropdown__link {
   background-color: #e7eaf0;
   border-color: #e7eaf0;
 }
 
-/* line 194, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 203, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list .gm_controls-dropdown__list {
   width: 220px;
   margin-top: 8px;
   text-align: right;
 }
 
-/* line 202, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 211, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__row:last-child .gm_controls-dropdown__list {
   top: auto !important;
   bottom: 100% !important;
@@ -29176,7 +29185,7 @@ body.login .indicator-hint {
   margin-bottom: 8px;
 }
 
-/* line 217, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 226, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__actions {
   display: flex;
   flex-wrap: wrap;
@@ -29184,35 +29193,35 @@ body.login .indicator-hint {
   padding: 0 16px;
 }
 
-/* line 224, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 233, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__actions > div + div {
   margin-left: 32px;
 }
 
-/* line 233, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 242, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__bulk-action {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 238, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 247, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__bulk-action__field {
   width: 250px;
   margin-right: 16px;
 }
 
-/* line 239, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 248, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__bulk-action__field .list {
   right: -1px;
 }
 
-/* line 250, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 259, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__pagination .uk-pagination {
   margin-top: 24px !important;
   text-align: right;
 }
 
-/* line 256, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+/* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
 .gm_table-list__pagination .gm_pagination-without-numbers {
   margin-top: 24px;
 }
@@ -33631,15 +33640,15 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 }
 
 @media (max-width: 479px) {
-  /* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 274, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-formatted-address .gm_table-list__head {
     display: none;
   }
-  /* line 266, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 275, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-formatted-address .gm_table-list__cell {
     width: 100%;
   }
-  /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 276, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-formatted-address .gm_table-list__row, .gm_woo-formatted-address .gm_table-list__cell {
     padding-left: 0;
     padding-right: 0;
@@ -34277,15 +34286,15 @@ body.wp-product-archive .gm_woo-product-list > * {
   .gm_woo-checkout-thankyou-order-overview .gm_table-list {
     text-align: center;
   }
-  /* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 274, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-checkout-thankyou-order-overview .gm_table-list__head {
     display: none;
   }
-  /* line 266, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 275, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-checkout-thankyou-order-overview .gm_table-list__cell {
     width: 100%;
   }
-  /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 276, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-checkout-thankyou-order-overview .gm_table-list__row, .gm_woo-checkout-thankyou-order-overview .gm_table-list__cell {
     padding-left: 0;
     padding-right: 0;
@@ -34642,15 +34651,15 @@ body.woocommerce-checkout .gm_page-title {
   .gm_woo-cart-totals .gm_table-list {
     text-align: center;
   }
-  /* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 274, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-cart-totals .gm_table-list__head {
     display: none;
   }
-  /* line 266, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 275, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-cart-totals .gm_table-list__cell {
     width: 100%;
   }
-  /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 276, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-cart-totals .gm_table-list__row, .gm_woo-cart-totals .gm_table-list__cell {
     padding-left: 0;
     padding-right: 0;
@@ -35051,15 +35060,15 @@ body.woocommerce-cart .gm_page-title {
 }
 
 @media (max-width: 1170px) {
-  /* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 274, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-myaccount-orders .gm_table-list__head {
     display: none;
   }
-  /* line 266, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 275, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-myaccount-orders .gm_table-list__cell {
     width: 100%;
   }
-  /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 276, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-myaccount-orders .gm_table-list__row, .gm_woo-myaccount-orders .gm_table-list__cell {
     padding-left: 0;
     padding-right: 0;
@@ -35237,15 +35246,15 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
 }
 
 @media (max-width: 479px) {
-  /* line 265, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 274, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-order-details .gm_table-list__head {
     display: none;
   }
-  /* line 266, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 275, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-order-details .gm_table-list__cell {
     width: 100%;
   }
-  /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
+  /* line 276, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__table-list.scss */
   .gm_woo-order-details .gm_table-list__row, .gm_woo-order-details .gm_table-list__cell {
     padding-left: 0;
     padding-right: 0;
