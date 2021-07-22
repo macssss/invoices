@@ -6,6 +6,7 @@
 	}
 	
 	
+	
 	&__restaurant {
 		
 		display: flex;
@@ -36,6 +37,7 @@
 	}
 	
 	
+	
 	&__status {
 		
 		min-width: 90px;
@@ -53,5 +55,22 @@
 		&--paid     { color: white; background-color: $gm_success-color; }
 	}
 	
+	
+	
+	&__download-link {
+		
+		font-size: $gm_medium-font-size;
+		color: $gm_primary-color;
+		text-decoration: none !important;
+		
+		&:before {
+			
+			content: $gm_fa-cloud-download-alt;
+			font-family: $gm_fa;
+			font-weight: $gm_fa-solid-style;
+		}
+		
+		&:hover { color: $gm_primary-muted-color; }
+	}
 	
 }
