@@ -3,6 +3,23 @@
 	
 	.gm_table-list {
 		
+		&__cell {
+		
+			&--id         { width: 8%; }
+			&--restaurant { width: 25%; }
+			&--status     { width: 10%; }
+			&--srart-date { width: 10%; }
+			&--end-date   { width: 10%; }
+			&--total      { width: 10%; }
+			&--fees       { width: 9%; }
+			&--transfer   { width: 10%; }
+			&--orders     { width: 8%; }
+			
+			&--download   { width: 55px; text-align: center; }
+		}
+		
+		&__cell-group--global { width: calc( 100% - 55px - #{$gm_offset-small * 2 + $gm_form-toggler-size} ); }
+		
 	}
 	
 	
@@ -40,6 +57,7 @@
 	
 	&__status {
 		
+		display: inline-block;
 		min-width: 90px;
 		padding: $gm_offset-nano $gm_offset-mini;
 		box-sizing: border-box;
