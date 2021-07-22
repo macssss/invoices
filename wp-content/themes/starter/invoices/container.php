@@ -72,6 +72,7 @@
 			</div>
 			
 			<div class="gm_table-list__footer">
+				<?php echo $args['invoices_pagination']; ?>
 			</div>
 			
 		</div>
