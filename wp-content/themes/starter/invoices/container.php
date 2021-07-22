@@ -1,7 +1,7 @@
 
 <div class="gm_invoices uk-form" data-invoices>
 	
-	<div class="gm_table-list">
+	<div class="gm_table-list gm_table-list--middle">
 		
 		<div class="gm_table-list__actions">
 		</div>
