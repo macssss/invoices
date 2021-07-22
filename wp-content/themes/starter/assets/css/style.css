@@ -23975,9 +23975,9 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  border: 1px solid #e6e7eb;
+  border: 1px solid #caccd4;
   background: #ffffff;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
@@ -24232,10 +24232,10 @@ input:not([type]).uk-form-large {
 
 /* line 267, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_form.scss */
 .uk-contrast-reset .uk-form .uk-form-toggler label > span:before {
-  border-color: #e6e7eb;
+  border-color: #caccd4;
   background-color: #ffffff;
   color: #4d4e52;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 /* line 269, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/theme/core/_form.scss */
@@ -28479,9 +28479,9 @@ body.login form .forgetmenot label:before, body.login form .pw-weak label:before
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  border: 1px solid #e6e7eb;
+  border: 1px solid #caccd4;
   background: #ffffff;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
@@ -29633,9 +29633,9 @@ div.wpcf7 div.ajax-error {
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  border: 1px solid #e6e7eb;
+  border: 1px solid #caccd4;
   background: #ffffff;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
@@ -29739,10 +29739,10 @@ div.wpcf7 div.ajax-error {
 
 /* line 115, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/components/__contact-form-7.scss */
 .uk-contrast-reset .wpcf7-checkbox .wpcf7-list-item-label:before, .uk-contrast-reset .wpcf7-acceptance .wpcf7-list-item-label:before, .uk-contrast-reset .wpcf7-radio .wpcf7-list-item-label:before {
-  border-color: #e6e7eb;
+  border-color: #caccd4;
   background-color: #ffffff;
   color: #4d4e52;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 /* line 117, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/components/__contact-form-7.scss */
@@ -35983,9 +35983,9 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  border: 1px solid #e6e7eb;
+  border: 1px solid #caccd4;
   background: #ffffff;
-  box-shadow: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;

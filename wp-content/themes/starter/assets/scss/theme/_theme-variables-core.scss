@@ -699,8 +699,9 @@ $form-large-radius:                              $gm_form-large-radius;
 
 $form-toggler-size:                              $gm_form-toggler-size;
 $form-toggler-font-size:                         $gm_form-toggler-font-size;
+$form-toggler-border:                            darken( $form-border, 10% );
 $form-toggler-radius:                            $gm_form-toggler-radius;
-$form-toggler-shadow:                            none;
+$form-toggler-shadow:                            0 0 3px rgba( 0, 0, 0, 0.05 );
 $form-toggler-active-shadow:                     none;
 
 
@@ -758,8 +759,9 @@ $contrast-form-focus-background:                 transparent;
 $contrast-form-focus-color:                      #ffffff;
 $contrast-form-focus-shadow:                     none;
 
-$contrast-toggler-shadow:                        none;
-$contrast-toggler-active-shadow:                 none;
+$contrast-form-toggler-border:                   #ffffff;
+$contrast-form-toggler-shadow:                    none;
+$contrast-form-toggler-active-shadow:             none;
 
 $contrast-form-placeholder-color:                rgba($gm_contrast-color, 0.7);
 

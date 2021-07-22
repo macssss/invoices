@@ -257,7 +257,7 @@
 	height: $form-toggler-size;
 	
 	border-radius: $form-toggler-radius;
-	border: $form-border-width solid $form-border;
+	border: $form-border-width solid $form-toggler-border;
 	background: $form-background;
 	box-shadow: $form-toggler-shadow;
 	
@@ -286,7 +286,7 @@
 
 @mixin gm_hook-toggler-default() {
 	
-	border-color: $form-border;
+	border-color: $form-toggler-border;
 	background-color: $form-background;
 	color: $form-color;
 	box-shadow: $form-toggler-shadow;
@@ -303,13 +303,13 @@
 	border-color: $contrast-form-border;
 	background-color: $contrast-form-background;
 	color: $gm_contrast-muted-color;
-	box-shadow: $contrast-toggler-shadow;
+	box-shadow: $contrast-form-toggler-shadow;
 }
 
 @mixin gm_hook-toggler-contrast-active() {
 	
-	border-color: $contrast-form-focus-border;
-	box-shadow: $contrast-toggler-active-shadow;
+	border-color: $contrast-form-toggler-border;
+	box-shadow: $contrast-form-toggler-active-shadow;
 }
 
 // END Form
