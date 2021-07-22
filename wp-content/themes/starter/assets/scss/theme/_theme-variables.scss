@@ -36,7 +36,7 @@ $gm_contrast-color:                              rgba(255, 255, 255, 0.9);
 $gm_contrast-muted-color:                        #ffffff;
 
 $gm_success-color:                               #48c092;
-$gm_warning-color:                               #ffc238;
+$gm_warning-color:                               $gm_primary-color;
 $gm_danger-color:                                #ff454e;
 
 $gm_border-color:                                #e6e7eb;

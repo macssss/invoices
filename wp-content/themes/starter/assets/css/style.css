@@ -16408,7 +16408,7 @@ a.uk-badge:hover {
  */
 /* line 86, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_badge.scss */
 .uk-badge-warning {
-  background-color: #ffc238;
+  background-color: #fe9603;
 }
 
 /*
@@ -16488,7 +16488,7 @@ a.uk-badge:hover {
  ========================================================================== */
 /* line 107, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_alert.scss */
 .uk-alert-warning {
-  background: #ffc238;
+  background: #fe9603;
   color: #ffffff;
 }
 
@@ -18599,7 +18599,7 @@ a.uk-thumbnail:focus {
 
 /* line 57, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_text.scss */
 .uk-text-warning {
-  color: #ffc238 !important;
+  color: #fe9603 !important;
 }
 
 /* line 58, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/core/_text.scss */
@@ -20618,7 +20618,7 @@ a.uk-datepicker-table-muted {
  ========================================================================== */
 /* line 162, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/components/_notify.scss */
 .uk-notify-message-warning {
-  background: #ffc238;
+  background: #fe9603;
   color: #ffffff;
 }
 
@@ -20702,7 +20702,7 @@ a.uk-datepicker-table-muted {
 
 /* line 121, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/components/_progress.scss */
 .uk-progress-warning .uk-progress-bar {
-  background-color: #ffc238;
+  background-color: #fe9603;
 }
 
 /* line 126, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/src/components/_progress.scss */
@@ -28688,7 +28688,7 @@ body.login .password-input-wrapper .password-input#pass1-text.strong, body.login
 
 /* line 220, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
 body.login .password-input-wrapper .password-input#pass1-text.good, body.login .password-input-wrapper .password-input#pass2-text.good {
-  border-color: #ffc238;
+  border-color: #fe9603;
 }
 
 /* line 221, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
@@ -28734,8 +28734,8 @@ body.login #pass-strength-result.strong {
 
 /* line 250, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
 body.login #pass-strength-result.good {
-  border-color: #ffc238;
-  background-color: #ffc238;
+  border-color: #fe9603;
+  background-color: #fe9603;
 }
 
 /* line 251, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/base/__login.scss */
@@ -33528,6 +33528,36 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
   line-height: 1.4;
 }
 
+/* line 39, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/_invoices.scss */
+.gm_invoices__status {
+  min-width: 90px;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: #e6e7eb;
+  border-radius: 999px;
+}
+
+/* line 51, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/_invoices.scss */
+.gm_invoices__status--pending {
+  color: white;
+  background-color: #fe9603;
+}
+
+/* line 52, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/_invoices.scss */
+.gm_invoices__status--verified {
+  color: white;
+  background-color: #48c092;
+}
+
+/* line 53, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/_invoices.scss */
+.gm_invoices__status--paid {
+  color: white;
+  background-color: #48c092;
+}
+
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__add-to-wishlist.scss */
 .gm_woo-add-to-wishlist {
   position: relative;
@@ -33563,7 +33593,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 28, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__add-to-wishlist.scss */
 .gm_woo-add-to-wishlist__link--remove {
-  background: #ffc238;
+  background: #fe9603;
   color: white;
 }
 
@@ -33615,7 +33645,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
   font-weight: 900;
   font-size: 16px;
   line-height: 30px;
-  background: #ffc238;
+  background: #fe9603;
 }
 
 /* line 50, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__badges.scss */
@@ -33903,7 +33933,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__stock.scss */
 .gm_woo-product-stock {
   font-weight: 700;
-  color: #ffc238;
+  color: #fe9603;
 }
 
 /* line 7, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__stock.scss */
@@ -33913,12 +33943,12 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 8, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__stock.scss */
 .gm_woo-product-stock--available-on-backorder {
-  color: #ffc238;
+  color: #fe9603;
 }
 
 /* line 9, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__stock.scss */
 .gm_woo-product-stock--only-left {
-  color: #ffc238;
+  color: #fe9603;
 }
 
 /* line 10, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__stock.scss */
@@ -35050,7 +35080,7 @@ body.woocommerce-cart .gm_page-title {
 
 /* line 22, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/myaccount/__orders.scss */
 .gm_woo-myaccount-orders .gm_table-list__body .gm_table-list__cell--order-status {
-  color: #ffc238;
+  color: #fe9603;
 }
 
 /* line 24, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/myaccount/__orders.scss */
@@ -35229,7 +35259,7 @@ body.woocommerce-lost-password .gm_woo-notices-wrapper {
 
 /* line 40, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/myaccount/__view-order.scss */
 .gm_woo-myaccount-view-order-info__status {
-  color: #ffc238;
+  color: #fe9603;
 }
 
 /* line 41, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/myaccount/__view-order.scss */

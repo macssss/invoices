@@ -35,4 +35,23 @@
 		}
 	}
 	
+	
+	&__status {
+		
+		min-width: 90px;
+		padding: $gm_offset-nano $gm_offset-mini;
+		box-sizing: border-box;
+		
+		font-size: $gm_small-font-size;
+		text-align: center;
+		text-transform: uppercase;
+		background: $gm_border-color;
+		border-radius: 999px;
+		
+		&--pending  { color: white; background-color: $gm_warning-color; }
+		&--verified { color: white; background-color: $gm_success-color; }
+		&--paid     { color: white; background-color: $gm_success-color; }
+	}
+	
+	
 }
