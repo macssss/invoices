@@ -33570,6 +33570,7 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 38, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
 .gm_invoices .gm_table-list__footer {
+  margin: 0;
   padding: 16px;
 }
 
@@ -33819,6 +33820,85 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 .gm_invoices__status--paid {
   color: white;
   background-color: #48c092;
+}
+
+/* line 4, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+
+/* line 14, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__inner > * {
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
+/* line 18, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__current {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #6c7481;
+}
+
+/* line 26, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e6e7eb;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* line 40, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__list > li + li {
+  border-left: 1px solid #e6e7eb;
+}
+
+/* line 43, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item {
+  min-width: 30px;
+  display: block;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none !important;
+  color: #6c7481;
+}
+
+/* line 56, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item--prev:before, .gm_invoices-pagination__item--next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* line 59, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item--prev:before {
+  content: "";
+}
+
+/* line 60, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item--next:before {
+  content: "";
+}
+
+/* line 62, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item[href]:hover {
+  color: #fe9603;
+}
+
+/* line 65, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__pagination.scss */
+.gm_invoices-pagination__item--active {
+  color: #191919;
+  background: #e6e7eb;
 }
 
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/woocommerce/global/__add-to-wishlist.scss */

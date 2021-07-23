@@ -35,7 +35,7 @@
 	}
 	
 	
-	&__footer { padding: $gm_offset-small; }
+	&__footer { margin: 0; padding: $gm_offset-small; }
 	
 	
 	@media ( max-width: 1350px ) {
