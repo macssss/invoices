@@ -3,8 +3,70 @@
 	
 	<div class="gm_table-list gm_table-list--middle">
 		
-		<div class="gm_table-list__actions">
+		
+		<div class="gm_table-list__actions gm_invoices-actions">
+			<div class="gm_invoices-actions__inner">
+				
+				
+				<div class="gm_invoices-actions__column">
+					<div class="gm_invoices-actions__column-inner">
+						
+						
+						<div class="gm_invoices-actions__column-item">
+							
+							<div class="gm_invoices-status-tabs">
+							</div>
+							
+						</div>
+						
+						
+					</div>
+				</div>
+				
+				
+				<div class="gm_invoices-actions__column">
+					<div class="gm_invoices-actions__column-inner">
+						
+						
+						<div class="gm_invoices-actions__column-item">
+							
+							<div class="gm_invoices-date-filter">
+								<div class="gm_invoices-date-filter__inner">
+									
+								</div>
+							</div>
+							
+						</div>
+						
+						
+						<div class="gm_invoices-actions__column-item">
+							
+							<div class="gm_invoices-search">
+								<div class="gm_invoices-search__inner">
+									
+								</div>
+							</div>
+							
+						</div>
+						
+						
+						<div class="gm_invoices-actions__column-item">
+							
+							<div class="gm_invoices-mark-as-paid">
+								
+							</div>
+							
+						</div>
+						
+						
+					</div>
+				</div>
+				
+				
+			</div>
 		</div>
+		
+		
 		
 		<div class="gm_table-list__items">
 			
@@ -67,15 +129,23 @@
 				</div>
 			</div>
 			
+			
 			<div class="gm_table-list__body" data-invoices-list>
 				<?php echo $args['invoices_list']; ?>
 			</div>
 			
+			
 			<div class="gm_table-list__footer">
-				<?php echo $args['invoices_pagination']; ?>
+				
+				<div class="gm_invoices-pagination-wrap" data-invoices-pagination>
+					<?php echo $args['invoices_pagination']; ?>
+				</div>
+				
 			</div>
 			
+			
 		</div>
+		
 		
 	</div>
 	
