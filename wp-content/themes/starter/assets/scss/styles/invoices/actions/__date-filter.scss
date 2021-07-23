@@ -1,0 +1,64 @@
+
+.gm_invoices-date-filter {
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-left: $form-small-line-height;
+	
+	position: relative;
+	
+	border: $form-border-width $form-border solid;
+	background: $form-background;
+	box-shadow: $gm_small-box-shadow;
+	border-radius: $form-small-radius;
+	overflow: hidden;
+	
+	&:before {
+		
+		content: $gm_fa-calendar;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-regular-style;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: $form-small-line-height;
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		
+		background: lighten( $form-border, 3% );
+	}
+	
+	&__field-wrap { width: 120px; }
+	
+	&__field {
+		
+		width: 100%;
+		height: $form-small-line-height !important;
+		border: none !important;
+		border-radius: 0 !important;
+		cursor: pointer;
+	}
+	
+	&__arrow:before {
+		
+		content: $gm_fa-arrow-right;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		font-size: 0.9em;
+	}
+	
+	
+	@media ( max-width: 350px ) {
+		
+		&__field-wrap { width: 100%; }
+		
+		&__arrow { margin-left: $form-small-padding-horizontal; }
+		&__arrow:before { content: $gm_fa-arrow-down; }
+		
+	}
+}

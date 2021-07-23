@@ -56,9 +56,17 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-date-filter">
-								<div class="gm_invoices-date-filter__inner">
 									
+								<div class="gm_invoices-date-filter__field-wrap">
+									<input type="text" name="start_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'From', 'warp' ); ?>" readonly="" />
 								</div>
+								
+								<div class="gm_invoices-date-filter__arrow"></div>
+								
+								<div class="gm_invoices-date-filter__field-wrap">
+									<input type="text" name="end_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'To', 'warp' ); ?>" readonly="" />
+								</div>
+									
 							</div>
 							
 						</div>
@@ -67,9 +75,7 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-search">
-								<div class="gm_invoices-search__inner">
-									
-								</div>
+								<input type="search" name="search" class="gm_invoices-search__field uk-form-small" placeholder="<?php _e( 'Search', 'warp' ); ?>" />
 							</div>
 							
 						</div>
@@ -78,9 +84,7 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-mark-as-paid">
-								
 								<a href="#mark-as-paid" class="uk-button uk-button-small uk-button-primary"><?php _e( 'Mark as paid', 'warp' ); ?></a>
-								
 							</div>
 							
 						</div>

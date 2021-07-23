@@ -62,7 +62,7 @@
 		&[href]:hover { color: $gm_primary-color; }
 		
 		
-		&--active { color: $gm_dark-color; background: $gm_border-color; }
+		&--active { color: $gm_dark-color; background: lighten( $form-border, 3% ); }
 	}
 }
 

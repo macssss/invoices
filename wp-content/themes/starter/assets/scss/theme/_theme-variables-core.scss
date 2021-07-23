@@ -701,7 +701,7 @@ $form-toggler-size:                              $gm_form-toggler-size;
 $form-toggler-font-size:                         $gm_form-toggler-font-size;
 $form-toggler-border:                            darken( $form-border, 10% );
 $form-toggler-radius:                            $gm_form-toggler-radius;
-$form-toggler-shadow:                            0 0 3px rgba( 0, 0, 0, 0.05 );
+$form-toggler-shadow:                            $gm_small-box-shadow;
 $form-toggler-active-shadow:                     none;
 
 

@@ -202,6 +202,7 @@ $this['asset']->addFile('js', 'js:libraries/swiper.min.js');
 $this['asset']->addFile('js', 'js:libraries/swiper-widgets.js');
 $this['asset']->addFile('js', 'js:libraries/simpleParallax.min.js');
 $this['asset']->addFile('js', 'js:libraries/simpleParallax-widgets.js');
+$this['asset']->addFile('js', 'js:libraries/datepicker-full.min.js');
 
 $this['asset']->addFile('js', 'js:base/functions/website-url.js');
 $this['asset']->addFile('js', 'js:base/functions/window-size.js');
@@ -233,6 +234,8 @@ $this['asset']->addFile('js', 'js:base/forms/contact-form-7.js');
 $this['asset']->addFile('js', 'js:base/forms/datepicker.js');
 $this['asset']->addFile('js', 'js:base/forms/files.js');
 $this['asset']->addFile('js', 'js:base/forms/select.js');
+
+$this['asset']->addFile('js', 'js:invoices/date-filter.js');
 
 if ( is_plugin_active ( 'woocommerce/woocommerce.php' ) ) {
 

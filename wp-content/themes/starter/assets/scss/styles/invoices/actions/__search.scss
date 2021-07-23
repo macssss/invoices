@@ -1,0 +1,30 @@
+
+.gm_invoices-search {
+	
+	position: relative;
+	
+	&:before {
+		
+		content: $gm_fa-search;
+		font-family: $gm_fa;
+		font-weight: $gm_fa-solid-style;
+		line-height: $gm_form-small-height;
+		font-size: 1.2em;
+		text-align: center;
+		color: $gm_secondary-color;
+		
+		display: block;
+		height: $gm_form-small-height;
+		width: $gm_form-small-height;
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	&__field {
+		
+		width: 250px;
+		padding-left: $gm_form-small-height !important;
+	}
+}
