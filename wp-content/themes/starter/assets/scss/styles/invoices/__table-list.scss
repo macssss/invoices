@@ -1,4 +1,23 @@
 
+.gm_invoices.loading {
+	
+	opacity: 0.75;
+	position: relative;
+	z-index: 1;
+	
+	&:after {
+		
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 999;
+	}
+}
+
 .gm_invoices .gm_table-list {
 	
 	&__cell {
