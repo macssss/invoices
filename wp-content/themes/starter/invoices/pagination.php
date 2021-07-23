@@ -8,7 +8,7 @@
 ?>
 
 
-<div class="gm_invoices__pagination gm_invoices-pagination">
+<div class="gm_invoices-pagination">
 	
 	<div class="gm_invoices-pagination__inner">
 		
