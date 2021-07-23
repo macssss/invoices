@@ -22,7 +22,7 @@
 
 
 
-<div class="gm_table-list__row">
+<div class="gm_table-list__row gm_invoices-item">
 	
 	<div class="gm_table-list__cell gm_table-list__cell--check">
 		
@@ -39,17 +39,17 @@
 		
 		<div class="gm_table-list__cell gm_table-list__cell--id" data-title="<?php _e( 'ID', 'warp' ); ?>">
 		
-			<div class="gm_invoices__id">#<?php echo $id; ?></div>
+			<div class="gm_invoices-item__id">#<?php echo $id; ?></div>
 		
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--restaurant" data-title="<?php _e( 'Restaurant', 'warp' ); ?>">
 			
-			<div class="gm_invoices__restaurant">
+			<div class="gm_invoices-item__restaurant">
 				
-				<div class="gm_invoices__restaurant-media"><?php echo $restaurant_image; ?></div>
-				<h3 class="gm_invoices__restaurant-title"><?php echo $restaurant_name; ?></h3>
+				<div class="gm_invoices-item__restaurant-media"><?php echo $restaurant_image; ?></div>
+				<h3 class="gm_invoices-item__restaurant-title"><?php echo $restaurant_name; ?></h3>
 				
 			</div>
 			
@@ -58,7 +58,7 @@
 		
 		<div class="gm_table-list__cell gm_table-list__cell--status" data-title="<?php _e( 'Status', 'warp' ); ?>">
 			
-			<div class="gm_invoices__status gm_invoices__status--<?php echo $status_value; ?>">
+			<div class="gm_invoices-item__status gm_invoices-item__status--<?php echo $status_value; ?>">
 				<?php echo $status_label; ?>
 			</div>
 			
@@ -67,42 +67,42 @@
 		
 		<div class="gm_table-list__cell gm_table-list__cell--srart-date" data-title="<?php _e( 'Start Date', 'warp' ); ?>">
 			
-			<div class="gm_invoices__start-date"><?php echo $start_date; ?></div>
+			<div class="gm_invoices-item__start-date"><?php echo $start_date; ?></div>
 		
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--end-date" data-title="<?php _e( 'End Date', 'warp' ); ?>">
 			
-			<div class="gm_invoices__end-date"><?php echo $end_date; ?></div>
+			<div class="gm_invoices-item__end-date"><?php echo $end_date; ?></div>
 			
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--total" data-title="<?php _e( 'Total', 'warp' ); ?>">
 			
-			<div class="gm_invoices__end-date"><?php echo $total; ?></div>
+			<div class="gm_invoices-item__end-date"><?php echo $total; ?></div>
 			
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--fees" data-title="<?php _e( 'Fees', 'warp' ); ?>">
 			
-			<div class="gm_invoices__fees"><?php echo $fees; ?></div>
+			<div class="gm_invoices-item__fees"><?php echo $fees; ?></div>
 			
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--transfer" data-title="<?php _e( 'Transfer', 'warp' ); ?>">
 			
-			<div class="gm_invoices__transfer"><?php echo $transfer; ?></div>
+			<div class="gm_invoices-item__transfer"><?php echo $transfer; ?></div>
 			
 		</div>
 		
 		
 		<div class="gm_table-list__cell gm_table-list__cell--orders" data-title="<?php _e( 'Orders', 'warp' ); ?>">
 			
-			<div class="gm_invoices__orders"><?php echo $orders; ?></div>
+			<div class="gm_invoices-item__orders"><?php echo $orders; ?></div>
 			
 		</div>
 	
@@ -111,8 +111,8 @@
 	
 	<div class="gm_table-list__cell gm_table-list__cell--download">
 	
-		<div class="gm_invoices__download">
-			<a href="#download" class="gm_invoices__download-link"></a>
+		<div class="gm_invoices-item__download">
+			<a href="#download" class="gm_invoices-item__download-link"></a>
 		</div>
 	
 	</div>
