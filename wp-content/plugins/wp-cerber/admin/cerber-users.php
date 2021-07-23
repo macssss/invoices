@@ -598,31 +598,13 @@ function crb_destroy_user_sessions( $user_id ) {
 	$manager->destroy_all();
 }
 
-/**
- * Return a "session verifier" to identify the current admin session among others admin sessions
- *
- * Copy of WP_Session_Tokens->hash_token();
- *
- * @param $token
- *
- * @return string
- */
-function crb_admin_hash_token( $token ) {
-	// If ext/hash is not present, use sha1() instead.
-	if ( function_exists( 'hash' ) ) {
-		return hash( 'sha256', $token );
-	} else {
-		return sha1( $token );
-	}
-}
-
 function crb_admin_is_current_session( $session_id ) {
 	static $st = null;
 	if ( $st === null ) {
 		$st = wp_get_session_token();
 	}
 
-	return ( $session_id === crb_admin_hash_token( $st ) );
+	return ( $session_id === cerber_hash_token( $st ) );
 }
 
 function crb_admin_get_user_cell( $user_id = null, $base_url = '', $text = '', $label = '' ) {

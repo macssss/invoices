@@ -46,6 +46,17 @@ const CERBER_LAB_IP_TABLE = 'cerber_lab_ip';
 const CERBER_LAB_NET_TABLE = 'cerber_lab_net';
 const CERBER_GEO_TABLE = 'cerber_countries';
 const CERBER_SCAN_TABLE = 'cerber_files';
+
+const CERBER_DB_TYPES = array(
+	CERBER_SCAN_TABLE => array(
+		'scan_id'     => 'int',
+		'scan_type'   => 'int',
+		'scan_mode'   => 'int',
+		'scan_status' => 'int',
+		'scan_step'   => 'int',
+	),
+);
+
 const CERBER_SETS_TABLE = 'cerber_sets';
 const CERBER_MS_TABLE = 'cerber_ms';
 const CERBER_MS_LIST_TABLE = 'cerber_ms_lists';
@@ -268,11 +279,16 @@ class WP_Cerber {
 	 * @since 6.3.3
 	 */
 	final public function isProhibitedFilename( $file_name ) {
+	    global $cerber_act_status;
+
 		$prohibited = array( '.htaccess' );
 		if ( in_array( $file_name, $prohibited ) ) {
+			$cerber_act_status = CRB_STS_52;
 			return 57;
 		}
+
 		if ( cerber_detect_exec_extension( $file_name, array('js') ) ) {
+			$cerber_act_status = CRB_STS_51;
 			return 56;
 		}
 
@@ -892,6 +908,11 @@ function cerber_wp_login_page() {
 				@ini_set( 'display_startup_errors', 0 );
 				@ini_set( 'display_errors', 0 );
 			} );
+
+			// Prevent getting PHP 8 "Undefined variable" error
+			$user_login = '';
+			$error = '';
+
 			require( ABSPATH . WP_LOGIN_SCRIPT ); // load default wp-login.php form
 			exit;
 		}
@@ -1124,6 +1145,10 @@ add_filter( 'wp_authenticate_user', 'cerber_restrict_auth', PHP_INT_MAX, 2 );
  */
 function cerber_restrict_auth( $user, $password = '', $app = false ) {
 	global $cerber_act_status;
+
+	if ( is_wp_error( $user ) ) {
+		return $user;
+	}
 
 	$deny = false;
 	$user_msg = '';
@@ -1517,8 +1542,8 @@ function crb_sessions_kill( $tokens, $user_id = null, $admin = true ) {
 	$errors = 0;
 
 	// Prevent termination the current admin session
-	if ( wp_get_session_token() ) {
-		unset( $kill[ crb_admin_hash_token( wp_get_session_token() ) ] );
+	if ( $token = wp_get_session_token() ) {
+		unset( $kill[ cerber_hash_token( $token ) ] );
 	}
 
 	foreach ( $users as $user_id ) {
@@ -1917,24 +1942,20 @@ add_filter( 'registration_errors', function ( $errors, $sanitized_user_login, $u
 	return $errors;
 }, 10, 3 );
 
-// Fires in wp_insert_user()
-/*add_filter( 'pre_user_login', function ( $login ) {
-
-	if ( ! is_admin() && cerber_is_registration_prohibited( $login ) ) {
-		return null;
-	}
-
-	return $login;
-}, PHP_INT_MAX );*/
-
-// Inserting users programmatically via wp_insert_user()
-// @since 8.6.3.3
+/**
+ * Inserting users programmatically via wp_insert_user()
+ *
+ * @since 8.6.3.3
+ */
 add_filter( 'wp_pre_insert_user_data', function ( $data, $update ) {
 	if ( $update || is_admin() ) {
 		return $data;
 	}
 
-	if ( cerber_is_registration_prohibited( $data['user_login'], $data['user_email'] ) ) {
+	$user_login = crb_array_get( $data, 'user_login' );
+	$user_email = crb_array_get( $data, 'user_email' );
+
+	if ( cerber_is_registration_prohibited( $user_login, $user_email ) ) {
 		return null;
 	}
 
@@ -4433,8 +4454,8 @@ function cerber_forbidden_page() {
                 </div>
                 <div style="display: table-cell; vertical-align: top;">
                     <h1 style="margin-top: 0;"><?php _e( "We're sorry, you are not allowed to proceed", 'wp-cerber' ); ?></h1>
-                    <p>Your request looks suspiciously similar to automated requests from spam posting software or it has been denied by a security policy configured by the website administrator.</p>
-                    <p>If you believe you should be able to perform this request, please let us know.</p>
+                    <p><?php _e( 'Your request looks suspiciously similar to automated requests from spam posting software or it has been denied by a security policy configured by the website administrator.', 'wp-cerber' ); ?></p>
+                    <p><?php _e( 'If you believe you should be able to perform this request, please let us know.', 'wp-cerber' ); ?></p>
                     <p style="margin-top: 2em;">
                     <pre style="color: #777">RID: <?php echo $sid; ?></pre>
                     </p>
@@ -6110,6 +6131,13 @@ function cerber_upgrade_db( $force = false ) {
 		$sql[] = 'ALTER TABLE ' . CERBER_TRAF_TABLE . ' ADD req_status int(10) UNSIGNED NOT NULL DEFAULT 0';
 	}
 
+	// @since 8.8.6.2
+	if ( $force || ! cerber_is_column( cerber_get_db_prefix() . CERBER_SCAN_TABLE, 'scan_step' ) ) {
+		$sql[] = 'ALTER TABLE ' . cerber_get_db_prefix() . CERBER_SCAN_TABLE . '
+		ADD scan_step INT UNSIGNED NOT NULL DEFAULT 0 AFTER scan_mode
+		';
+	}
+
 	if ( ! empty( $sql ) ) {
 		foreach ( $sql as $query ) {
 			$query = str_replace( '"', '\'', $query );
@@ -6278,6 +6306,7 @@ add_action( 'deac' . 'tivate_' . CERBER_PLUGIN_ID, function ( $ip ) {
 	wp_clear_scheduled_hook( 'cerber_hourly_1' );
 	wp_clear_scheduled_hook( 'cerber_hourly_2' );
 	wp_clear_scheduled_hook( 'cerber_daily' );
+	wp_clear_scheduled_hook( 'cerber_scheduled_hash' );
 
 	cerber_htaccess_clean_up();
 	cerber_set_boot_mode( 0 );
@@ -7291,7 +7320,7 @@ function cerber_inspect_value( &$value = '', $reset = false ) {
 		$parsed = cerber_detect_php_code( $value );
 		if ( ! empty( $parsed[0] ) ) {
 			$cerber_act_status = 22;
-			$found         = 100;
+			$found = 100;
 		}
 		elseif ( ! empty( $parsed[1] ) ) {
 			foreach ( $parsed[1] as $string ) {

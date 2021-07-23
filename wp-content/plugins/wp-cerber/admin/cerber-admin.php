@@ -66,7 +66,10 @@ function cerber_assets_dir() {
 
 function cerber_scanner_show_dashboard( $msg = '', $status = 0 ) {
 
-    $loader = ( $status ) ? UIS_LOADER_HTML : '';
+	$loader = ( $status ) ? UIS_LOADER_HTML : '';
+	$stats = cerber_get_stats_html();
+	$stats = array_shift( $stats );
+	$note = ( $status ) ? '' : __( 'It seems this website has never been scanned. To start scanning click the button below.', 'wp-cerber' );
 
 	?>
     <div id="crb-scan-display">
@@ -96,32 +99,7 @@ function cerber_scanner_show_dashboard( $msg = '', $status = 0 ) {
                 </table>
             </div>
             <div id="crb-scan-filter" class="crb-scan-info scan-tile">
-                <table>
-                    <!--<tr id="crb-numbers-4">
-                        <td><span><?php _e( 'Vulnerabilities', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr> -->
-                    <tr id="crb-numbers-51">
-                        <td><span data-itype-list="[51]"><?php _e( 'New files', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr>
-                    <tr id="crb-numbers-50">
-                        <td><span data-itype-list="[50]"><?php _e( 'Changed files', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr>
-                    <tr id="crb-numbers-15">
-                        <td><span data-itype-list="[15]"><?php _e( 'Checksum mismatch', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr>
-                    <tr id="crb-numbers-30">
-                        <td><span data-itype-list="[30]"><?php _e( 'Unwanted extensions', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr>
-                    <tr id="crb-numbers-18">
-                        <td><span data-itype-list="[18]" data-setype-list="[21]"><?php _e( 'Unattended files', 'wp-cerber' ); ?></span></td>
-                        <td class="crb-scan-number" data-init="-">-</td>
-                    </tr>
-                </table>
+                <?php echo $stats; ?>
             </div>
             <div class="scan-tile">
                 <div><p><span id="crb-scanned-files" data-init="0">0</span> / <span id="crb-total-files"
@@ -146,10 +124,19 @@ function cerber_scanner_show_dashboard( $msg = '', $status = 0 ) {
             </div>
         </div>
 
-        <p id="crb-scan-message"><?php echo $msg; ?></p>
+        <div id="crb-scan-message"><?php echo $msg; ?></div>
 
     </div>
     <div id="crb-scan-details">
+
+        <?php
+
+        if ( $note ) {
+	        echo '<div id="crb-scan-note">' . $note . '</div>';
+        }
+
+        ?>
+
         <table class="crb-table" id="crb-browse-files">
 			<?php
 			$rows = array();
@@ -157,20 +144,7 @@ function cerber_scanner_show_dashboard( $msg = '', $status = 0 ) {
 			$rows[] = '<tr class="crb-scan-container" id="crb-muplugins" style=""><td colspan="6">Must use plugins</td></tr>';
 			$rows[] = '<tr class="crb-scan-container" id="crb-dropins" style=""><td colspan="6">Drop-ins</td></tr>';
 			$rows[] = '<tr class="crb-scan-container" id="crb-plugins" style=""><td colspan="6">Plugins</td></tr>';
-
-			/*
-			$plugins = get_plugins();
-			foreach ( $plugins as $plugin ) {
-				$rows[] = '<tr class="crb-scan-section" id="' . sha1( $plugin['Name'] ) . '" style="display:none;"></tr>';
-			}
-			*/
 			$rows[] = '<tr class="crb-scan-container" id="crb-themes" style=""><td colspan="6">Themes</td></tr>';
-
-			/*$themes = wp_get_themes();
-			foreach ( $themes as $theme_folder => $theme ) {
-				$rows[] = '<tr class="crb-scan-section" id="' . sha1( $theme->get( 'Name' ) ) . '" style="display:none;"></tr>';
-			}*/
-
 			$rows[] = '<tr class="crb-scan-container" id="crb-uploads" style=""><td colspan="6">Uploads folder</td></tr>';
 			$rows[] = '<tr class="crb-scan-container" id="crb-unattended" style=""><td colspan="6">Unattended files</td></tr>';
 			echo implode( "\n", $rows );
@@ -207,9 +181,6 @@ function cerber_show_scanner() {
 		else {
 			$status = 3;
 		}
-	}
-	else {
-		$msg = __( 'It seems this website has never been scanned. To start scanning click the button below.', 'wp-cerber' );
 	}
 
 	$start_quick = '<input data-control="start_scan" data-mode="quick" type="button" value="' . __( 'Start Quick Scan', 'wp-cerber' ) . '" class="button button-primary">';
@@ -675,7 +646,8 @@ add_action( 'wp_ajax_cerber_scan_bulk_files', function () {
 	if ( $operation == 'ignore_add_file' ) {
 		// Update the last scan results to keep it up to date and avoid user confusing
 		if ( $scan = cerber_get_scan() ) {
-			$scan['issues'] = crb_issue_filer( $scan['issues'], function ( $file_name ) {
+
+		    crb_file_filter( $scan['issues'], function ( $file_name ) {
 				global $crb_list;
 				if ( in_array( $file_name, $crb_list ) ) {
 					return false;
@@ -683,6 +655,7 @@ add_action( 'wp_ajax_cerber_scan_bulk_files', function () {
 
 				return true;
 			} );
+
 			cerber_update_scan( $scan );
 		}
 		if ( ! cerber_update_set( 'ignore-list', $ignore ) ) {
@@ -1132,7 +1105,7 @@ function crb_scan_insights_brief( $scan_id ) {
 		if ( $sum = array_sum( $files ) ) {
 			$sum = crb_size_format( $sum );
 		}
-		$folders[] = array( 'Beyond the WordPress root folder', '', count( $files ), $sum );
+		$folders[] = array( 'Above the WordPress installation folder', '', count( $files ), $sum );
 	}
 
 	$column = array_column( $folders, 2 );
@@ -1242,7 +1215,7 @@ function crb_scan_insights_exts( $scan_id ) {
 		__( 'Average Size', 'wp-cerber' ),
 		__( 'Oldest', 'wp-cerber' ),
 		__( 'Newest', 'wp-cerber' ),
-	), '', 'crb_align_right', 'crb-monospace crb-anchor-decorated' );
+	), 'crb-ext-statistics', 'crb_align_right', 'crb-monospace crb-anchor-decorated' );
 
 	return $report;
 }

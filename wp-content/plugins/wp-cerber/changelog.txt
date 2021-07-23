@@ -1,3 +1,21 @@
+= 8.9 =
+Improved: An updated scan statistic and filtering widget. Dynamically displays the most important issues with sorting.
+Improved: The percentage of completion of a scanner step is shown now.
+Improved: Sanitizing of malformed filenames in the scanner reports has been improved to avoid possible issues with the layout of the scan results page if malware creates malformed filenames to hinder their detection.
+Improved: Handling of WordPress locales and versions on websites with multilanguage plugins has been improved.
+Improved: A missing wp-config-sample.php file is not reported as an issue in the results of the scan anymore.
+Improved: Handling REGEX patterns for the setting fields "Restrict email addresses" and "Prohibited usernames". Now they support REGEX quantifiers.
+Improved: You can specify the "User-Agent" string for requests from the main (master) Cerber.Hub website by defining the PHP constant CERBER_HUB_UA in the wp-config.php file.
+Improved: Diagnostic logging for network requests to the WP Cerber cloud. To enable logging, define the PHP constant CERBER_CLOUD_DEBUG in the wp-config.php file. Logging covers admin operations on the WP Cerber admin pages only.
+Improved: Text on the forbidden page is translatable now.
+Fixed bug: Some long filenames in the scan results break the layout of the scan results page, making it hard to navigate and use.
+Fixed bug: Unwanted file extensions are not detected if a file is identified as malicious.
+Fixed bug: If a file is missing, the full filename is not shown in the scan results when clicking the “Show full filenames” icon.
+Fixed bug: "PHP Deprecated: Required parameter $function follows optional parameter $pattern in /plugins/wp-cerber/cerber-scanner.php".
+Fixed bug: "PHP Fatal error: Call to undefined function crb_admin_hash_token() in cerber-load.php:1521".
+Fixed bug: "PHP Notice: Undefined property: WP_Error::$ID in cerber-load.php on line 1131".
+Breaking changes on the plugin admin pages: all versions of Internet Explorer browser and Safari browser version 13.0 and older are not supported anymore, meaning some elements might not work as expected.
+
 = 8.8.5 =
 * New: Quick user activity analytics (user insights) with filtering links on the Activity and Live Traffic log pages. Select a user to see how it works.
 * New: Quick IP address activity and analytics (IP insights) with filtering links on the Activity and Live Traffic log pages. Select an IP address to see how it works.

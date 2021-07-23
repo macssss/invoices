@@ -583,7 +583,7 @@ final class CRB_2FA {
 			return '';
 		}
 
-		return implode( '</br>', $pins );
+		return implode( '<br/>', $pins );
 
 	}
 

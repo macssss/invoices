@@ -223,9 +223,10 @@ function lab_api_send_request( $workload = array(), $payload_key = null ) {
  * @return array|bool The response of a node on the success request otherwise false on any error
  */
 function lab_send_request( $request, $node_id = null, $scheme = null ) {
-	global $node_delay;
+	global $node_delay, $cerber_lab_last_net_error, $cerber_lab_last_node_id;
 
 	$node = lab_get_node( $node_id );
+
 	if ( ! $scheme ) {
 		if ( crb_get_settings( 'cerberproto' ) ) {
 			$scheme = 'https';
@@ -258,11 +259,15 @@ function lab_send_request( $request, $node_id = null, $scheme = null ) {
 
 	$curl = @curl_init(); // @since 4.32
 	if ( ! $curl ) {
+		cerber_error_log( 'Unable to initialize cURL', 'CLOUD' );
+
 		return false;
 	}
 
+	$url = $scheme . '://' . $node[2] . '/engine/v1/';
+
 	curl_setopt_array( $curl, array(
-		CURLOPT_URL               => $scheme . '://' . $node[2] . '/engine/v1/',
+		CURLOPT_URL               => $url,
 		CURLOPT_POST              => true,
 		CURLOPT_HTTPHEADER        => $headers,
 		CURLOPT_POSTFIELDS        => $request_body,
@@ -276,9 +281,14 @@ function lab_send_request( $request, $node_id = null, $scheme = null ) {
 		CURLOPT_CAINFO            => ABSPATH . WPINC . '/certificates/ca-bundle.crt',
 	) );
 
+	cerber_diag_log( 'Sending request to: ' . $url, 'CLOUD' );
+	cerber_diag_log( 'Request body: ' . print_r( $body, 1 ), 'CLOUD' );
+
 	$start = microtime( true );
 	$data = @curl_exec( $curl );
 	$stop = microtime( true );
+
+	$cerber_lab_last_node_id = $node[0];
 
 	$node_delay = $stop - $start;
 
@@ -288,8 +298,11 @@ function lab_send_request( $request, $node_id = null, $scheme = null ) {
 	else {
 		$response['status'] = 0;
 		$code = intval( curl_getinfo( $curl, CURLINFO_HTTP_CODE ) );
-		$response['error'] = 'No connection (' . $code . ')';
-		//if (!$data) // curl_error($curl) . curl_errno($curl) );
+		$response['error'] = 'Network error occurred while connecting to the node #' . $node[0] . ' (' . $code . ')';
+		if ( $curl_err = curl_error( $curl ) ) {
+			$curl_err .= '[' . curl_errno( $curl ) . ']';
+			cerber_error_log( 'cURL => ' . $curl_err, 'CLOUD' );
+		}
 	}
 
 	curl_close( $curl );
@@ -304,7 +317,13 @@ function lab_send_request( $request, $node_id = null, $scheme = null ) {
 	) );
 
 	if ( $response['error'] ) {
+		$cerber_lab_last_net_error = $response['error'];
+		cerber_error_log( $response['error'], 'CLOUD' );
+
 		return false;
+	}
+	elseif ( defined( 'CERBER_CLOUD_DEBUG' ) ) {
+		cerber_diag_log( 'Response: ' . print_r( $response, 1 ), 'CLOUD' );
 	}
 
 	return $response;
@@ -725,6 +744,7 @@ function lab_update_key( $lic, $expires = 0 ) {
 }
 
 function lab_validate_lic( $lic = '', &$msg = '' ) {
+	global $cerber_lab_last_net_error, $cerber_lab_last_node_id;
 
 	$msg = '';
 	$key = lab_get_key();
@@ -732,6 +752,7 @@ function lab_validate_lic( $lic = '', &$msg = '' ) {
 	if ( ! $lic ) {
 		if ( empty( $key[2] ) ) {
 			$msg = '(1)';
+
 			return false;
 		}
 		$lic = $key[2];
@@ -750,20 +771,24 @@ function lab_validate_lic( $lic = '', &$msg = '' ) {
 		$i --;
 	}
 
+	if ( ! empty( $cerber_lab_last_net_error ) ) {
+		$msg .= $cerber_lab_last_net_error;
+	}
+
 	if ( ! $ret || ! isset( $ret['response']['expires_gmt'] ) ) {
 		cerber_admin_notice( 'A network error occurred while verifying the license key. Please try again in a couple of minutes.' );
-		$msg = '(2)';
+		$msg .= '(2)';
 		$expires = 0;
 	}
 	else {
-		$msg = '(3)';
+		$msg .= '(3)';
 		$expires = absint( $ret['response']['expires_gmt'] );
 	}
 
 	lab_update_key( $lic, $expires );
 
 	if ( ! $expires ) {
-		$msg = '(4)';
+		$msg .= '(4.' . $i . '.' . $cerber_lab_last_node_id . '.' . htmlspecialchars( crb_array_get( $ret, array( 'response', 'expires_gmt' ), '@' ) ) . ')';
 
 		return false;
 	}
@@ -774,10 +799,11 @@ function lab_validate_lic( $lic = '', &$msg = '' ) {
 		return false;
 	}
 
-	$df         = get_option( 'date_format', false );
+	$df = get_option( 'date_format', false );
 	$gmt_offset = get_option( 'gmt_offset', false ) * 3600;
 
 	$msg = date_i18n( $df, $gmt_offset + $expires );
+
 	return true;
 }
 

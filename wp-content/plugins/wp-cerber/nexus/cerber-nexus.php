@@ -318,7 +318,7 @@ function nexus_is_valid_request() {
 		return false;
 	}
 
-	nexus_diag_log( 'Check for valid master request...' );
+	nexus_diag_log( 'Check for a valid master request ...' );
 
 	// It seems this is a request from the master
 	// Check master credentials and payload checksum

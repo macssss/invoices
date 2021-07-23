@@ -952,7 +952,7 @@ function nexus_net_send_request( $payload, $slave ) {
 
 	nexus_diag_log( 'Sending HTTP request to ' . $slave->site_url );
 
-	curl_setopt_array( $curl, array(
+	$curl_opt = array(
 		CURLOPT_URL               => $slave->site_url,
 		CURLOPT_FOLLOWLOCATION    => 0,
 		CURLOPT_POST              => true,
@@ -966,8 +966,14 @@ function nexus_net_send_request( $payload, $slave ) {
 		//CURLOPT_CERTINFO          => 1, doesn't work
 		//CURLOPT_VERBOSE          => 1,
 		CURLOPT_CAINFO            => ABSPATH . WPINC . '/certificates/ca-bundle.crt',
-		CURLOPT_ENCODING          => '' // allows built-in compressions
-	) );
+		CURLOPT_ENCODING          => '', // allows built-in compressions
+	);
+
+	if ( defined( 'CERBER_HUB_UA' ) ) {
+		$curl_opt[ CURLOPT_USERAGENT ] = (string) CERBER_HUB_UA;
+	}
+
+	curl_setopt_array( $curl, $curl_opt );
 
 	$response = @curl_exec( $curl );
 	$curl_info = curl_getinfo( $curl );

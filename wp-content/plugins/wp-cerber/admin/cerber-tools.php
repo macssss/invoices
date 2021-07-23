@@ -345,13 +345,14 @@ function cerber_show_lic() {
 	$valid = '';
 	if ( ! empty( $key[2] ) ) {
 		$lic = $key[2];
-		if ( lab_validate_lic( $lic, $expires ) ) {
+		if ( lab_validate_lic( $lic, $message ) ) {
 			$valid = '
-                <p><span style="color: green;">This key is valid until ' . $expires . '</span></p>
+                <p><span style="color: green;">This key is valid until ' . $message . '</span></p>
                 <p>To move the key to another website or web server, please follow these steps: <a href="https://my.wpcerber.com/how-to-move-license-key/" target="_blank">https://my.wpcerber.com/how-to-move-license-key/</a></p>';
 		}
 		else {
-			$valid = '<p><span style="color: red;">This license key is invalid or expired ' . $expires . '</span></p>
+			$message = htmlspecialchars( $message );
+			$valid = '<p><span style="color: red;">This license key is invalid or expired</span> <a href="#" onclick="alert(\'' . $message . '\'); return false;">[ i ]</a></p>
 			<p>If you believe this key is valid, please follow these steps: <a href="https://my.wpcerber.com/how-to-fix-invalid-or-expired-key/" target="_blank">https://my.wpcerber.com/how-to-fix-invalid-or-expired-key/</a></p>';
 		}
 	}
@@ -424,7 +425,7 @@ function cerber_show_wp_diag(){
 		array( 'Default PHP timezone', $tz ),
 		array( 'Disabled PHP functions', $disabled ),
 		array( 'WordPress version', cerber_get_wp_version() ),
-		array( 'WordPress locale', get_locale() ),
+		array( 'WordPress locale', cerber_get_wp_locale() ),
 		array( 'WordPress options DB table', $opt ),
 		array( 'MySQLi', ( function_exists( 'mysqli_connect' ) ) ? '<span style="color: green;">YES</span>' : '<span style="color: red;">NO</span>' ),
 		array( 'MySQL Native Driver (mysqlnd)', ( function_exists( 'mysqli_fetch_all' ) ) ? '<span style="color: green;">YES</span>' : 'NO' ),
@@ -474,9 +475,9 @@ function cerber_show_wp_diag(){
 		array( 'WordPress themes folder', cerber_get_themes_dir() ),
 		array( 'WordPress must-use plugin folder (WPMU_PLUGIN_DIR) ', WPMU_PLUGIN_DIR ),
 		array( 'WordPress config file', $config ),
-		array( 'PHP folder for uploading files', ini_get( 'upload_tmp_dir' ) ),
 		array( 'Server folder for temporary files', sys_get_temp_dir() ),
-		array( 'Server folder for user session data', session_save_path() ),
+		array( 'PHP folder for uploading files', ini_get( 'upload_tmp_dir' ) ),
+		array( 'PHP folder for user session data', session_save_path() ),
 		array( 'WP Cerber\'s quarantine folder', $folder ),
 		array( 'WP Cerber\'s diagnostic log', cerber_get_diag_log() )
 	);
@@ -607,7 +608,7 @@ function cerber_db_diag(){
 	if ( $errors = get_site_option( '_cerber_db_errors' ) ) {
 		$err = '<p style="color: #DF0000;">Some minor DB errors were detected</p><textarea>';
 		foreach ( $errors as $error ) {
-			$err .= $error[0] . "\n" . $error[1] . "\n" . cerber_auto_date( $error[2] ) . "\n------------------------\n";
+			$err .= $error[0] . "\n" . $error[1] . "\n" . cerber_auto_date( $error[2], false ) . "\n------------------------\n";
 		}
 		$err .= '</textarea>';
 		update_site_option( '_cerber_db_errors', '' );

@@ -1472,6 +1472,8 @@ body.wp-cerber_page_cerber-integrity {
 
 #crb-browse-files tr td:nth-child(3) {
     color: #000;
+    white-space: nowrap;
+    line-height: 180%;
 }
 
 #crb-browse-files tr td:nth-child(n+5) {
@@ -1506,6 +1508,7 @@ body.wp-cerber_page_cerber-integrity {
     font-family: "Roboto Mono", Menlo, Consolas, Monaco, monospace;
     font-size: 12px;
     color: #111;
+    word-break: break-all;
     /*cursor: pointer;*/
 }
 
@@ -1622,8 +1625,18 @@ body.wp-cerber_page_cerber-integrity {
 }
 
 #crb-scan-message {
+    display: none;
     clear: both;
-    color: #A00D5C;
+    color: #A30058;
+    margin: 1em 1em 0.5em;
+}
+
+#crb-scan-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    color: #A30058;
 }
 
 #ref-section-name {
@@ -1636,6 +1649,11 @@ body.wp-cerber_page_cerber-integrity {
 
 #crb_scan_insights .uis_loader_wrapper {
     margin-top: 100px;
+}
+
+#crb-ext-statistics td:nth-child(7),
+#crb-ext-statistics td:nth-child(8) {
+    white-space: nowrap;
 }
 
 /* end of the Scanner page */

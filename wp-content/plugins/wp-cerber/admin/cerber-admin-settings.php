@@ -291,7 +291,8 @@ function cerber_field_show( $args ) {
 	$value = crb_attr_escape( $value );
 
 	if ( isset( $args['list'] ) ) {
-		$value = cerber_array2text( $value, $args['delimiter'] );
+		$dlt = crb_array_get( $args, 'delimiter_show', $args['delimiter'] );
+		$value = cerber_array2text( $value, $dlt );
 	}
 
 	$name_prefix = 'cerber-' . $args['group'];
@@ -370,7 +371,13 @@ function cerber_field_show( $args ) {
 
 		case 'checkbox':
 			$html = '<div style="display: table-cell;"><label class="crb-switch"><input class="screen-reader-text" type="checkbox" id="' . $id . '" name="' . $name . '" value="1" ' . checked( 1, $value, false ) . $atts . ' /><span class="crb-slider round"></span></label></div>';
-			$html .= '<div style="display: table-cell;"><label for="' . $args['setting'] . '">' . $label . '</label></div><i ' . $data . '></i>';
+			//$html .= '<div style="display: table-cell;"><label for="' . $args['setting'] . '">' . $label . '</label></div><i ' . $data . '></i>';
+			if ( $label ) {
+				$html .= '<div style="display: table-cell;"><label for="' . $args['setting'] . '">' . $label . '</label></div>';
+			}
+			if ( $data ) {
+				$html .= '<i ' . $data . '></i>';
+			}
 			break;
 
 		case 'textarea':
@@ -480,17 +487,17 @@ function cerber_field_show( $args ) {
 			break;
 	}
 
-	if ( ! empty( $args['enabled'] ) ) {
+	if ( ! empty( $args['field_switcher'] ) ) {
 		$name = 'cerber-' . $args['group'] . '[' . $args['setting'] . '-enabled]';
 		$value = 0;
 		if ( isset( $settings[ $args['setting'] . '-enabled' ] ) ) {
 			$value = $settings[ $args['setting'] . '-enabled' ];
 		}
-		$checkbox = '<label class="crb-switch"><input class="screen-reader-text" type="checkbox" id="' . $args['setting'] . '-enabled" name="' . $name . '" value="1" ' . checked( 1, $value, false ) . ' /><span class="crb-slider round"></span></label>' . $args['enabled'];
+		$checkbox = '<label class="crb-switch"><input class="screen-reader-text" type="checkbox" id="' . $args['setting'] . '-enabled" name="' . $name . '" value="1" ' . checked( 1, $value, false ) . ' /><span class="crb-slider round"></span></label><span>' . $args['field_switcher'].'</span>';
 		$html = $checkbox . ' ' . $html;
 	}
 
-	echo $html . "\n";
+	echo '<div class="crb-settings-field">' . $html . "</div>\n";
 }
 
 function cerber_role_select( $name = 'cerber-roles', $selected = array(), $class = '', $multiple = '', $placeholder = '', $width = '75%' ) {
@@ -708,24 +715,11 @@ add_filter( 'pre_update_option_'.CERBER_OPT, function ($new, $old, $option) {
 
 	return $new;
 }, 10, 3 );
-/*
-	Sanitizing/checking user input for User tab settings
-*/
-add_filter( 'pre_update_option_'.CERBER_OPT_U, function ($new, $old, $option) {
 
-	$new['prohibited'] = cerber_text2array($new['prohibited'], ',', 'strtolower');
-	$new['emlist'] = cerber_text2array($new['emlist'], ',', 'strtolower');
-
-	$new['authonlymsg'] = strip_tags( $new['authonlymsg'] );
-
-	return $new;
-}, 10, 3 );
 /*
 	Sanitizing/checking user input for anti-spam tab settings
 */
 add_filter( 'pre_update_option_' . CERBER_OPT_A, function ( $new, $old, $option ) {
-
-	$new['botswhite'] = cerber_text2array( $new['botswhite'], "\n" );
 
 	if ( empty( $new['botsany'] ) && empty( $new['botscomm'] ) && empty( $new['botsreg'] ) ) {
 		update_site_option( 'cerber-antibot', '' );
@@ -868,10 +862,6 @@ add_filter( 'pre_update_option_'.CERBER_OPT_T, function ($new, $old, $option) {
 		}
 	}
 
-	$new['tinoua'] = cerber_text2array( $new['tinoua'], "\n" );
-	$new['tinolocs'] = cerber_text2array( $new['tinolocs'], "\n" );
-
-	$new['timask'] = cerber_text2array( $new['timask'], "," );
 	if ( $new['tithreshold'] ) {
 		$new['tithreshold'] = absint( $new['tithreshold'] );
 	}
@@ -923,16 +913,6 @@ add_filter( 'pre_update_option_' . CERBER_OPT_S, function ( $new, $old, $option 
 
 	$new['scan_exclude'] = cerber_normal_dirs( $new['scan_exclude'] );
 
-	$new['scan_cpt']  = cerber_text2array( $new['scan_cpt'], "\n" );
-	$new['scan_uext'] = cerber_text2array( $new['scan_uext'], ",", function ( $ext ) {
-		$ext = strtolower( trim( $ext, '. *' ) );
-		if ( $ext == 'php' || $ext == 'js' || $ext == 'css' || $ext == 'txt' ) {
-			$ext = '';
-		}
-
-		return $ext;
-	} );
-
 	return $new;
 }, 10, 3 );
 
@@ -975,12 +955,6 @@ add_filter( 'pre_update_option_' . CERBER_OPT_P, function ( $new, $old, $option 
 
 	$new['scan_delexdir'] = cerber_normal_dirs($new['scan_delexdir']);
 
-	$new['scan_delexext'] = cerber_text2array( $new['scan_delexext'], ",", function ( $ext ) {
-		$ext = strtolower( trim( $ext, '. *' ) );
-
-		return $ext;
-	} );
-
 	return $new;
 }, 10, 3 );
 
@@ -991,7 +965,42 @@ add_filter( 'pre_update_option_' . CERBER_OPT_P, function ( $new, $old, $option 
  */
 add_filter( 'pre_update_option', 'cerber_o_o_sanitizer', 10, 3 );
 function cerber_o_o_sanitizer( $value, $option, $old_value ) {
+
 	if ( in_array( $option, cerber_get_setting_list() ) ) {
+
+		if ( is_array( $value ) ) {
+
+		    // Parsing settings, applying formatting, etc.
+
+			foreach ( $value as $setting => &$setting_val ) {
+				if ( ! $conf = cerber_settings_config( array( 'setting' => $setting ) ) ) {
+					continue;
+				}
+
+				$callback = crb_array_get( $conf, 'apply' );
+
+				if ( isset( $conf['list'] ) ) {
+					//$filter = crb_array_get( $conf, 'filter' ); // is_email();
+					$regex = crb_array_get( $conf, 'regex_filter' );
+					$setting_val = cerber_text2array( $setting_val, $conf['delimiter'], $callback, $regex );
+
+					global $_deny;
+					if ( $_deny = crb_array_get( $conf, 'deny_filter' ) ) {
+						$setting_val = array_filter( $setting_val, function ( $e ) {
+							global $_deny;
+
+							return ! in_array( $e, $_deny );
+						} );
+					}
+				}
+				else {
+					if ( $callback && is_callable( $callback ) ) {
+					    $setting_val = call_user_func( $callback, $setting_val );
+					}
+				}
+			}
+		}
+
 		if ( is_array( $value ) ) {
 			array_walk_recursive( $value, function ( &$element, $key ) {
 				if ( ! is_array( $element ) ) {
