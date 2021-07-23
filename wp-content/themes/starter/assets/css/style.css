@@ -33498,27 +33498,6 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
   content: "#";
 }
 
-/* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__actions.scss */
-.gm_invoices-actions {
-  display: block;
-}
-
-/* line 6, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__actions.scss */
-.gm_invoices-actions__inner, .gm_invoices-actions__column-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -16px;
-  margin-left: -16px;
-}
-
-/* line 17, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__actions.scss */
-.gm_invoices-actions__column, .gm_invoices-actions__column-item {
-  margin-top: 16px;
-  padding-left: 16px;
-}
-
 /* line 6, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
 .gm_invoices .gm_table-list__cell--id {
   width: 8%;
@@ -33836,6 +33815,67 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 .gm_invoices-pagination__item--active {
   color: #191919;
   background: #e6e7eb;
+}
+
+/* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__layout.scss */
+.gm_invoices-actions {
+  display: block;
+}
+
+/* line 6, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__layout.scss */
+.gm_invoices-actions__inner, .gm_invoices-actions__column-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+
+/* line 17, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__layout.scss */
+.gm_invoices-actions__column, .gm_invoices-actions__column-item {
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
+/* line 4, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
+.gm_invoices-status-tabs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+/* line 16, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
+.gm_invoices-status-tabs__list > * {
+  margin-top: 8px;
+  padding-left: 8px;
+}
+
+/* line 23, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
+.gm_invoices-status-tabs__item {
+  display: block;
+  padding: 4px 8px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #6c7481;
+  text-decoration: none !important;
+  border-radius: 5px;
+}
+
+/* line 36, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
+.gm_invoices-status-tabs__item:hover {
+  color: #6c7481;
+  background: #d8dde6;
+}
+
+/* line 38, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
+.gm_invoices-status-tabs__item--active {
+  color: white;
+  background: #6c7481;
 }
 
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/item/__download.scss */

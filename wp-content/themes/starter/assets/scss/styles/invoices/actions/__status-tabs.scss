@@ -1,0 +1,40 @@
+
+.gm_invoices-status-tabs {
+	
+	&__list {
+		
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		display: flex;
+		flex-wrap: wrap;
+		
+		margin-top: -$gm_offset-mini;
+		margin-left: -$gm_offset-mini;
+		
+		> * {
+			
+			margin-top: $gm_offset-mini;
+			padding-left: $gm_offset-mini;
+		}
+	}
+	
+	&__item {
+		
+		display: block;
+		padding: $gm_offset-micro $gm_offset-mini;
+		
+		font-size: $gm_small-font-size;
+		text-transform: uppercase;
+		color: $gm_secondary-color;
+		text-decoration: none !important;
+		
+		
+		border-radius: $gm_base-radius;
+		
+		&:hover { color: $gm_secondary-color; background: $gm_light-muted-color; }
+		
+		&--active { color: white; background: $gm_secondary-color; }
+	}
+}

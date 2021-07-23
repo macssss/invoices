@@ -15,6 +15,31 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-status-tabs">
+								
+								<ul class="gm_invoices-status-tabs__list">
+									
+									<li>
+										<a href="#all" class="gm_invoices-status-tabs__item gm_invoices-status-tabs__item--active"><?php _e( 'All', 'warp' ); ?></a>
+									</li>
+									
+									<li>
+										<a href="#ongoing" class="gm_invoices-status-tabs__item"><?php _e( 'Ongoing', 'warp' ); ?></a>
+									</li>
+									
+									<li>
+										<a href="#verified" class="gm_invoices-status-tabs__item"><?php _e( 'Verified', 'warp' ); ?></a>
+									</li>
+									
+									<li>
+										<a href="#pending" class="gm_invoices-status-tabs__item"><?php _e( 'Pending', 'warp' ); ?></a>
+									</li>
+									
+									<li>
+										<a href="#paid" class="gm_invoices-status-tabs__item"><?php _e( 'Paid', 'warp' ); ?></a>
+									</li>
+									
+								</ul>
+								
 							</div>
 							
 						</div>
