@@ -1,0 +1,23 @@
+
+.gm_invoices-actions {
+	
+	display: block;
+	
+	&__inner, &__column-inner {
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		
+		margin-top: -$gm_offset-small;
+		margin-left: -$gm_offset-small;
+	}
+	
+	&__column, &__column-item {
+		
+		margin-top: $gm_offset-small;
+		padding-left: $gm_offset-small;
+	}
+	
+}
