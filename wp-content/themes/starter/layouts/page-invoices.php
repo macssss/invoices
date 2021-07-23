@@ -9,7 +9,7 @@
 		
 		<?php endif; ?>
 		
-		<div class="gm_invoices-page__content uk-margin-top">
+		<div class="gm_invoices-page__content uk-margin-top-small">
 			<?php echo gm_get_invoices(); ?>
 		</div>
 		
