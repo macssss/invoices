@@ -34114,13 +34114,13 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 @media (min-width: 861px) {
   /* line 213, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
-  .gm_invoices .gm_table-list__body .gm_table-list__row {
+  .gm_invoices .gm_table-list__body .gm_table-list__row:not(.gm_invoices-item--empty) {
     background: white;
     transition: all 0.3s ease-in-out;
     transform-origin: center center;
   }
   /* line 219, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/__table-list.scss */
-  .gm_invoices .gm_table-list__body .gm_table-list__row:hover {
+  .gm_invoices .gm_table-list__body .gm_table-list__row:not(.gm_invoices-item--empty):hover {
     transform: scale(1.04);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     z-index: 2;
@@ -34358,8 +34358,8 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 
 /* line 38, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/actions/__status-tabs.scss */
 .gm_invoices-status-tabs__item--active {
-  color: white;
-  background: #6c7481;
+  color: white !important;
+  background: #6c7481 !important;
 }
 
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/item/__download.scss */
@@ -34382,6 +34382,14 @@ body.gm_transparent-header .gm_navbar-wrapper:not(.uk-active) .logo-contrast {
 /* line 19, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/item/__download.scss */
 .gm_invoices-item__download-link:hover {
   color: #c3770b;
+}
+
+/* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/item/__not-found.scss */
+.gm_invoices-item--empty {
+  text-align: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* line 2, /Users/Max/Desktop/CreateIT/Site/app/public/wp-content/themes/starter/assets/scss/styles/invoices/item/__restaurant.scss */

@@ -35,6 +35,6 @@
 		
 		&:hover { color: $gm_secondary-color; background: $gm_light-muted-color; }
 		
-		&--active { color: white; background: $gm_secondary-color; }
+		&--active { color: white !important; background: $gm_secondary-color !important; }
 	}
 }
