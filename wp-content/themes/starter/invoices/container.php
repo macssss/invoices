@@ -33,11 +33,11 @@
 										
 										<?php
 											
-											foreach( $statuses as $status_item ) {
+											foreach( $statuses as $key => $status_item ) {
 												
 												$value = $status_item['value'];
 												$label = $status_item['label'];
-												$class = !$status || $status == $status_item['value'] ? ' gm_invoices-status-tabs__item--active gm_js-active' : '';
+												$class = ( !$status && $key == 0 ) || ( $status == $status_item['value'] ) ? ' gm_invoices-status-tabs__item--active gm_js-active' : '';
 												
 												printf( '<li><a href="#%s" class="gm_invoices-status-tabs__item%s" data-invoices-status-item="%s">%s</a></li>', $value, $class, $value, $label );
 											}	
