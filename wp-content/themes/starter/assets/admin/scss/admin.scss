@@ -56,6 +56,14 @@
 
 
 
+// LiteSpeed
+
+#wp-admin-bar-litespeed-menu-default > *:not(#wp-admin-bar-litespeed-purge-all) { display: none; }
+
+// END LiteSpeed
+
+
+
 // Plugins Goups
 
 body.plugins-php .subsubsub {
