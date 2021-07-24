@@ -21,7 +21,7 @@
 				
 				<p class="uk-text-center">
 					
-					<a href="<?php echo wp_login_url(); ?>" class="uk-button uk-button-secondary"><?php _e( 'Login', 'warp' ); ?></a>
+					<a href="<?php echo wp_login_url('/'); ?>" class="uk-button uk-button-secondary"><?php _e( 'Login', 'warp' ); ?></a>
 					
 				</p>
 				
