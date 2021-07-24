@@ -1,3 +1,14 @@
+<?php
+	
+	$invoices_list       = isset( $args['invoices_list'] )       ? $args['invoices_list']       : '';
+	$invoices_pagination = isset( $args['invoices_pagination'] ) ? $args['invoices_pagination'] : '';
+	$status              = isset( $args['status'] )              ? $args['status']              : '';
+	$from_date           = isset( $args['from_date'] )           ? $args['from_date']           : '';
+	$to_date             = isset( $args['to_date'] )             ? $args['to_date']             : '';
+	$search              = isset( $args['search'] )              ? $args['search']              : '';
+	$statuses            = isset( $args['statuses'] )            ? $args['statuses']            : array();
+	
+?>
 
 <div class="gm_invoices uk-form" data-invoices>
 	
@@ -12,37 +23,33 @@
 					<div class="gm_invoices-actions__column-inner">
 						
 						
-						<div class="gm_invoices-actions__column-item">
-							
-							<div class="gm_invoices-status-tabs" data-invoices-status>
+						<?php if ( $statuses ): ?>
+						
+							<div class="gm_invoices-actions__column-item">
 								
-								<ul class="gm_invoices-status-tabs__list">
+								<div class="gm_invoices-status-tabs" data-invoices-status>
 									
-									<li>
-										<a href="#all" class="gm_invoices-status-tabs__item gm_invoices-status-tabs__item--active gm_js-active" data-invoices-status-item='all'><?php _e( 'All', 'warp' ); ?></a>
-									</li>
+									<ul class="gm_invoices-status-tabs__list">
+										
+										<?php
+											
+											foreach( $statuses as $status_item ) {
+												
+												$value = $status_item['value'];
+												$label = $status_item['label'];
+												$class = !$status || $status == $status_item['value'] ? ' gm_invoices-status-tabs__item--active gm_js-active' : '';
+												
+												printf( '<li><a href="#%s" class="gm_invoices-status-tabs__item%s" data-invoices-status-item="%s">%s</a></li>', $value, $class, $value, $label );
+											}	
+										?>
+										
+									</ul>
 									
-									<li>
-										<a href="#ongoing" class="gm_invoices-status-tabs__item" data-invoices-status-item='ongoing'><?php _e( 'Ongoing', 'warp' ); ?></a>
-									</li>
-									
-									<li>
-										<a href="#verified" class="gm_invoices-status-tabs__item" data-invoices-status-item='verified'><?php _e( 'Verified', 'warp' ); ?></a>
-									</li>
-									
-									<li>
-										<a href="#pending" class="gm_invoices-status-tabs__item" data-invoices-status-item="pending"><?php _e( 'Pending', 'warp' ); ?></a>
-									</li>
-									
-									<li>
-										<a href="#paid" class="gm_invoices-status-tabs__item" data-invoices-status-item="paid"><?php _e( 'Paid', 'warp' ); ?></a>
-									</li>
-									
-								</ul>
+								</div>
 								
 							</div>
 							
-						</div>
+						<?php endif; ?>
 						
 						
 					</div>
@@ -58,13 +65,13 @@
 							<div class="gm_invoices-date-filter">
 									
 								<div class="gm_invoices-date-filter__field-wrap">
-									<input type="text" name="from_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'From', 'warp' ); ?>" />
+									<input type="text" name="from_date" class="gm_invoices-date-filter__field uk-form-small" value="<?php echo $from_date; ?>" placeholder="<?php _e( 'From', 'warp' ); ?>" />
 								</div>
 								
 								<div class="gm_invoices-date-filter__arrow"></div>
 								
 								<div class="gm_invoices-date-filter__field-wrap">
-									<input type="text" name="to_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'To', 'warp' ); ?>" />
+									<input type="text" name="to_date" class="gm_invoices-date-filter__field uk-form-small" value="<?php echo $to_date; ?>" placeholder="<?php _e( 'To', 'warp' ); ?>" />
 								</div>
 									
 							</div>
@@ -75,7 +82,7 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-search">
-								<input type="search" name="search" class="gm_invoices-search__field uk-form-small" placeholder="<?php _e( 'Search', 'warp' ); ?>" />
+								<input type="search" name="search" class="gm_invoices-search__field uk-form-small" value="<?php echo $search; ?>" placeholder="<?php _e( 'Search', 'warp' ); ?>" />
 							</div>
 							
 						</div>
@@ -162,14 +169,14 @@
 			
 			
 			<div class="gm_table-list__body" data-invoices-list>
-				<?php echo $args['invoices_list']; ?>
+				<?php echo $invoices_list; ?>
 			</div>
 			
 			
 			<div class="gm_table-list__footer">
 				
 				<div class="gm_invoices-pagination-wrap" data-invoices-pagination>
-					<?php echo $args['invoices_pagination']; ?>
+					<?php echo $invoices_pagination; ?>
 				</div>
 				
 			</div>
