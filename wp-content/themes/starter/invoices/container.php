@@ -91,7 +91,7 @@
 						<div class="gm_invoices-actions__column-item">
 							
 							<div class="gm_invoices-mark-as-paid">
-								<a href="#mark-as-paid" class="uk-button uk-button-small uk-button-primary"><?php _e( 'Mark as paid', 'warp' ); ?></a>
+								<a href="#mark-as-paid" class="uk-button uk-button-small uk-button-primary" data-invoices-mark-as-paid><?php _e( 'Mark as paid', 'warp' ); ?></a>
 							</div>
 							
 						</div>

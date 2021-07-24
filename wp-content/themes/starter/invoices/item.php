@@ -56,7 +56,7 @@
 		</div>
 		
 		
-		<div class="gm_table-list__cell gm_table-list__cell--status" data-title="<?php _e( 'Status', 'warp' ); ?>">
+		<div class="gm_table-list__cell gm_table-list__cell--status" data-title="<?php _e( 'Status', 'warp' ); ?>" data-invoices-status-item=<?php echo $id; ?>>
 			
 			<div class="gm_invoices-item__status gm_invoices-item__status--<?php echo $status_value; ?>">
 				<?php echo $status_label; ?>
