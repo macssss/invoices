@@ -1,9 +1,8 @@
 <?php
 	
 	$count            = (int) $args['count'];
-	$per_page         = (int) $args['per_page'];
 	$current          = (int) $args['current'];
-	$pagination_count = ceil( $count / $per_page );
+	$pagination_count = (int) $args['pagination_count']
 
 ?>
 
@@ -27,7 +26,7 @@
 				
 				<?php if ( $pagination_count > 1 && $current > 1 ): ?>
 				
-					<li><a class="gm_invoices-pagination__item gm_invoices-pagination__item--prev" href="#page-<?php echo $current - 1; ?>"></a></li>
+					<li><a class="gm_invoices-pagination__item gm_invoices-pagination__item--prev" href="#prev-page" data-invoices-pagination-item="<?php echo $current - 1; ?>"></a></li>
 				
 				<?php endif; ?>
 				
@@ -38,12 +37,12 @@
 						
 						if ( $i == $current ) {
 							
-							echo '<li><span class="gm_invoices-pagination__item gm_invoices-pagination__item--active">' . $i . '</a></li>';
+							echo '<li><span class="gm_invoices-pagination__item gm_invoices-pagination__item--active" data-invoices-pagination-item="' . $i . '">' . $i . '</a></li>';
 						}
 						
 						else {
 							
-							echo '<li><a class="gm_invoices-pagination__item" href="#page-' . $i . '">' . $i . '</a></li>';
+							echo '<li><a class="gm_invoices-pagination__item" href="#page-' . $i . '" data-invoices-pagination-item="' . $i . '">' . $i . '</a></li>';
 						}
 						
 					}
@@ -53,7 +52,7 @@
 				
 				<?php if ( $pagination_count > 1 && $current < $pagination_count ): ?>
 			
-					<li><a class="gm_invoices-pagination__item gm_invoices-pagination__item--next" href="#page-<?php echo $current + 1; ?>"></a></li>
+					<li><a class="gm_invoices-pagination__item gm_invoices-pagination__item--next" href="#next-page" data-invoices-pagination-item="<?php echo $current + 1; ?>"></a></li>
 				
 				<?php endif; ?>
 				

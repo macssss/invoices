@@ -236,6 +236,7 @@ $this['asset']->addFile('js', 'js:base/forms/files.js');
 $this['asset']->addFile('js', 'js:base/forms/select.js');
 
 $this['asset']->addFile('js', 'js:invoices/date-filter.js');
+$this['asset']->addFile('js', 'js:invoices/filters-and-pagination.js');
 
 if ( is_plugin_active ( 'woocommerce/woocommerce.php' ) ) {
 

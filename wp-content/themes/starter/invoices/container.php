@@ -14,28 +14,28 @@
 						
 						<div class="gm_invoices-actions__column-item">
 							
-							<div class="gm_invoices-status-tabs">
+							<div class="gm_invoices-status-tabs" data-invoices-status>
 								
 								<ul class="gm_invoices-status-tabs__list">
 									
 									<li>
-										<a href="#all" class="gm_invoices-status-tabs__item gm_invoices-status-tabs__item--active"><?php _e( 'All', 'warp' ); ?></a>
+										<a href="#all" class="gm_invoices-status-tabs__item gm_invoices-status-tabs__item--active gm_js-active" data-invoices-status-item='all'><?php _e( 'All', 'warp' ); ?></a>
 									</li>
 									
 									<li>
-										<a href="#ongoing" class="gm_invoices-status-tabs__item"><?php _e( 'Ongoing', 'warp' ); ?></a>
+										<a href="#ongoing" class="gm_invoices-status-tabs__item" data-invoices-status-item='ongoing'><?php _e( 'Ongoing', 'warp' ); ?></a>
 									</li>
 									
 									<li>
-										<a href="#verified" class="gm_invoices-status-tabs__item"><?php _e( 'Verified', 'warp' ); ?></a>
+										<a href="#verified" class="gm_invoices-status-tabs__item" data-invoices-status-item='verified'><?php _e( 'Verified', 'warp' ); ?></a>
 									</li>
 									
 									<li>
-										<a href="#pending" class="gm_invoices-status-tabs__item"><?php _e( 'Pending', 'warp' ); ?></a>
+										<a href="#pending" class="gm_invoices-status-tabs__item" data-invoices-status-item="pending"><?php _e( 'Pending', 'warp' ); ?></a>
 									</li>
 									
 									<li>
-										<a href="#paid" class="gm_invoices-status-tabs__item"><?php _e( 'Paid', 'warp' ); ?></a>
+										<a href="#paid" class="gm_invoices-status-tabs__item" data-invoices-status-item="paid"><?php _e( 'Paid', 'warp' ); ?></a>
 									</li>
 									
 								</ul>
@@ -58,13 +58,13 @@
 							<div class="gm_invoices-date-filter">
 									
 								<div class="gm_invoices-date-filter__field-wrap">
-									<input type="text" name="start_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'From', 'warp' ); ?>" readonly="" />
+									<input type="text" name="from_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'From', 'warp' ); ?>" />
 								</div>
 								
 								<div class="gm_invoices-date-filter__arrow"></div>
 								
 								<div class="gm_invoices-date-filter__field-wrap">
-									<input type="text" name="end_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'To', 'warp' ); ?>" readonly="" />
+									<input type="text" name="to_date" class="gm_invoices-date-filter__field uk-form-small" placeholder="<?php _e( 'To', 'warp' ); ?>" />
 								</div>
 									
 							</div>
