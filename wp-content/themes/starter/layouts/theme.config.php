@@ -177,6 +177,10 @@ $this['asset']->addFile('css', 'css:style.css');
 
 // add scripts
 
+if ( function_exists( 'is_plugin_active' ) && !is_plugin_active ( 'widgetkit/widgetkit.php' ) ) {
+
+    $this['asset']->addFile('js', 'warp:vendor/uikit/js/uikit.js');
+}
 
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/accordion.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/autocomplete.js');
