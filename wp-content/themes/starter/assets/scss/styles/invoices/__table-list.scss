@@ -210,7 +210,7 @@
 	
 	@media ( min-width: 861px ) {
 		
-		&__body .gm_table-list__row {
+		&__body .gm_table-list__row:not(.gm_invoices-item--empty) {
 			
 			background: white;
 			transition: $gm_transition-default;
