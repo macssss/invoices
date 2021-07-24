@@ -101,6 +101,8 @@ jQuery( function($) {
 					list.html( data.list );
 					pagination.html( data.pagination );
 					
+					delete(params.nonce);
+					
 					var query_string = $.param( params );
 					window.history.replaceState( {}, document.title, window.location.pathname + '?' + query_string );
 					
@@ -125,6 +127,8 @@ jQuery( function($) {
 		
 		function get_params( container, page = 1, status = '', from_date = '', to_date = '', search = '' ) {
 			
+			var nonce             = container.find('[name="gm_invoices_nonce"]').val();
+			
 			var current_status    = container.find('[data-invoices-status-item].gm_js-active').data('invoices-status-item');
 			var current_from_date = container.find('[name="from_date"]').val();
 			var current_to_date   = container.find('[name="to_date"]').val();
@@ -135,7 +139,7 @@ jQuery( function($) {
 			to_date   = to_date && to_date != 'empty'     ? to_date   : current_to_date;
 			search    = search && search != 'empty'       ? search    : current_search;
 			
-			var params = {};
+			var params = { nonce : nonce };
 			
 			if ( page )      { params.in_page      = page; }
 			if ( status )    { params.in_status    = status; }

@@ -9,7 +9,8 @@ jQuery( function($) {
 			var container = $(e.delegateTarget);
 			var button    = $(this);
 			
-			var checked_items     = container.find('[name="check"]:checked');
+			var nonce          = container.find('[name="gm_invoices_nonce"]').val();
+			var checked_items  = container.find('[name="check"]:checked');
 			
 			
 			if ( !checked_items.length ) { return false; }
@@ -27,7 +28,8 @@ jQuery( function($) {
 			var data        = {
 				
 				action : 'mark_as_paid_invoices',
-				ids   : checked_items_ids
+				ids    : checked_items_ids,
+				nonce  : nonce
 			}
 			
 			$.ajax({

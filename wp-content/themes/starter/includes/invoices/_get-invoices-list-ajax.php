@@ -5,16 +5,18 @@
 	
 	function gm_get_invoices_list_ajax() {
 		
+		$params = isset( $_POST['params'] ) ? $_POST['params'] : '';
+		
+		$nonce     = '';
 		$page      = 1;
 		$status    = '';
 		$from_date = '';
 		$to_date   = '';
 		$search    = '';
 		
-		$params = isset( $_POST['params'] ) ? $_POST['params'] : '';
-		
 		if ( $params ) {
 			
+			$nonce     = isset( $params['nonce'] )        ? $params['nonce']      : $page;
 			$page      = isset( $params['in_page'] )      ? $params['in_page']      : $page;
 			$status    = isset( $params['in_status'] )    ? $params['in_status']    : $status;
 			$from_date = isset( $params['in_from_date'] ) ? $params['in_from_date'] : $from_date;
@@ -22,9 +24,13 @@
 			$search    = isset( $params['in_search'] )    ? $params['in_search']    : $search;
 		}
 		
-		$invoices_list = gm_get_invoices_list( $page, $status, $from_date, $to_date, $search );
+		if ( is_user_logged_in() && wp_verify_nonce( $nonce, 'gm_invoices_nonce' ) ) {
 		
-		echo json_encode( $invoices_list );
+			$invoices_list = gm_get_invoices_list( $page, $status, $from_date, $to_date, $search );
+			
+			echo json_encode( $invoices_list );
+			
+		}
 		
 		die;
 		

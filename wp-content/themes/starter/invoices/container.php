@@ -187,4 +187,6 @@
 		
 	</div>
 	
+	<?php wp_nonce_field( 'gm_invoices_nonce', 'gm_invoices_nonce' ); ?>
+	
 </div>
