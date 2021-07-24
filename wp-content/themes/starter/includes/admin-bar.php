@@ -10,6 +10,9 @@
 		$wp_admin_bar->remove_node('litespeed-purge-opcache');
 		$wp_admin_bar->remove_node('litespeed-purge-ccss');
 		
+		$wp_admin_bar->remove_node('comments');
+		$wp_admin_bar->remove_node('new-udb_widgets');
+		
 	}
 	
 ?>
