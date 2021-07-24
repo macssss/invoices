@@ -182,62 +182,62 @@ if ( function_exists( 'is_plugin_active' ) && !is_plugin_active ( 'widgetkit/wid
     $this['asset']->addFile('js', 'warp:vendor/uikit/js/uikit.js');
 }
 
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/accordion.js');
+/*$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/accordion.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/autocomplete.js');
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/datepicker.js');
+$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/datepicker.js');*/
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/grid.js');
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/grid-parallax.js');
+/*$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/grid-parallax.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/lightbox.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/notify.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/pagination.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/search.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/slideset.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/slideshow.js');
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/slideshow-fx.js');
+$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/slideshow-fx.js');*/
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/sticky.js');
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/timepicker.js');
-$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/tooltip.js');
+/*$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/timepicker.js');
+$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/tooltip.js');*/
 
-$this['asset']->addFile('js', 'js:libraries/jquery.nice-select.min.js');
+/*$this['asset']->addFile('js', 'js:libraries/jquery.nice-select.min.js');
 $this['asset']->addFile('js', 'js:libraries/jquery.cookie.min.js');
 $this['asset']->addFile('js', 'js:libraries/jquery.animateNumber.min.js');
 $this['asset']->addFile('js', 'js:libraries/simplebar.min.js');
 $this['asset']->addFile('js', 'js:libraries/swiper.min.js');
 $this['asset']->addFile('js', 'js:libraries/swiper-widgets.js');
 $this['asset']->addFile('js', 'js:libraries/simpleParallax.min.js');
-$this['asset']->addFile('js', 'js:libraries/simpleParallax-widgets.js');
+$this['asset']->addFile('js', 'js:libraries/simpleParallax-widgets.js');*/
 $this['asset']->addFile('js', 'js:libraries/datepicker-full.min.js');
 
 $this['asset']->addFile('js', 'js:base/functions/website-url.js');
-$this['asset']->addFile('js', 'js:base/functions/window-size.js');
+/*$this['asset']->addFile('js', 'js:base/functions/window-size.js');
 $this['asset']->addFile('js', 'js:base/functions/header-offset.js');
-$this['asset']->addFile('js', 'js:base/functions/window-onload-resize.js');
+$this['asset']->addFile('js', 'js:base/functions/window-onload-resize.js');*/
 
-$this['asset']->addFile('js', 'js:base/global/translations.js');
+//$this['asset']->addFile('js', 'js:base/global/translations.js');
 
-$this['asset']->addFile('js', 'js:base/global/links.js');
+/*$this['asset']->addFile('js', 'js:base/global/links.js');
 $this['asset']->addFile('js', 'js:base/global/nav.js');
 $this['asset']->addFile('js', 'js:base/global/smooth-onepage.js');
 $this['asset']->addFile('js', 'js:base/global/table-list.js');
 $this['asset']->addFile('js', 'js:base/global/tables.js');
-$this['asset']->addFile('js', 'js:base/global/video.js');
+$this['asset']->addFile('js', 'js:base/global/video.js');*/
 
-$this['asset']->addFile('js', 'js:base/blocks/block-kernburns.js');
+/*$this['asset']->addFile('js', 'js:base/blocks/block-kernburns.js');
 $this['asset']->addFile('js', 'js:base/blocks/breadcrumb.js');
 $this['asset']->addFile('js', 'js:base/blocks/copyright.js');
 $this['asset']->addFile('js', 'js:base/blocks/counters.js');
 $this['asset']->addFile('js', 'js:base/blocks/networks.js');
-$this['asset']->addFile('js', 'js:base/blocks/show-more-section.js');
+$this['asset']->addFile('js', 'js:base/blocks/show-more-section.js');*/
 
-$this['asset']->addFile('js', 'js:base/blog/like-dislike.js');
-$this['asset']->addFile('js', 'js:base/blog/related-posts.js');
+/*$this['asset']->addFile('js', 'js:base/blog/like-dislike.js');
+$this['asset']->addFile('js', 'js:base/blog/related-posts.js');*/
 
 $this['asset']->addFile('js', 'js:base/pages/login.js');
 
-$this['asset']->addFile('js', 'js:base/forms/contact-form-7.js');
+/*$this['asset']->addFile('js', 'js:base/forms/contact-form-7.js');
 $this['asset']->addFile('js', 'js:base/forms/datepicker.js');
 $this['asset']->addFile('js', 'js:base/forms/files.js');
-$this['asset']->addFile('js', 'js:base/forms/select.js');
+$this['asset']->addFile('js', 'js:base/forms/select.js');*/
 
 $this['asset']->addFile('js', 'js:invoices/date-filter.js');
 $this['asset']->addFile('js', 'js:invoices/filters-and-pagination.js');

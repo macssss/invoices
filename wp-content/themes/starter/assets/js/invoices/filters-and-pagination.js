@@ -77,10 +77,6 @@ jQuery( function($) {
 			var list       = container.find('[data-invoices-list]');
 			var pagination = container.find('[data-invoices-pagination]');
 			
-			var domain_name = window.location.hostname;
-			var protocol    = window.location.protocol;
-			var ajax_url    = protocol + '//' + domain_name + '/wp-admin/admin-ajax.php';
-			
 			
 			var data        = {
 				

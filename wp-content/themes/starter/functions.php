@@ -17,7 +17,7 @@
 	require get_template_directory () . '/includes/user-avatar.php';
 	require get_template_directory () . '/includes/user-capabilities.php';
 	
-	require get_template_directory () . '/includes/blog/blog.php';
+	//require get_template_directory () . '/includes/blog/blog.php';
 	require get_template_directory () . '/includes/invoices/invoices.php';
 	
 	if ( function_exists( 'is_plugin_active' ) ) {
