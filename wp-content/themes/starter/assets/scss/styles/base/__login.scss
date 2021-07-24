@@ -11,7 +11,7 @@ body.login {
 	line-height: $base-body-line-height;
 	font-weight: $base-body-font-weight;
 	color: $base-body-color;
-	background: white;
+	background: $gm_body-background;
 	
 	* { box-sizing: border-box !important; }
 	*:focus { box-shadow: none !important; }
